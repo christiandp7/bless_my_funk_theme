@@ -1,0 +1,22 @@
+{
+  "name": "blessmyfunk",
+  "version": "1.0.0",
+  "description": "Theme based on Shopify's Debut theme.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "theme open --env=development && theme watch --allow-live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christiandp7/bless_my_funk_theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christiandp7/bless_my_funk_theme/issues"
+  },
+  "homepage": "https://github.com/christiandp7/bless_my_funk_theme#readme"
+}
