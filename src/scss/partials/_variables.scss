@@ -15,3 +15,9 @@ $medium-down: 599px;
 $medium-up: 600px;
 $large-down: 1135px;
 $large-up: 1136px;
+
+// Fonts
+$fallback-families: Arial, Helvetica, sans-serif;
+
+$font-family-primary: "Drunk Wide Bold", $fallback-families;
+$font-family-secondary: "Blair ITC Medium", $fallback-families;

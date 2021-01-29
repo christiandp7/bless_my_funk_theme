@@ -508,6 +508,17 @@ $color-slideshow-dots: #fff;
 
 /*================ Typography ================*/
 
+@font-face {
+  font-family: "Druk Wide Bold";
+  src: url({{ "Drunk-Wide-Bold.eot" | asset_url }}); /* IE9*/
+  src: url({{ "Drunk-Wide-Bold.eot?#iefix" | asset_url }}) format("embedded-opentype"),
+   url({{ "Drunk-Wide-Bold.ttf" | asset_url }}) format("truetype");
+}
+@font-face {
+  font-family: "Blair ITC Medium";
+  src: url({{ "Blair-ITC-Medium.ttf" | asset_url }}) format("truetype");
+}
+
 {% assign header_font = settings.type_header_font %}
 {% assign base_font = settings.type_base_font %}
 
