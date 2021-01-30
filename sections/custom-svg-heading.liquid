@@ -1,0 +1,89 @@
+<style>
+  .section--{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+  .section--{{ section.id }} .custom-heading_heading-2 {
+    width: {{ section.settings.c-h-2_margin-top }}em;
+  }
+  .section--{{ section.id }} .custom-heading_heading-1 svg {
+    width: {{ section.settings.c-h-1_width }}%;
+  }
+  .section--{{ section.id }} .custom-heading_heading-2 svg {
+    width: {{ section.settings.c-h-2_width }}%;
+  }
+  .section--{{ section.id }} .custom-heading_heading-1 svg path {
+    fill: {{ section.settings.c-h-1_color }};
+  }
+  .section--{{ section.id }} .custom-heading_heading-2 svg path {
+    fill: {{ section.settings.c-h-2_color }};
+  }
+</style> 
+
+<div class="section--{{ section.id }} index-section-pad" data-section-id="{{ section.id }}" data-section-type="custom-heading-height-section">
+  <div class="page-width full">
+    <div class="custom-heading text-center">
+      <div class="custom-heading_heading-1 text-center">
+        {% include 'its-not-for-everyone_svg' %}
+      </div>
+      <div class="custom-heading_heading-2 text-center">
+        {% include 'find-out-more_svg' %}
+      </div>
+    </div>
+    
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Custom SVG Heading",
+  "class": "index-section index-section--flush",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fff"
+    },
+    {
+      "type": "header",
+      "content": "Heading svg 1"
+    },
+    {
+      "type": "color",
+      "id": "c-h-1_color",
+      "label": "Heading 1 color",
+      "default": "#000"
+    },
+    {
+      "type": "range",
+      "id": "c-h-1_width",
+      "label": "Heading 1 width",
+      "unit": "%",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Heading svg 2"
+    },
+    {
+      "type": "color",
+      "id": "c-h-2_color",
+      "label": "Heading 2 color",
+      "default": "#000"
+    },
+     
+  ],
+  "presets": [
+    {
+      "category": "Custom",
+      "name":"Custom SVG Heading"
+    }
+  ]
+}
+{% endschema %}
