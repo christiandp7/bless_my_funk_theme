@@ -1,0 +1,67 @@
+
+<style>
+  .section--{{ section.id }} {
+    background-color: {{ section.settings.bg_color }}
+  }
+</style>
+
+<div data-section-id="{{ section.id }}" class="section--{{ section.id  }}" data-section-type="header-full-height-section">
+  <div class="header-full-height__container">
+    <div class="header-full-height__toolbar">toolbar</div>
+    <a class="header-full-height__logo">
+      
+      {% if section.settings.logo != blank %}
+        <img src="{{ logo | img_url: 'master' }}" alt="logo">
+      {% else %}
+        {% if section.settings.logo_svg != blank %}
+          <img src="https://cdn.shopify.com/s/files/1/0413/6494/7102/files/LOGO_BLESSMYFUNK-05.svg?v=1612003792" alt="logo">
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      {% endif %}
+      
+    </a>
+    <div class="header-full-height__menu">Menu</div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header full height",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#fff"
+    },
+    {
+      "type": "header",
+      "content": "Logo",
+      "info": "link to SVG file"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "logo_svg",
+      "label": "Logo svg"
+    },
+    {
+      "type": "header",
+      "content": "Menu",
+      "info": "Select menu"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu",
+      "info": "Main menu"
+    }
+  ]
+}
+{% endschema %}
