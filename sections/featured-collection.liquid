@@ -1,65 +1,91 @@
-<div class="page-width">
-  {% if section.settings.title != blank %}
-    <div class="section-header text-center">
-      <h2>{{ section.settings.title | escape }}</h2>
-    </div>
-  {% endif %}
+<style>
+  .section--{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+    color: {{ section.settings.text_color }};
+  }
+  .section--{{ section.id }} .section-header {
+    color: {{ section.settings.heading_color }};
+  }
+  .section--{{ section.id }} .section-header .adornment-rect {
+    
+  }
+  .section--{{ section.id }} .price span,
+  .section--{{ section.id }} .h4.grid-view-item__title {
+    color: {{ section.settings.text_color }};
+  }
+</style>
 
-  {%- assign collection = collections[section.settings.collection] -%}
+<div class="section--{{ section.id }} index-section-pad">
+  <div class="page-width full">
+    {% if section.settings.title != blank %}
+      <div class="section-header">
+        <h2>{{ section.settings.title | escape }}</h2>
+        {% if section.settings.subtitle != blank %}
+          <h2 class="section-header__with-adornment">
+            {{ section.settings.subtitle | escape }} <span class="adornment-rect">▮▮▮▮▮▮▮▮▮</span>
+          </h2>
+        {% endif %}
+      </div>
+    {% endif %}
 
-  {% case section.settings.grid %}
-    {% when 2 %}
-      {%- assign max_height = 530 -%}
-      {%- assign grid_item_width = 'medium-up--one-half' -%}
-    {% when 3 %}
-      {%- assign max_height = 345 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
-    {% when 4 %}
-      {%- assign max_height = 250 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
-    {% when 5 %}
-      {%- assign max_height = 195 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
-  {% endcase %}
+    {%- assign collection = collections[section.settings.collection] -%}
 
-  {%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
+    {% case section.settings.grid %}
+      {% when 2 %}
+        {%- assign max_height = 530 -%}
+        {%- assign grid_item_width = 'medium-up--one-half' -%}
+      {% when 3 %}
+        {%- assign max_height = 345 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+      {% when 4 %}
+        {%- assign max_height = 250 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+      {% when 5 %}
+        {%- assign max_height = 195 -%}
+        {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+    {% endcase %}
 
-  <ul class="grid grid--uniform grid--view-items">
-    {% for product in collection.products limit: product_limit %}
-      <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
-        {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
-      </li>
-    {% else %}
+    {%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
 
-      {% for i in (1..product_limit) %}
+    <ul class="grid grid--uniform grid--view-items">
+      {% for product in collection.products limit: product_limit %}
         <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
-          <div class="grid-view-item product-card">
-            <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="#">
-              <span class="visually-hidden">{{ 'homepage.onboarding.product_title' | t }}</span>
-            </a>
-            <div class="grid-view-item__image-wrapper">
-              {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-              {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-            </div>
-            <div class="h4 grid-view-item__title" aria-hidden="true">{{ 'homepage.onboarding.product_title' | t }}</div>
-            {% include 'product-price' %}
-          </div>
+          {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
         </li>
+      {% else %}
+
+        {% for i in (1..product_limit) %}
+          <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+            <div class="grid-view-item product-card">
+              <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="#">
+                <span class="visually-hidden">{{ 'homepage.onboarding.product_title' | t }}</span>
+              </a>
+              <div class="grid-view-item__image-wrapper">
+                {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+              {% if section.settings.show_only_images == false %}
+                <div class="h4 grid-view-item__title" aria-hidden="true">{{ 'homepage.onboarding.product_title' | t }}</div>
+                {% include 'product-price' %}
+              {% endif %}
+
+            </div>
+          </li>
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
-  </ul>
+    </ul>
 
-  {% if section.settings.show_view_all %}
-    <hr class="hr--invisible" aria-hidden="true" />
-    <div class="text-center">
-      <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
-        {{ 'collections.general.view_all' | t }}
-      </a>
-    </div>
-  {% endif %}
+    {% if section.settings.show_view_all %}
+      <hr class="hr--invisible" aria-hidden="true" />
+      <div class="text-center">
+        <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+          {{ 'collections.general.view_all' | t }}
+        </a>
+      </div>
+    {% endif %}
 
+  </div>
 </div>
-
 
 
 {% schema %}
@@ -68,7 +94,7 @@
     "en": "Featured collection",
     "es": "Colección destacada"
   },
-  "class": "index-section",
+  "class": "index-section index-section--flush",
   "settings": [
     {
       "type": "text",
@@ -81,6 +107,30 @@
         "en": "Featured collection",
         "es": "Colección destacada"
       }
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Subheading"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000"
     },
     {
       "id": "collection",
@@ -115,12 +165,6 @@
       "default": 2
     },
     {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background color",
-      "default": "#FFF"
-    },
-    {
       "type": "checkbox",
       "id": "show_vendor",
       "label": {
@@ -137,6 +181,13 @@
         "es": "Mostrar el botón 'Ver todo'"
       },
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_only_images",
+      "label": "Show only images",
+      "default": true,
+      "info": "Hide name and price info"
     }
   ],
   "presets": [

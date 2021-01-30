@@ -5,8 +5,8 @@
 // fonts
 @import "partials/fonts";
 
-// base
-@import "partials/base";
+// globals
+@import "partials/globals";
 
 // components
 @import "partials/buttons";
@@ -15,3 +15,4 @@
 // Sections
 @import "partials/header";
 @import "partials/header-full-height";
+@import "partials/featured-collection";
