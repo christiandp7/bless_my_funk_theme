@@ -5,10 +5,10 @@
   .section--{{ section.id }} .custom-heading_heading-2 {
     width: {{ section.settings.c-h-2_margin-top }}em;
   }
-  .section--{{ section.id }} .custom-heading_heading-1 svg {
+  .section--{{ section.id }} .custom-heading_heading-1 img {
     width: {{ section.settings.c-h-1_width }}%;
   }
-  .section--{{ section.id }} .custom-heading_heading-2 svg {
+  .section--{{ section.id }} .custom-heading_heading-2 img {
     width: {{ section.settings.c-h-2_width }}%;
   }
   .section--{{ section.id }} .custom-heading_heading-1 svg path {
@@ -23,10 +23,10 @@
   <div class="page-width full">
     <div class="custom-heading text-center">
       <div class="custom-heading_heading-1 text-center">
-        {% include 'its-not-for-everyone_svg' %}
+        <img src="{{ section.settings.c-h-1_svg }}">
       </div>
       <div class="custom-heading_heading-2 text-center">
-        {% include 'find-out-more_svg' %}
+        <img src="{{ section.settings.c-h-2_svg }}">
       </div>
     </div>
     
@@ -52,6 +52,11 @@
       "content": "Heading svg 1"
     },
     {
+      "type": "url",
+      "id": "c-h-1_svg",
+      "label": "Svg image 1"
+    },
+    {
       "type": "color",
       "id": "c-h-1_color",
       "label": "Heading 1 color",
@@ -72,11 +77,26 @@
       "content": "Heading svg 2"
     },
     {
+      "type": "url",
+      "id": "c-h-2_svg",
+      "label": "Svg image 2"
+    },
+    {
       "type": "color",
       "id": "c-h-2_color",
       "label": "Heading 2 color",
       "default": "#000"
     },
+    {
+      "type": "range",
+      "id": "c-h-2_width",
+      "label": "Heading 2 width",
+      "unit": "%",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "default": 50
+    }
      
   ],
   "presets": [

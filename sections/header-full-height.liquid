@@ -14,7 +14,7 @@
         <img src="{{ logo | img_url: 'master' }}" alt="logo">
       {% else %}
         {% if section.settings.logo_svg != blank %}
-          <img src="https://cdn.shopify.com/s/files/1/0413/6494/7102/files/LOGO_BLESSMYFUNK-05.svg?v=1612003792" alt="logo">
+          <img src="{{ section.settings.logo_svg }}" alt="logo">
           {% else %}
             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
