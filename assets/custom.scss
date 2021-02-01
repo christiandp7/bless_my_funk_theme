@@ -61,3 +61,14 @@ header.site-header {
 .header-full-height__container .header-full-height__logo img {
   width: 100%;
 }
+
+.hero--adapt,
+.hero-fixed-width__image {
+  max-height: none !important;
+}
+@media screen and (min-width: 750px) {
+  .hero--adapt,
+.hero-fixed-width__image {
+    max-height: none !important;
+  }
+}
