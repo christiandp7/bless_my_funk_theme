@@ -113,3 +113,12 @@ header.site-header {
 .hero-2 .btn__beep img {
   width: 100%;
 }
+
+.image-bar-svg .image-bar__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-bar-svg .image-bar__content img {
+  max-height: 100%;
+}

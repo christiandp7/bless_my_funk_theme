@@ -1,0 +1,11 @@
+.image-bar-svg {
+  .image-bar__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 100%;
+    }
+  }
+}
