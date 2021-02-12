@@ -8,6 +8,9 @@
 // globals
 @import "partials/globals";
 
+// Layout
+@import "partials/layout";
+
 // components
 @import "partials/buttons";
 
@@ -19,3 +22,5 @@
 @import "partials/sections/header-full-height";
 @import "partials/sections/featured-collection";
 @import "partials/sections/hero";
+@import "partials/footer";
+@import "partials/sections/hero-2";

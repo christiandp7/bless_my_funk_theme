@@ -14,15 +14,29 @@
   letter-spacing: -0.5em;
 }
 
+.page-width.page-width-large {
+  max-width: 1500px;
+}
+
 .btn {
   display: inline-block;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   margin: 1em;
   min-width: 10em;
   border-radius: 4em;
+  font-size: 1.3rem;
   border: 5px solid #000;
   background-color: #d0d6d1;
   color: #000;
+  font-family: "Blair ITC Medium", Arial, Helvetica, sans-serif;
+}
+.btn.btn__hollow {
+  background-color: transparent;
+}
+.btn.btn__big {
+  font-size: 1.3rem;
+  padding: 0.8em 2.6em;
+  border-width: 6px;
 }
 
 .btn:not([disabled]):hover,
@@ -71,4 +85,31 @@ header.site-header {
 .hero-fixed-width__image {
     max-height: none !important;
   }
+}
+
+.hero-2 {
+  position: relative;
+}
+.hero-2 .btn__beep {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  border: 0;
+  outline: none;
+  background: none;
+  z-index: 2;
+  width: 12em;
+}
+@media screen and (max-width: 1135px) {
+  .hero-2 .btn__beep {
+    width: 8em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .hero-2 .btn__beep {
+    width: 5em;
+  }
+}
+.hero-2 .btn__beep img {
+  width: 100%;
 }

@@ -1,13 +1,23 @@
 .btn {
   display: inline-block;
-  padding: 1em 2em;
+  padding: 0.8em 2em;
   margin: 1em;
   min-width: 10em;
   border-radius: 4em;
+  font-size: 1.3rem;
   border: 5px solid $color-bg-primary;
   background-color: $color-bg-secondary;
   color: $font-color;
-  // font-family: $font-family-secondary;
+  font-family: $font-family-secondary;
+
+  &.btn__hollow {
+    background-color: transparent;
+  }
+  &.btn__big {
+    font-size: 1.3rem;
+    padding: 0.8em 2.6em;
+    border-width: 6px;
+  }
 }
 .btn:not([disabled]):hover,
 .shopify-payment-button .shopify-payment-button__button--unbranded:not([disabled]):hover,

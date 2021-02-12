@@ -1,0 +1,24 @@
+.hero-2 {
+  position: relative;
+
+  .btn__beep {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    border: 0;
+    outline: none;
+    background: none;
+    z-index: 2;
+    width: 12em;
+    @include media-max-width($large-down) {
+      width: 8em;
+    }
+    @include media-max-width($medium-down) {
+      width: 5em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
