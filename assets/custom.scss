@@ -114,6 +114,9 @@ header.site-header {
   width: 100%;
 }
 
+.image-bar-svg .image-bar__heading {
+  border-bottom: 15px solid #000;
+}
 .image-bar-svg .image-bar__content {
   display: flex;
   align-items: center;

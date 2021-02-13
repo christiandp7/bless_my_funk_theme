@@ -1,4 +1,8 @@
 .image-bar-svg {
+  .image-bar__heading {
+    border-bottom: 15px solid $color-bg-primary;
+  }
+
   .image-bar__content {
     display: flex;
     align-items: center;
