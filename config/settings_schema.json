@@ -590,6 +590,11 @@
         "default": "helvetica_n7"
       },
       {
+        "type": "text",
+        "label": "Custom Font name",
+        "id": "type_header_font_custom"
+      },
+      {
         "type": "range",
         "id": "type_header_base_size",
         "label": {
@@ -665,6 +670,11 @@
           "zh-TW": "字型"
         },
         "default": "helvetica_n4"
+      },
+      {
+        "type": "text",
+        "label": "Custom Font name",
+        "id": "type_base_font_custom"
       },
       {
         "type": "range",

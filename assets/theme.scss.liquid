@@ -510,15 +510,17 @@ $color-slideshow-dots: #fff;
 
 @font-face {
   font-family: "Druk Wide Bold";
-  src: url({{ "Drunk-Wide-Bold.eot" | asset_url }}); /* IE9*/
-  src: url({{ "Drunk-Wide-Bold.eot?#iefix" | asset_url }}) format("embedded-opentype"),
-   url({{ "Drunk-Wide-Bold.ttf" | asset_url }}) format("truetype");
+  src: url({{ "Druk-Wide-Bold.eot" | asset_url }}); /* IE9*/
+  src: url({{ "Druk-Wide-Bold.eot?#iefix" | asset_url }}) format("embedded-opentype"),
+   url({{ "Druk-Wide-Bold.ttf" | asset_url }}) format("truetype");
 }
 @font-face {
   font-family: "Blair ITC Medium";
   src: url({{ "Blair-ITC-Medium.ttf" | asset_url }}) format("truetype");
 }
 
+
+{% comment %}
 {% assign header_font = settings.type_header_font %}
 {% assign base_font = settings.type_base_font %}
 
@@ -545,12 +547,31 @@ $font-weight-header: {{ header_font.weight }};
 $font-stack-body: {{ base_font.family }}, {{ base_font.fallback_families }};
 $font-style-body: {{ base_font.style }};
 $font-weight-body: {{ base_font.weight }};
+{% endcomment %}
+
+{% assign header_font = settings.type_header_font_custom %}
+{% assign base_font = settings.type_base_font_custom %}
+
+$font-weight-body--bold: 700;
+$font-weight-body--bolder: 700;
+
+$font-stack-header: {{ header_font }};
+$font-style-header: normal;
+$font-weight-header: 400;
+
+$font-stack-body: {{ base_font }};
+$font-style-body: normal;
+$font-weight-body: 400;
+
 
 $font-size-header: {{ settings.type_header_base_size }} * 1px;
 
 $font-size-base: {{ settings.type_base_size }}px; // Henceforth known as 1em
 
-$font-stack-cart-notification: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+// $font-stack-cart-notification: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack-cart-notification: "Blair ITC Medium";
 
 $font-size-mobile-input: 16px; // min 16px to prevent zooming
 
