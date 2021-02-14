@@ -99,10 +99,18 @@ header.site-header {
   padding: 0 35px;
   padding-top: 35px;
 }
-.header-full-height__container .header-full-height__toolbar button,
+@media screen and (min-width: 1136px) {
+  .header-full-height__container .header-full-height__toolbar {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+@media screen and (min-width: 1136px) {
+  .header-full-height__container .header-full-height__toolbar button,
 .header-full-height__container .header-full-height__toolbar a {
-  font-size: 1.2rem;
-  padding: 12px 18px;
+    font-size: 1.2rem;
+    padding: 12px 18px;
+  }
 }
 .header-full-height__container .header-full-height__menu {
   width: 100%;

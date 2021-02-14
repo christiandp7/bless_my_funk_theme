@@ -34,10 +34,16 @@
     width: 100%;
     padding: 0 35px;
     padding-top: 35px;
+    @include media-min-width($large-up) {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
     button,
     a {
-      font-size: 1.2rem;
-      padding: 12px 18px;
+      @include media-min-width($large-up) {
+        font-size: 1.2rem;
+        padding: 12px 18px;
+      }
     }
   }
 
