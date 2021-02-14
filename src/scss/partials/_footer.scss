@@ -2,6 +2,9 @@
   .list--inline {
     & > li {
       display: block;
+      a {
+        font-size: 1.2rem;
+      }
     }
   }
 }

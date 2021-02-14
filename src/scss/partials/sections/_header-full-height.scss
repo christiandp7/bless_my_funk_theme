@@ -15,7 +15,8 @@
   width: 100%;
   height: 100vh;
 
-  a {
+  a,
+  button {
     font-family: $font-family-secondary;
   }
 
@@ -30,11 +31,21 @@
 
   // Toolbar
   .header-full-height__toolbar {
+    width: 100%;
+    padding: 0 35px;
+    padding-top: 35px;
+    button,
+    a {
+      font-size: 1.2rem;
+      padding: 12px 18px;
+    }
   }
 
   // Menu bottom
   .header-full-height__menu {
     width: 100%;
+    padding-bottom: 35px;
+
     .h-f-h--linklist {
       width: 100%;
       // padding-bottom: 30px;
@@ -51,8 +62,6 @@
       flex-wrap: wrap;
 
       .h-f-h--linklist-item {
-        position: relative;
-        bottom: 35px;
         .h-f-h--linklist-link {
           text-transform: uppercase;
           font-size: 1.45rem;
