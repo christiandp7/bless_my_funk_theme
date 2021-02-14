@@ -7,6 +7,7 @@
 
 <div data-section-id="{{ section.id }}" class="section--{{ section.id  }}" data-section-type="header-full-height-section">
   <div class="header-full-height__container">
+
     <div class="header-full-height__toolbar">toolbar</div>
     <a class="header-full-height__logo">
       
@@ -21,7 +22,19 @@
       {% endif %}
       
     </a>
-    <div class="header-full-height__menu">Menu</div>
+    <div class="header-full-height__menu">
+      {% if section.settings.menu != blank %}
+        {%- assign menu = section.settings.menu -%}
+        <ul class="h-f-h--linklist">
+          {% for link in linklists[menu].links %}
+            <li class="h-f-h--linklist-item">
+              <a class="h-f-h--linklist-link" href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+
   </div>
 </div>
 

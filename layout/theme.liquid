@@ -119,9 +119,16 @@
     {% include 'cart-popup' %}
   {%- endif -%}
 
+
+
   {% section 'header' %}
 
-  {% section 'header-full-height' %}
+  {% if template contains 'index' %}
+    {% section 'header-full-height' %}
+  {% endif %}
+
+
+  
 
   <div class="page-container drawer-page-content" id="PageContainer">
 

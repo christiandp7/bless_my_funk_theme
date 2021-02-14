@@ -60,12 +60,24 @@ header.site-header {
 }
 
 .header-full-height__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   height: 100vh;
+}
+.header-full-height__container a {
+  font-family: "Blair ITC Medium", Arial, Helvetica, sans-serif;
 }
 .header-full-height__container .header-full-height__logo {
   width: 60%;
@@ -74,6 +86,31 @@ header.site-header {
 }
 .header-full-height__container .header-full-height__logo img {
   width: 100%;
+}
+.header-full-height__container .header-full-height__menu {
+  width: 100%;
+}
+.header-full-height__container .header-full-height__menu .h-f-h--linklist {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.header-full-height__container .header-full-height__menu .h-f-h--linklist .h-f-h--linklist-item {
+  position: relative;
+  bottom: 35px;
+}
+.header-full-height__container .header-full-height__menu .h-f-h--linklist .h-f-h--linklist-item .h-f-h--linklist-link {
+  text-transform: uppercase;
+  font-size: 1.45rem;
 }
 
 .hero--adapt,
@@ -87,31 +124,39 @@ header.site-header {
   }
 }
 
+.site-footer .list--inline > li {
+  display: block;
+}
+
 .hero-2 {
   position: relative;
 }
-.hero-2 .btn__beep {
+.hero-2 .btn__sound {
   position: absolute;
   bottom: 10%;
   left: 10%;
   border: 0;
   outline: none;
-  background: none;
+  background-color: #ffff43;
+  border: 8px solid #000;
   z-index: 2;
-  width: 12em;
+  width: 10em;
+  height: 15em;
+  border-radius: 5em;
 }
 @media screen and (max-width: 1135px) {
-  .hero-2 .btn__beep {
+  .hero-2 .btn__sound {
     width: 8em;
+    height: 12em;
+    border-radius: 4em;
   }
 }
 @media screen and (max-width: 599px) {
-  .hero-2 .btn__beep {
+  .hero-2 .btn__sound {
     width: 5em;
+    height: 7.5em;
+    border-radius: 2.5em;
   }
-}
-.hero-2 .btn__beep img {
-  width: 100%;
 }
 
 .image-bar-svg .image-bar__heading {

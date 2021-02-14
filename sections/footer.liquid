@@ -138,7 +138,7 @@
 {%- endcapture -%}
 
 <footer class="site-footer" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
-  <div class="page-width">
+  <div class="page-width full">
     <div class="site-footer__content">
       {%- for block in section.blocks -%}
 
@@ -317,9 +317,8 @@
             {%- endif -%}
           </ul>
         {%- else -%}
-          <div class="small--hide site-footer-item-align-right {% if show_selectors or show_payment_icons %}site-footer-item-center-vertically{% endif %}">
-            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-            <small class="site-footer__copyright-content site-footer__copyright-content-powered-by">{{ powered_by_link }}</small>
+          <div class="small--hide text-center {% if show_selectors or show_payment_icons %}site-footer-item-center-vertically{% endif %}">
+            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}, all rights reserved.</small>
           </div>
         {%- endif -%}
       </div>
@@ -331,14 +330,13 @@
       <div class="grid__item medium-up--hide {{ payment_width_class }} small--one-whole">{{ payment_icon_markup }}</div>
 
       {%- if social_icons and show_selectors -%}
-        <div class="grid__item small--hide site-footer-item-align-right {% if show_payment_icons %}one-half{% endif %}">
-          <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-          <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
+        <div class="grid__item small--hide text-center {% if show_payment_icons %}one-half{% endif %}">
+          <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}, all rights reserved.</small>
         </div>
       {%- endif -%}
 
       <div class="grid__item small--one-whole {{ copyright_show_class }} site-footer-item-align-right">
-        <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+        <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}, all rights reserved.</small>
       </div>
     </div>
   </div>
