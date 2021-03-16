@@ -1,6 +1,47 @@
 header.site-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 999;
-  display: none;
+  transition: transform 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  @include media-max-width(749px) {
+    width: 100%;
+  }
+  // display: none;
+  &.site-header--down {
+    position: fixed;
+    transform: translateY(-100%);
+  }
+
+  &.site-header--up {
+    position: fixed;
+    transform: translateY(0);
+  }
+
+  .site-nav {
+    .site-nav__link {
+      .site-nav__label {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .site-header__icons-wrapper {
+    a,
+    button {
+      font-size: 0.85rem;
+    }
+  }
+
+  .mobile-nav--open,
+  .mobile-nav--close {
+    margin-right: 15px;
+  }
+}
+
+.template-index {
+  header.site-header {
+    &.site-header--on-top {
+      display: none;
+    }
+  }
 }

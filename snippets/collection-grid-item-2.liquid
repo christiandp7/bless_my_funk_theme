@@ -1,0 +1,77 @@
+{% comment %}
+    Renders a list of products from a collection
+
+    Accepts:
+    - collection: {Object} Collection Liquid object (required)
+
+    Usage:
+    {% include 'collection-grid-item', collection: collection %}
+{% endcomment %}
+
+{% comment %}
+{% if collection.image %}
+  {%- assign collection_image = collection.image -%}
+{% elsif collection.products.first and collection.products.first.media != empty %}
+  {%- assign collection_image = collection.products.first.featured_media.preview_image -%}
+{% else %}
+  {% assign collection_image = blank %}
+{% endif %}
+
+<div class="collection-grid-item">
+  <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
+    {% unless collection_image == blank %}
+      <div class="collection-grid-item__overlay box ratio-container lazyload js"
+        data-bgset="{% include 'bgset', image: collection_image %}"
+        data-sizes="auto"
+        data-parent-fit="cover"
+        style="background-image: url('{{ collection_image | img_url: '300x300' }}')">
+      </div>
+      <noscript>
+        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_image | img_url: '1024x1024' }}')"></div>
+      </noscript>
+    {% else %}
+      {% if collection == empty %}
+        <div class="collection-grid-item__overlay">
+          {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
+          {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {% else %}
+        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_image | img_url: '1024x1024' }}')"></div>
+      {% endif %}
+    {% endunless %}
+
+    <div class="collection-grid-item__title-wrapper">
+      <div class="collection-grid-item__title h3">
+        {% if collection.title == blank %}
+          {{ 'homepage.onboarding.collection_title' | t }}
+        {% else %}
+          {{ collection.title }}
+        {% endif %}
+      </div>
+    </div>
+  </a>
+</div>
+{% endcomment %}
+
+
+{% case section.settings.grid %}
+  {% when 2 %}
+    {%- assign max_height = 530 -%}
+  {% when 3 %}
+    {%- assign max_height = 345 -%}
+  {% when 4 %}
+    {%- assign max_height = 250 -%}
+  {% when 5 %}
+    {%- assign max_height = 195 -%}
+{% endcase %}
+
+
+<ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
+  {% paginate collection.products by number_of_products %}
+    {% for product in collection.products %}
+      <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+        {% include 'product-card-grid-2', max_height: max_height, product: product, show_vendor: true %}
+      </li>
+    {% endfor %}
+  {% endpaginate %}
+</ul>

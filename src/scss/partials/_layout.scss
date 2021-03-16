@@ -3,3 +3,11 @@
     max-width: 1500px;
   }
 }
+
+body:not(.template-index) {
+  .main-content {
+    @include media-min-width(750px) {
+      padding-top: 135px;
+    }
+  }
+}

@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "start": "theme open && theme watch --allow-live",
+    "start": "theme watch --allow-live",
     "sass": "sass --no-source-map --watch src/scss/index.scss assets/custom.scss",
     "deploy": "theme deploy --allow-live"
   },

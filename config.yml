@@ -1,8 +1,16 @@
+# development:
+#   password: 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
+#   theme_id: "118034006174"
+#   store: christiandp7.myshopify.com
+#   #proxy: http://localhost:8000
+#   ignore_files: 
+#   - config/settings_data.json
+#   - src/
+
 development:
-  password: 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
-  theme_id: "118034006174"
-  store: christiandp7.myshopify.com
-  #proxy: http://localhost:8000
+  password: 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
+  theme_id: "120491081923"
+  store: blessmyfunkhome.myshopify.com
   ignore_files: 
   - config/settings_data.json
   - src/

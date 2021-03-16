@@ -1,27 +1,53 @@
-<div class="page-width">
+{% assign fullwidth = section.settings.fullwidth %}
+
+{% if fullwidth %}
+  {% assign banner_bottom_width = '1920x' %}
+{% else %}
+  {% assign banner_bottom_width = '1090x' %}
+{% endif %}
+
+
+<div class="page-width {% if fullwidth %}full{% endif %}">
   <header class="section-header text-center">
-    <h1>{{ page_title }}</h1>
+    <h1>{{ section.settings.heading }}</h1>
   </header>
 
   {%- assign blocks = section.blocks | sort: 'collection.all_products_count' -%}
+  {% assign number_of_products = section.settings.grid %}
 
   {% case section.settings.grid %}
     {% when 2 %}
       {%- assign grid_item_width = 'medium-up--one-half' -%}
-      {%- assign image_size = '530x' -%}
+      {% if fullwidth %}
+        {%- assign image_size = '700x' -%}
+      {% else %}
+        {%- assign image_size = '530x' -%}
+      {% endif %}
     {% when 3 %}
       {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
-      {%- assign image_size = '350x' -%}
+      {% if fullwidth %}
+        {%- assign image_size = '500x' -%}
+      {% else %}
+        {%- assign image_size = '350x' -%}
+      {% endif %}
     {% when 4 %}
       {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
-      {%- assign image_size = '250x' -%}
+      {% if fullwidth %}
+        {%- assign image_size = '350x' -%}
+      {% else %}
+        {%- assign image_size = '250x' -%}
+      {% endif %}
     {% when 5 %}
       {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
-      {%- assign image_size = '225x' -%}
+      {% if fullwidth %}
+        {%- assign image_size = '300x' -%}
+      {% else %}
+        {%- assign image_size = '225x' -%}
+      {% endif %}
   {% endcase %}
 
-  <ul class="grid grid--uniform">
-    {% if section.settings.display_type == 'all' %}
+
+  {% if section.settings.display_type == 'all' %}
       {% case section.settings.sort %}
         {% when 'products_high' or 'products_low' %}
           {%- assign collections = collections | sort: 'all_products_count' -%}
@@ -30,27 +56,35 @@
       {% endcase %}
       {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
         {% for collection in collections %}
-          <li class="grid__item {{ grid_item_width }}">
-            {% include 'collection-grid-item', collection: collection %}
-          </li>
+          <div class="collection-item">
+            <h3><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
+            {% include 'collection-grid-item-2', collection: collection, number_of_products: number_of_products %}
+          </div>
         {% endfor %}
       {% else %}
         {% for collection in collections reversed %}
-          <li class="grid__item {{ grid_item_width }}">
-            {% include 'collection-grid-item', collection: collection %}
-          </li>
+          <div class="collection-item">
+            <h3><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
+            {% include 'collection-grid-item-2', collection: collection, number_of_products: number_of_products %}
+          </div>
         {% endfor %}
       {% endif %}
     {% else %}
       {% for block in section.blocks %}
-        <li class="grid__item {{ grid_item_width }}">
+        <div class="collection-item">
+          <h3><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
           {%- assign collection = collections[block.settings.collection] -%}
-          {% include 'collection-grid-item', collection: collection %}
-        </li>
+          {% include 'collection-grid-item-2', collection: collection, number_of_products: number_of_products %}
+        </div>
       {% endfor %}
     {% endif %}
-  </ul>
+
+  {% if section.settings.bottom_banner %}
+    <img class="collection-banner" src="{{ section.settings.bottom_banner | img_url: banner_bottom_width }}" alt="bottom banner">
+  {% endif %}
+
 </div>
+
 
 
 
@@ -77,6 +111,12 @@
     "zh-TW": "商品系列清單頁面"
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Products"
+    },
     {
       "type": "paragraph",
       "content": {
@@ -361,30 +401,22 @@
     {
       "type": "range",
       "id": "grid",
-      "label": {
-        "da": "Kollektioner pr. række",
-        "de": "Kategorien per Reihe",
-        "en": "Collections per row",
-        "es": "Colecciones por fila",
-        "fi": "Kokoelmia per rivi",
-        "fr": "Collections par rangée",
-        "hi": "प्रति पंक्ति कलेक्शन",
-        "it": "Collezioni per riga",
-        "ja": "行あたりのコレクション数",
-        "ko": "열 별 컬렉션",
-        "nb": "Samlinger per rad",
-        "nl": "Collecties per rij",
-        "pt-BR": "Coleções por linha",
-        "pt-PT": "Coleções por linha",
-        "sv": "Produktserier per rad",
-        "th": "คอลเลกชันต่อแถว",
-        "zh-CN": "每行产品系列数",
-        "zh-TW": "每列商品系列數"
-      },
+      "label": "Products per row",
       "default": 3,
       "min": 2,
       "max": 5,
       "step": 1
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_banner",
+      "label": "Bottom banner"
+    },
+    {
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Fullwidth",
+      "default": true
     }
   ],
   "blocks": [
