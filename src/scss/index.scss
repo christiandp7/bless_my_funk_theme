@@ -18,7 +18,8 @@
 @import "partials/home";
 
 // Templates
-@import "partials/collections";
+@import "partials/templates/collections";
+@import "partials/templates/product";
 
 // Sections
 @import "partials/sections/header";

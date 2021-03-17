@@ -4,10 +4,25 @@
   }
 }
 
-body:not(.template-index) {
-  .main-content {
-    @include media-min-width(750px) {
-      padding-top: 135px;
+body {
+  text-transform: lowercase;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  input,
+  select,
+  button {
+    text-transform: lowercase;
+  }
+
+  &:not(.template-index) {
+    .main-content {
+      @include media-min-width(750px) {
+        padding-top: 135px;
+      }
     }
   }
 }

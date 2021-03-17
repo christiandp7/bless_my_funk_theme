@@ -41,7 +41,7 @@
             <div class="rte-setting mega-subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>
           {%- endif -%}
           {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
-            <a href="{{ section.settings.button_link }}" class="btn hero__btn btn__hollow btn__big">
+            <a href="{{ section.settings.button_link }}" class="btn btn-round hero__btn btn__hollow btn__big">
               {{ section.settings.button_label | escape }}
             </a>
           {%- endif -%}
@@ -112,7 +112,7 @@
             {%- endcapture -%}
 
             <a href="{{ section.settings.button_link }}"
-              class="btn hero__btn btn__hollow btn__big"
+              class="btn btn-round hero__btn btn__hollow btn__big"
               aria-label="{{ ariaLabel }}">
               {{- section.settings.button_label | escape -}}
             </a>
