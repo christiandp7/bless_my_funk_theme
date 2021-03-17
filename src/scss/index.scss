@@ -14,8 +14,9 @@
 // components
 @import "partials/buttons";
 
-// Pages global styles
-@import "partials/home";
+// Pages
+@import "partials/pages/home";
+@import "partials/pages/about";
 
 // Templates
 @import "partials/templates/collections";

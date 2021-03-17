@@ -79,13 +79,12 @@
       {% endfor %}
     {% endif %}
 
-  {% if section.settings.bottom_banner %}
-    <img class="collection-banner" src="{{ section.settings.bottom_banner | img_url: banner_bottom_width }}" alt="bottom banner">
-  {% endif %}
-
 </div>
 
 
+{% if section.settings.bottom_banner %}
+  <img class="collection-banner" src="{{ section.settings.bottom_banner | img_url: banner_bottom_width }}" alt="bottom banner">
+{% endif %}
 
 
 {% schema %}
