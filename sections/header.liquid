@@ -111,10 +111,12 @@
       <div class="grid__item small--hide {% if section.settings.align_logo == 'left' %}medium-up--one-quarter{% else %}medium-up--one-third medium-up--push-one-third{% endif %} text-right site-header__icons{% if shop.customer_accounts_enabled %} site-header__icons--plus{% endif %}">
         <div class="site-header__icons-wrapper">
 
-          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
-            {% comment %}{% include 'icon-search' %}{% endcomment %}
-            search
-          </button>
+          {% if settings.search_enabled %}
+            <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
+              {% comment %}{% include 'icon-search' %}{% endcomment %}
+              search
+            </button>
+          {% endif %}
 
           {% if shop.customer_accounts_enabled %}
             {% if customer %}
@@ -128,6 +130,12 @@
                 account
               </a>
             {% endif %}
+          {% endif %}
+
+          {% if section.settings.contact_email != blank %} 
+            <a href="mailto:{{ section.settings.contact_email }}" class="site-header__icon">
+              help
+            </a>
           {% endif %}
 
           <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
@@ -157,9 +165,12 @@
 
 
       <div class="site-header__icons-wrapper">
-        <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
-          {% include 'icon-search' %}
-        </button>
+        
+        {% if settings.search_enabled %}
+          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
+            {% include 'icon-search' %}
+          </button>
+        {% endif %}
 
         {% if shop.customer_accounts_enabled %}
           {% if customer %}
@@ -502,6 +513,16 @@
         "zh-TW": "選單"
       },
       "default": "main-menu"
+    },
+    {
+      "type": "header",
+      "content": "Toolbar"
+    },
+    {
+      "type": "text",
+      "id": "contact_email",
+      "label": "Contact email",
+      "info": "Open email client (mailto:)"
     },
     {
       "type": "header",

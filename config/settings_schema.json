@@ -712,6 +712,16 @@
     "settings": [
       {
         "type": "header",
+        "content": "Search Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "search_enabled",
+        "label": "Enable Search",
+        "default": true
+      },
+      {
+        "type": "header",
         "content": "Product suggestions"
       },
       {

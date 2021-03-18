@@ -20,8 +20,15 @@
   animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.img-fullwidth {
+  width: 100%;
+}
+
 .page-width.page-width-large {
   max-width: 1500px;
+}
+.page-width.page-width__about {
+  max-width: 1600px;
 }
 
 body {
@@ -76,6 +83,23 @@ body button {
 /*  Custom SVG Heading  */
 .custom-heading_heading-2 {
   margin-top: 1.8em;
+}
+
+.img-w-t .img-w-t_img-container img {
+  width: 100%;
+}
+.img-w-t .rte p {
+  word-break: break-all;
+}
+
+.imgs {
+  margin-top: 50px;
+}
+.imgs .img-w-h__container {
+  position: relative;
+}
+.imgs .img-w-h__container .img-w-h__heading {
+  text-transform: uppercase;
 }
 
 .collection-item {
@@ -173,7 +197,7 @@ header.site-header.site-header--up {
   transform: translateY(0);
 }
 header.site-header .site-nav .site-nav__link .site-nav__label {
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 header.site-header .site-header__icons-wrapper a,
 header.site-header .site-header__icons-wrapper button {

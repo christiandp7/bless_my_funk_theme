@@ -17,10 +17,12 @@
 
       <div class="site-header__icons-wrapper">
 
-        <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
-          search
-          <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
-        </button>
+        {% if settings.search_enabled %}
+          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
+            search
+            <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+          </button>
+        {% endif %}
 
         {% if shop.customer_accounts_enabled %}
           {% if customer %}
@@ -34,6 +36,12 @@
               <span class="icon__fallback-text">{{ 'layout.customer.log_in' | t }}</span>
             </a>
           {% endif %}
+        {% endif %}
+
+        {% if section.settings.contact_email != blank %} 
+          <a href="mailto:{{ section.settings.contact_email }}" class="site-header__icon">
+            help
+          </a>
         {% endif %}
 
         <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
@@ -124,6 +132,16 @@
       "label": "Menu",
       "default": "main-menu",
       "info": "Main menu"
+    },
+    {
+      "type": "header",
+      "content": "Toolbar"
+    },
+    {
+      "type": "text",
+      "id": "contact_email",
+      "label": "Contact email",
+      "info": "Open email client (mailto:)"
     }
   ]
 }

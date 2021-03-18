@@ -1,4 +1,6 @@
-<div class="product-template__container page-width"
+{% assign fullwidth = section.settings.fullwidth %}
+
+<div class="product-template__container page-width {% if fullwidth %}full{% endif %}"
   id="ProductSection-{{ section.id }}"
   data-section-id="{{ section.id }}"
   data-section-type="product"
@@ -649,6 +651,16 @@
         "zh-TW": "啟用影片循環功能"
       },
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "fullwidth",
+      "label": "Fullwidth",
+      "default": true
     }
   ]
 }

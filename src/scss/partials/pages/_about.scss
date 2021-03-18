@@ -1,0 +1,23 @@
+.img-w-t {
+  .img-w-t_img-container {
+    img {
+      width: 100%;
+    }
+  }
+  .rte {
+    p {
+      word-break: break-all;
+    }
+  }
+}
+
+.imgs {
+  margin-top: 50px;
+
+  .img-w-h__container {
+    position: relative;
+    .img-w-h__heading {
+      text-transform: uppercase;
+    }
+  }
+}
