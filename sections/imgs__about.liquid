@@ -1,5 +1,10 @@
 
-<div class="section--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="img-w-text__about-height-section">
+<div class="section--{{ section.id }} silhouette_container" data-section-id="{{ section.id }}" data-section-type="img-w-text__about-height-section">
+
+  {% if section.settings.silhouette != blank %}
+    <img class="silhouette_img" src="{{ section.settings.silhouette }}" alt="{{ section.settings.silhouette.alt }}">
+  {% endif %}
+
   <div class="page-width page-width__about">  
 
     <div class="grid grid--uniform">
@@ -42,22 +47,6 @@
     </div>
   </div>
 </div>
-
-<style>
-  .section--{{ section.id }} .img-w-h__heading {
-    font-size: {{ section.settings.heading_font_size }}rem;
-    line-height: {{ section.settings.heading_line_height }};
-  }
-  @media screen and (min-width: 750px) {
-    .section--{{ section.id }} .img-w-h__heading {
-      margin: {{ section.settings.heading_margin_top_bottom }}px 0;
-    }
-    .section--{{ section.id }} .img-w-h__container {
-      top: -{{ section.settings.heading_top_offset }}px;
-    }
-  }
-  
-</style>
 
 {% schema %}
 {
@@ -130,8 +119,45 @@
       "type": "image_picker",
       "id": "image_2",
       "label": "Image 2"
+    },
+    {
+      "type":"header",
+      "content":"Background Silhouette"
+    },
+    {
+      "type": "url",
+      "id": "silhouette",
+      "label": "Silhouette (svg)"
+    },
+    {
+      "type": "textarea",
+      "id": "silhouette_styles",
+      "label": "Silhouette CSS Styles",
+      "info": "Use CSS to setup image position."
     }
     
   ]
 }
 {% endschema %}
+
+
+<style>
+  {% if section.settings.silhouette != blank %}
+  .section--{{ section.id }} .silhouette_img { 
+    {{ section.settings.silhouette_styles }}
+  }
+  {% endif %}
+
+  .section--{{ section.id }} .img-w-h__heading {
+    font-size: {{ section.settings.heading_font_size }}rem;
+    line-height: {{ section.settings.heading_line_height }};
+  }
+  @media screen and (min-width: 750px) {
+    .section--{{ section.id }} .img-w-h__heading {
+      margin: {{ section.settings.heading_margin_top_bottom }}px 0;
+    }
+    .section--{{ section.id }} .img-w-h__container {
+      top: -{{ section.settings.heading_top_offset }}px;
+    }
+  }
+</style>

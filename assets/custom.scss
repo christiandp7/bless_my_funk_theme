@@ -24,6 +24,23 @@
   width: 100%;
 }
 
+.silhouette_container {
+  position: relative;
+}
+
+.silhouette_bg_container {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.silhouette_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: -1;
+}
+
 .page-width.page-width-large {
   max-width: 1500px;
 }
@@ -34,16 +51,19 @@
 body {
   text-transform: lowercase;
 }
+body p,
+body input,
+body select,
+body button {
+  text-transform: lowercase;
+}
 body h1,
 body h2,
 body h3,
 body h4,
 body h5,
-body h6,
-body input,
-body select,
-body button {
-  text-transform: lowercase;
+body h6 {
+  text-transform: uppercase;
 }
 @media screen and (min-width: 750px) {
   body:not(.template-index) .main-content {
@@ -83,6 +103,17 @@ body button {
 /*  Custom SVG Heading  */
 .custom-heading_heading-2 {
   margin-top: 1.8em;
+}
+
+.about-us__page h1,
+.about-us__page h2,
+.about-us__page h3 {
+  font-family: "Druk Wide Medium Regular", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.about-us__page p {
+  font-family: "Druk Wide Medium Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
 }
 
 .img-w-t .img-w-t_img-container img {

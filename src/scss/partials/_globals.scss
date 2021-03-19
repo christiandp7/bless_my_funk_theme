@@ -27,3 +27,19 @@
 .img-fullwidth {
   width: 100%;
 }
+
+// Silhouettes
+.silhouette_container {
+  position: relative;
+}
+.silhouette_bg_container {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.silhouette_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: -1;
+}
