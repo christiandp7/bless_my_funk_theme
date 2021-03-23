@@ -6,6 +6,13 @@ header.site-header {
   @include media-max-width(749px) {
     width: 100%;
   }
+
+  .h2.site-header__logo {
+    @include media-max-width(1400px) {
+      font-size: 0.95rem;
+    }
+  }
+
   // display: none;
   &.site-header--down {
     position: fixed;
@@ -19,6 +26,10 @@ header.site-header {
 
   .site-nav {
     .site-nav__link {
+      font-size: 0.85rem;
+      @include media-max-width(1400px) {
+        font-size: 0.8rem;
+      }
       .site-nav__label {
         text-transform: lowercase;
       }
@@ -29,12 +40,75 @@ header.site-header {
     a,
     button {
       font-size: 0.85rem;
+      @include media-max-width(1400px) {
+        font-size: 0.8rem;
+      }
     }
   }
 
   .mobile-nav--open,
   .mobile-nav--close {
     margin-right: 15px;
+  }
+
+  // Desktop Header mockup
+  &.header_divided_nav {
+    width: 100%;
+    .site-header__mobile-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+      &.grid:after {
+        display: none;
+      }
+      > .grid__item {
+        width: auto;
+      }
+      > nav.grid__item {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        @include media-max-width($header-desktop-down) {
+          display: none;
+        }
+        > ul.site-nav {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          > li.header_divided_nav--divider {
+            margin-right: auto;
+          }
+        }
+      }
+      > .site-header__icons {
+        @include media-max-width($header-desktop-down) {
+          display: none;
+        }
+      }
+      > button.site-header__icon.site-header__menu.js-mobile-nav-toggle {
+        @include media-max-width($header-desktop-down) {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 10px 11px;
+          margin: 0;
+        }
+      }
+    }
   }
 }
 

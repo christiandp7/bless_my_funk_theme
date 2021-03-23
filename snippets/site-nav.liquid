@@ -79,7 +79,15 @@
         </div>
       </li>
     {% else %}
-      <li {% if link.active %} class="site-nav--active"{% endif %}>
+
+      {% assign nav_divider_num = forloop.length | divided_by: 2 | ceil %}
+      {% assign divide_nav = false %}
+
+      {% if forloop.index == nav_divider_num %}
+        {% assign divide_nav = true %}
+      {% endif %}
+
+      <li class="{% if link.active %}site-nav--active{% endif %} {% if divide_nav %}header_divided_nav--divider{% endif %}">
         <a href="{{ link.url }}"
           class="site-nav__link site-nav__link--main{% if link.active %} site-nav__link--active{% endif %}"
           {% if link.current %} aria-current="page"{% endif %}
