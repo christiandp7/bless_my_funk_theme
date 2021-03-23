@@ -148,6 +148,13 @@ body h6 {
   width: 100%;
 }
 
+.product-title {
+  margin-bottom: 25px;
+}
+
+.product_bmf.product-single .product-single__media-wrapper {
+  max-width: 100% !important;
+}
 @media screen and (max-width: 749px) {
   .product_bmf.product-single .product-single__thumbnails {
     justify-content: flex-start;

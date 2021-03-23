@@ -1,5 +1,12 @@
+.product-title {
+  margin-bottom: 25px;
+}
+
 .product_bmf.product-single {
   // product image
+  .product-single__media-wrapper {
+    max-width: 100% !important;
+  }
   .product-single__thumbnails {
     @include media-max-width(749px) {
       justify-content: flex-start;

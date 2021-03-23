@@ -55,7 +55,10 @@
       </dt>
       <dd>
         <span class="price-item price-item--regular" data-regular-price>
-          {{ money_price }}
+          {% if variant.selected == false %}
+          from
+          {% endif %}
+           {{ money_price }}
         </span>
       </dd>
     </div>
@@ -65,7 +68,10 @@
       </dt>
       <dd>
         <span class="price-item price-item--sale" data-sale-price>
-          {{ money_price }}
+          {% if variant.selected == false %}
+          from
+          {% endif %}
+           {{ money_price }}
         </span>
       </dd>
       <dt>

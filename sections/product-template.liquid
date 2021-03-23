@@ -35,7 +35,13 @@
       {%- assign product_description_width = '' -%}
       {%- assign height = 1090 -%}
       {%- assign enable_image_zoom = false -%}
+    {% when 'full-2' %}
+      {%- assign product_media_width = 'medium-up--two-thirds' -%}
+      {%- assign product_description_width = 'medium-up--one-third' -%}
+      {%- assign height = 1080 -%}
   {% endcase %}
+
+  <h1 class="product-title">{{ product.title }}</h1>
 
   <div class="grid product_bmf product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
     <div class="grid__item product-single__media-group {{ product_media_width }}{% if section.settings.media_size == 'full' %} product-single__media-group--full{% endif %}" data-product-single-media-group>
@@ -124,7 +130,8 @@
     <div class="grid__item {{ product_description_width }}">
       <div class="product-single__meta">
 
-        <h1 class="product-single__title">{{ product.title }}</h1>
+        {%- comment -%}<h1 class="product-single__title">{{ product.title }}</h1>{%- endcomment -%}
+        
 
           <div class="product__price">
             {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
@@ -598,6 +605,10 @@
             "zh-CN": "全宽",
             "zh-TW": "完整寬度"
           }
+        },
+        {
+          "value": "full-2",
+          "label": "Full-width 2"
         }
       ],
       "default": "medium"
