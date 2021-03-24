@@ -9,23 +9,23 @@ header.site-header {
 
   .h2.site-header__logo {
     margin: 0;
-    > img {
+    img {
       width: 300px;
     }
 
     @include media-max-width(1400px) {
       font-size: 0.95rem;
-      > img {
+      img {
         width: 260px;
       }
     }
     @include media-max-width($medium-down) {
-      > img {
+      img {
         width: 235px;
       }
     }
     @include media-max-width($small-down) {
-      > img {
+      img {
         width: 200px;
       }
     }
