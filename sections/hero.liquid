@@ -18,7 +18,7 @@
     }
   {%- endstyle -%}
 {%- endif -%}
-<div data-section-id="{{ section.id }}" data-section-type="hero-section">
+<div data-section-id="{{ section.id }}" class="section--{{ section.id }}" data-section-type="hero-section">
   {%- if section.settings.hero_layout == 'fixed_width' -%}
     <div class="page-width">
   {%- endif -%}
@@ -112,7 +112,7 @@
             {%- endcapture -%}
 
             <a href="{{ section.settings.button_link }}"
-              class="btn btn-round hero__btn"
+              class="btn btn-round hero__btn btn-nintendo"
               aria-label="{{ ariaLabel }}">
               {{- section.settings.button_label | escape -}}
             </a>
@@ -719,6 +719,16 @@
         "zh-CN": "按钮链接",
         "zh-TW": "按鈕連結"
       }
+    },
+    {
+      "type": "range",
+      "id": "button_animation_duration",
+      "label": "Button Animation duration",
+      "unit": "s",
+      "min": 0.1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1
     }
   ],
   "presets": [
@@ -767,3 +777,12 @@
   ]
 }
 {% endschema %}
+
+
+
+<style>
+  .section--{{ section.id }} .btn-nintendo {
+    -webkit-animation: nintendo-button {{ section.settings.button_animation_duration }}s infinite both;
+    animation: nintendo-button {{ section.settings.button_animation_duration }}s infinite both;
+  }
+</style>

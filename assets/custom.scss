@@ -100,6 +100,11 @@ body h6 {
   color: #fff;
 }
 
+.btn-nintendo {
+  -webkit-animation: nintendo-button 0.8s infinite both;
+  animation: nintendo-button 0.8s infinite both;
+}
+
 /*  Custom SVG Heading  */
 .custom-heading_heading-2 {
   margin-top: 1.8em;
@@ -465,6 +470,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > nav.grid__item 
   margin: 0;
 }
 
+.animated.bounce-top {
+  -webkit-animation: bounce-top 1s;
+  animation: bounce-top 1s;
+}
+
 /**
  * ----------------------------------------
  * animation slide-in-top
@@ -509,3 +519,160 @@ header.site-header.header_divided_nav .site-header__mobile-nav > nav.grid__item 
  * animation slide-out-top
  * ----------------------------------------
  */
+/**
+ * ----------------------------------------
+ * animation nintendo-button
+ * ----------------------------------------
+ */
+@-webkit-keyframes nintendo-button {
+  0% {
+    background-color: #d0d6d1;
+    color: #000;
+  }
+  50% {
+    background-color: #000;
+    color: #fff;
+  }
+  100% {
+    background-color: #d0d6d1;
+    color: #000;
+  }
+}
+@keyframes nintendo-button {
+  0% {
+    background-color: #d0d6d1;
+    color: #000;
+  }
+  50% {
+    background-color: #000;
+    color: #fff;
+  }
+  100% {
+    background-color: #d0d6d1;
+    color: #000;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation blink-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes blink-1 {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%, 55%, 75%, 87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}

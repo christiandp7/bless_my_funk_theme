@@ -128,11 +128,16 @@
     </div>
   {%- endif -%}
 
-  <button type="button" class="btn__sound">
+  <button type="button" class="btn__sound bounce-top">
   </button>
 
 
 </div>
+
+<audio id="sound__comic001">
+  <source src="{{ 'comic001.mp3' | asset_url }}" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
 
 {% schema %}
 {

@@ -26,3 +26,10 @@
   background-color: $color-bg-primary;
   color: $font-color-hover;
 }
+
+.btn-nintendo {
+  -webkit-animation: nintendo-button 0.8s infinite both;
+  animation: nintendo-button 0.8s infinite both;
+  // -webkit-animation: blink-1 2s infinite both;
+  // animation: blink-1 2s infinite both;
+}

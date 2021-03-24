@@ -7574,7 +7574,7 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-    console.log(st, lastScrollTop)
+    // console.log(st, lastScrollTop)
     if (st === 0) {
       header.addClass('site-header--on-top')
     } else {
@@ -7601,6 +7601,18 @@ $(document).ready(function () {
   }
 
   setHeaderState();
+
+
+  var btn_sound_audio = document.getElementById('sound__comic001')
+
+
+  $('.btn__sound').click(function () {
+    $(this).addClass('animated');
+    btn_sound_audio.play();
+  });
+  $('.btn__sound').on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+    $(this).removeClass("animated");
+  });
 
 
 });
