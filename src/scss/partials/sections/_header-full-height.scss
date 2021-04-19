@@ -52,7 +52,9 @@
     width: 100%;
     padding-bottom: 35px;
 
+    // ul
     .h-f-h--linklist {
+      position: relative;
       width: 100%;
       // padding-bottom: 30px;
       list-style: none;
@@ -67,10 +69,61 @@
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 
+      // li
       .h-f-h--linklist-item {
+        padding: 8px 0;
+        // a
         .h-f-h--linklist-link {
           text-transform: uppercase;
-          font-size: 1.45rem;
+          font-size: 1.3rem;
+        }
+
+        // has submenu as child
+        &.h-f-h--has-dropdown {
+          // position: relative;
+          &:after {
+            display: none;
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            min-height: 300px;
+            background-color: black;
+            z-index: 1;
+          }
+          // ul dropdown submenu
+          &:hover {
+            > .h-f-h--child-linklist {
+              display: block;
+            }
+            &:after {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .h-f-h--child-linklist {
+      display: none;
+      position: absolute;
+      left: initial;
+      top: initial;
+      margin-top: 8px;
+      z-index: 2;
+
+      li {
+        a {
+          display: block;
+          padding: 10px 15px;
+          color: $font-color-hover;
+          font-size: 1.2rem;
+          @include transition-all-ease(300ms);
+          &:hover {
+            color: $font-color;
+            background: $font-color-hover;
+          }
         }
       }
     }

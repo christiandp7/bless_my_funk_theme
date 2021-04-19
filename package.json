@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Theme based on Shopify's Debut theme.",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1"
+  },
   "scripts": {
     "start": "theme watch --allow-live",
     "sass": "sass --no-source-map --watch src/scss/index.scss assets/custom.scss",
+    "sass:production": "postcss -r ./assets/custom.scss",
     "deploy": "theme deploy --allow-live"
   },
   "repository": {

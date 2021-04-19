@@ -1,0 +1,37 @@
+<ul class="h-f-h--linklist">
+  {% for link in linklists[menu].links %}
+
+
+    {% comment %}
+      Check if third-level nav exists on each parent link.
+    {% endcomment %}
+    {%- assign three_level_nav = false -%}
+    {% if link.links != blank %}
+      {% if link.levels == 2 %}
+        {%- assign three_level_nav = true -%}
+      {% endif %}
+    {% endif %}
+
+    
+      <li class="h-f-h--linklist-item {% if link.links != blank %}h-f-h--has-dropdown{% endif %}">
+        <a class="h-f-h--linklist-link" href="{{ link.url }}">{{ link.title }}</a>
+        {% if link.links != blank %}
+        <ul class="h-f-h--child-linklist">
+          {% for childlink in link.links %}
+              <li>
+                <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+              </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      
+
+
+    
+  {% endfor %}
+
+
+
+
+</ul>

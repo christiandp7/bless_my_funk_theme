@@ -81,15 +81,9 @@
     </a>
 
     <div class="header-full-height__menu">
-      {% if section.settings.menu != blank %}
-        {%- assign menu = section.settings.menu -%}
-        <ul class="h-f-h--linklist">
-          {% for link in linklists[menu].links %}
-            <li class="h-f-h--linklist-item">
-              <a class="h-f-h--linklist-link" href="{{ link.url }}">{{ link.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
+      {%- assign menu = section.settings.menu -%}
+      {% if menu != blank %}
+        {% include 'site-nav_header-full-height' %}
       {% endif %}
     </div>
 

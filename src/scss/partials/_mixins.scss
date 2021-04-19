@@ -1,5 +1,3 @@
-
-
 @mixin media-min-width($breakpoint) {
   @media screen and (min-width: $breakpoint) {
     @content;
@@ -15,4 +13,13 @@
   @media screen and (min-width: $breakpointMin) and (max-width: $breakpointMax) {
     @content;
   }
+}
+
+// Transitions
+@mixin transition-all-ease($time) {
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  -ms-transition: all $time ease;
+  -o-transition: all $time ease;
+  transition: all $time ease;
 }
