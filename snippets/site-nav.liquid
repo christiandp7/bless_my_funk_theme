@@ -80,12 +80,14 @@
       </li>
     {% else %}
 
-      {% assign nav_divider_num = forloop.length | divided_by: 2 | ceil %}
+      {% assign nav_divider_num = forloop.length | plus: 1 | divided_by: 2 | ceil  %}
       {% assign divide_nav = false %}
 
       {% if forloop.index == nav_divider_num %}
         {% assign divide_nav = true %}
       {% endif %}
+      
+      
 
       <li class="{% if link.active %}site-nav--active{% endif %} {% if divide_nav %}header_divided_nav--divider{% endif %}">
         <a href="{{ link.url }}"
@@ -95,6 +97,18 @@
           <span class="site-nav__label">{{ link.title | escape }}</span>
         </a>
       </li>
+
+      {%- comment -%}
+      {% if forloop.index == nav_divider_num %}
+        <li class="">
+          <button type="button" class="btn--link site-nav__link site-header__search-toggle js-drawer-open-top">
+            search
+            <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
+          </button>
+        </li>
+      {% endif %}
+      {%- endcomment -%}
+
     {% endif %}
   {% endfor %}
 </ul>

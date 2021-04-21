@@ -43,6 +43,9 @@ header.site-header {
   }
 
   .site-nav {
+     > li:first-child {
+      display: none;
+    }
     .site-nav__link {
       font-size: 0.85rem;
       @include media-max-width(1400px) {
@@ -126,6 +129,13 @@ header.site-header {
           margin: 0;
         }
       }
+    }
+  }
+
+  // Mobile nav
+  .mobile-nav {
+    > li:first-child {
+      display: none;
     }
   }
 }

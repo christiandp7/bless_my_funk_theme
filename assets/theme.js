@@ -7605,7 +7605,6 @@ $(document).ready(function () {
 
   var btn_sound_audio = document.getElementById('sound__comic001')
 
-
   $('.btn__sound').click(function () {
     $(this).addClass('animated');
     btn_sound_audio.play();
@@ -7613,6 +7612,8 @@ $(document).ready(function () {
   $('.btn__sound').on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
     $(this).removeClass("animated");
   });
+
+  // Headers search
 
 
 });
