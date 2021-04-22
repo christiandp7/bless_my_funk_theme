@@ -58,9 +58,17 @@ header.site-header {
   }
 
   .site-header__icons-wrapper {
+    a {
+      &:hover {
+        .site-nav__label {
+          border-bottom-color: #3a3a3a;
+        }
+      }
+    }
     a,
     button {
       font-size: 0.85rem;
+      padding: 3px 10px;
       @include media-max-width(1400px) {
         font-size: 0.8rem;
       }

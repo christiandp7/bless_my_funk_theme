@@ -118,7 +118,7 @@
           {% if settings.search_enabled %}
             <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
               {% comment %}{% include 'icon-search' %}{% endcomment %}
-              search
+              <span class="site-nav__label">search</span>
             </button>
           {% endif %}
 
@@ -126,25 +126,25 @@
             {% if customer %}
               <a href="{{ routes.account_url }}" class="site-header__icon site-header__account">
                 {% comment %}{% include 'icon-login' %}{% endcomment %}
-                account
+                <span class="site-nav__label">account</span>
               </a>
             {% else %}
               <a href="{{ routes.account_login_url }}" class="site-header__icon site-header__account">
                 {% comment %}{% include 'icon-login' %}{% endcomment %}
-                account
+                <span class="site-nav__label">account</span>
               </a>
             {% endif %}
           {% endif %}
 
           {% if section.settings.contact_email != blank %} 
             <a href="mailto:{{ section.settings.contact_email }}" class="site-header__icon">
-              help
+              <span class="site-nav__label">help</span>
             </a>
           {% endif %}
 
           <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
             {% comment %}{% include 'icon-cart' %}{% endcomment %}
-            cart
+            <span class="site-nav__label">cart</span>
             <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
             <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %}" data-cart-count-bubble>
               <span data-cart-count>{{ cart.item_count }}</span>

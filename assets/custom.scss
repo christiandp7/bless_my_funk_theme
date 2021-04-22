@@ -234,6 +234,7 @@ body h6 {
 .product_bmf.product-single .product-single__meta .product-form .product-form__controls-group .product-form__item .product-form__input {
   display: inline;
   width: 100%;
+  -webkit-appearance: none;
   -moz-text-align-last: center;
   text-align-last: center;
 }
@@ -295,9 +296,13 @@ header.site-header .site-nav .site-nav__link {
 header.site-header .site-nav .site-nav__link .site-nav__label {
   text-transform: lowercase;
 }
+header.site-header .site-header__icons-wrapper a:hover .site-nav__label {
+  border-bottom-color: #3a3a3a;
+}
 header.site-header .site-header__icons-wrapper a,
 header.site-header .site-header__icons-wrapper button {
   font-size: 0.85rem;
+  padding: 3px 10px;
 }
 @media screen and (max-width: 1400px) {
   header.site-header .site-header__icons-wrapper a,
@@ -472,6 +477,7 @@ header.site-header .mobile-nav > li:first-child {
   left: initial;
   top: initial;
   margin-top: 8px;
+  margin-left: -15px;
   z-index: 2;
 }
 .header-full-height__container .header-full-height__menu .h-f-h--child-linklist li a {
