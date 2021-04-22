@@ -239,6 +239,15 @@ body h6 {
   text-align-last: center;
 }
 
+.cart__submit {
+  background-color: #e573d5;
+}
+@media screen and (min-width: 750px) {
+  .cart__submit {
+    padding: 15px 25px;
+  }
+}
+
 header.site-header {
   position: absolute;
   top: 0;

@@ -1,0 +1,7 @@
+
+.cart__submit {
+  background-color: $color-secondary;
+  @include media-min-width(750px) {
+    padding: 15px 25px;
+  }
+}
