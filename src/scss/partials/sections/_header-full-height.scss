@@ -21,9 +21,13 @@
   }
 
   .header-full-height__logo {
-    width: 60%;
+    width: 75%;
     max-width: 100%;
     margin-bottom: 35px;
+
+    @include media-min-width($medium-up) {
+      width: 60%;
+    }
     img {
       width: 100%;
     }
@@ -32,12 +36,18 @@
   // Toolbar
   .header-full-height__toolbar {
     width: 100%;
-    padding: 0 35px;
-    padding-top: 35px;
-    @include media-min-width($large-up) {
-      padding-left: 18px;
-      padding-right: 18px;
+    padding: 0 15px;
+    padding-top: 18px;
+    
+    @include media-min-width($medium-up) {
+      padding: 0 18px;
+      padding-top: 25px;
     }
+    @include media-min-width($large-up) {
+      padding: 0 35px;
+      padding-top: 35px;
+    }
+
     button,
     a {
       @include media-min-width($large-up) {
@@ -72,6 +82,9 @@
       // li
       .h-f-h--linklist-item {
         padding: 8px 0;
+        @include media-max-width($large-down) {
+          margin: 0 10px;
+        }
         // a
         .h-f-h--linklist-link {
           text-transform: uppercase;
@@ -117,14 +130,16 @@
         z-index: 1;
       }
 
-      &:hover{
-        .h-f-h--has-dropdown {
-          > .h-f-h--child-linklist {
+      @include media-min-width($large-up) {
+        &:hover{
+          .h-f-h--has-dropdown {
+            > .h-f-h--child-linklist {
+                display: block;
+            }
+          }
+          &:after {
             display: block;
           }
-        }
-        &:after {
-          display: block;
         }
       }
 
