@@ -1,0 +1,146 @@
+<div
+  class="section--{{ section.id }}  silhouette_container"
+  data-section-id="{{ section.id }}"
+  data-section-type="img-w-text__about-height-section"
+>
+  {% if section.settings.silhouette != blank %}
+  <img
+    class="silhouette_img"
+    src="{{ section.settings.silhouette }}"
+    alt="{{ section.settings.silhouette.alt }}"
+  />
+  {% endif %}
+
+  <div class="page-width page-width__about">
+    {% if section.settings.heading != blank %}
+    <h1 class="img-w-t__heading">{{ section.settings.heading }}</h1>
+    {% endif %}
+
+    <div class="grid grid--uniform">
+      <div class="grid__item small--one-whole medium-up--six-tenths">
+        <div class="img-w-t_img-container">
+          {% if section.settings.image != blank %}
+          <picture>
+            <source
+              media="(min-width: 1500px)"
+              srcset="{{ section.settings.image | img_url: '1000x' }}"
+            />
+            <source
+              media="(min-width: 750px)"
+              srcset="{{ section.settings.image | img_url: '700x' }}"
+            />
+            <img
+              src="{{ section.settings.image | img_url: '480x' }}"
+              alt="{{ section.settings.image.alt | escape }}"
+            />
+          </picture>
+          {% else %}
+          {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
+          {% endif %}
+        </div>
+      </div>
+      <div class="grid__item small--one-whole medium-up--four-tenths">
+        {% if section.settings.text != blank %}
+        <div class="rte rte-setting">{{ section.settings.text }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %} { "name": "Image with video - Difusers", "class": "img-w-v",
+"settings": [ { "type": "header", "content": "Heading" }, { "type": "textarea",
+"id": "heading", "label": "Heading" }, { "type": "range", "id":
+"heading_font_size", "label": "Heading font size", "unit": "rem", "min": 1,
+"max": 3, "step": 0.1, "default": 1.5 }, { "type": "range", "id":
+"heading_line_height", "label": "Heading line-height", "unit": "%", "min": 1,
+"max": 3, "step": 0.1, "default": 1.5 }, { "type": "header", "content":
+"Content" }, { "type": "image_picker", "id": "image", "label": "Image" }, {
+"type": "richtext", "id": "text", "label": "Text", "default": "
+<p>
+  Pair large text with an image to give focus to your chosen product,
+  collection, or blog post. Add details on availability, style, or even provide
+  a review.Pair large text with an image to give focus to your chosen product,
+  collection, or blog post. Add details on availability, style, or even provide
+  a review.Pair large text with an image to give focus to your chosen product,
+  collection, or blog post. Add details on availability, style, or even provide
+  a review.Pair large text with an image to give focus to your chosen product,
+  collection, or blog post. Add details on availability, style, or even provide
+  a review.Pair large text with an image to give focus to your chosen product,
+  collection, or blog post. Add details on availability, style, or even provide
+  a review.Pair large text with an image to give focus to your chosen product,
+  collection, or blog post. Add details on availability, style, or even provide
+  a review.Pair large text with an image to give focus to your chosen product,
+  collection, or blog post. Add details on availability, style, or even provide
+  a review.
+</p>
+" }, { "type": "range", "id": "text_font_size", "label": "Text font size",
+"unit": "rem", "min": 0.5, "max": 2, "step": 0.1, "default": 1 }, {
+"type":"header", "content":"Background Silhouette" }, { "type": "url", "id":
+"silhouette", "label": "Silhouette (svg)" }, { "type": "textarea", "id":
+"silhouette_styles", "label": "Silhouette CSS Styles", "info": "Use CSS to setup
+image position." } ] } {% endschema %}
+
+<style>
+  {
+    % if section.settings.silhouette !=blank %
+  }
+
+  .section-- {
+      {
+      section.id
+    }
+  }
+
+  .silhouette_img {
+      {
+        {
+        section.settings.silhouette_styles
+      }
+    }
+  }
+
+    {
+    % endif %
+  }
+
+  .section-- {
+      {
+      section.id
+    }
+  }
+
+  .img-w-t__heading {
+    font-size: {
+        {
+        section.settings.heading_font_size
+      }
+    }
+
+    rem;
+
+    line-height: {
+        {
+        section.settings.heading_line_height
+      }
+    }
+
+    ;
+  }
+
+  .section-- {
+      {
+      section.id
+    }
+  }
+
+  .rte p {
+    font-size: {
+        {
+        section.settings.text_font_size
+      }
+    }
+
+    rem;
+  }
+</style>
