@@ -73,29 +73,7 @@ opacity: 0;
       </div>
     </noscript>
 
-    <div class="video__text-content text-center">
-      <div class="page-width">
-        {%- unless section.settings.video_title == blank -%}
-        <h2
-          class="h1 mega-title video__title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">
-          {{ section.settings.video_title | escape }}
-        </h2>
-        {%- endunless -%}
-
-        {%- unless section.settings.style == 'background' -%}
-        <div
-          class="video-control__play-wrapper{% if section.settings.video_title != blank %} video-control__play-wrapper--with-text{% endif %}">
-          {%- if section.settings.video_link != blank -%}
-          <div class="video-play-loader"></div>
-          {%- endif -%}
-          <button type="button" class="btn video-control video-control__play" data-controls="Video-{{ section.id }}">
-            {% include 'icon-play' %}
-            <span class="icon__fallback-text">{{ 'sections.video.play' | t: video_title: '[video_title]' }}</span>
-          </button>
-        </div>
-        {%- endunless -%}
-      </div>
-    </div>
+    
 
     <div class="video-control__play-wrapper-mobile">
       {%- if section.settings.video_link != blank -%}
@@ -125,7 +103,28 @@ opacity: 0;
     <div class="video-w-img--inner">
       <img class="video-w-img--img-overlay" src="{{ section.settings.image_overlay | img_url: 'master' }}" alt="">
       <div class="video-w-img--inner-content">
-        content
+        <div class="video__text-content text-center">
+          <div class="page-width">
+            {%- unless section.settings.video_title == blank -%}
+            <h2 class="h1 mega-title video__title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">
+              {{ section.settings.video_title | escape }}
+            </h2>
+            {%- endunless -%}
+        
+            {%- unless section.settings.style == 'background' -%}
+            <div
+              class="video-control__play-wrapper{% if section.settings.video_title != blank %} video-control__play-wrapper--with-text{% endif %}">
+              {%- if section.settings.video_link != blank -%}
+              <div class="video-play-loader"></div>
+              {%- endif -%}
+              <button type="button" class="btn video-control video-control__play" data-controls="Video-{{ section.id }}">
+                {% include 'icon-play' %}
+                <span class="icon__fallback-text">{{ 'sections.video.play' | t: video_title: '[video_title]' }}</span>
+              </button>
+            </div>
+            {%- endunless -%}
+          </div>
+        </div>
       </div>
     </div>
 
