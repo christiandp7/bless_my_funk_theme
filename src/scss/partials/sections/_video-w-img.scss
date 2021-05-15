@@ -1,0 +1,19 @@
+.video-w-img--wrapper {
+  .video-w-img--inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+
+    .video-w-img--img-overlay {
+      width: auto;
+      height: 100%;
+    }
+    .video-w-img--inner-content {
+      flex: 1;
+    }
+  }
+}

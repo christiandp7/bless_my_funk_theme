@@ -623,6 +623,23 @@ header.site-header .mobile-nav > li:first-child {
   margin: 0;
 }
 
+.video-w-img--wrapper .video-w-img--inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+}
+.video-w-img--wrapper .video-w-img--inner .video-w-img--img-overlay {
+  width: auto;
+  height: 100%;
+}
+.video-w-img--wrapper .video-w-img--inner .video-w-img--inner-content {
+  flex: 1;
+}
+
 .animated.bounce-top {
   -webkit-animation: bounce-top 1s;
   animation: bounce-top 1s;
