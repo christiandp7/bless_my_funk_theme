@@ -20,6 +20,12 @@ opacity: 0;
 {% endstyle %}
 {%- endif -%}
 <div class="page-width" data-section-id="{{ section.id }}" data-section-type="video-section">
+
+
+  <div class="video-w-img--heading">
+    <h2 class="video-w-img--heading-h2">{{ section.settings.heading | escape }}</h2>
+  </div>
+
   {%- if section.settings.video_link != blank -%}
   <div class="video-section-wrapper
                 video-w-img--wrapper

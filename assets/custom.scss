@@ -623,6 +623,22 @@ header.site-header .mobile-nav > li:first-child {
   margin: 0;
 }
 
+.video-w-img--heading .video-w-img--heading-h2 {
+  display: inline-block;
+  position: relative;
+  padding: 3px 2px;
+}
+.video-w-img--heading .video-w-img--heading-h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ebcdbd;
+  z-index: -1;
+}
+
 .video-w-img--wrapper .video-w-img--inner {
   position: absolute;
   top: 0;
