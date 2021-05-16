@@ -19,11 +19,11 @@ opacity: 0;
 }
 {% endstyle %}
 {%- endif -%}
-<div class="page-width" data-section-id="{{ section.id }}" data-section-type="video-section">
+<div class="page-width {% if section.settings.fullwidth %}full{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section">
 
 
   <div class="video-w-img--heading">
-    <h2 class="video-w-img--heading-h2">{{ section.settings.heading | escape }}</h2>
+    <h2 class="video-w-img--heading-h2 h1">{{ section.settings.heading | escape }}</h2>
   </div>
 
   {%- if section.settings.video_link != blank -%}
@@ -116,10 +116,16 @@ opacity: 0;
               {{ section.settings.video_title | escape }}
             </h2>
             {%- endunless -%}
+
+            {%- unless section.settings.cta_text == blank and section.settings.cta_url == blank -%}
+            <a href="{{ section.settings.cta_url }}" class="btn">
+              {{ section.settings.cta_text | escape }}
+            </a>
+            {%- endunless -%}
         
             {%- unless section.settings.style == 'background' -%}
             <div
-              class="video-control__play-wrapper{% if section.settings.video_title != blank %} video-control__play-wrapper--with-text{% endif %}">
+              class="video-control__play-wrapper{% if section.settings.video_title != blank or section.settings.cta_text != blank %} video-control__play-wrapper--with-text{% endif %}">
               {%- if section.settings.video_link != blank -%}
               <div class="video-play-loader"></div>
               {%- endif -%}
@@ -129,6 +135,8 @@ opacity: 0;
               </button>
             </div>
             {%- endunless -%}
+
+
           </div>
         </div>
       </div>
@@ -145,152 +153,169 @@ opacity: 0;
 
 {% schema %}
 {
-  "name": "Video w Img - Difusers",
-  "class": "index-section video-section",
-  "settings": [
+  "name":"Video w Img - Difusers",
+  "class":"index-section video-section",
+  "settings":[
     {
-      "type": "header",
-      "content": "Layout"
+      "type":"header",
+      "content":"Layout"
     },
     {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Heading"
+      "type":"text",
+      "id":"heading",
+      "label":"Heading",
+      "default":"Heading"
     },
     {
-      "type": "header",
-      "content": "Image Settings"
+      "type":"checkbox",
+      "id":"fullwidth",
+      "label":"Full width",
+      "default": false,
+      "info":"Layout takes the entire width"
     },
     {
-      "type": "image_picker",
-      "id": "image_overlay",
-      "label": "Image"
+      "type":"header",
+      "content":"Image Settings"
     },
     {
-      "type": "header",
-      "content": "Video Settings"
+      "type":"image_picker",
+      "id":"image_overlay",
+      "label":"Image"
     },
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Cover image",
-      "info": "Always shown on mobile devices"
+      "type":"header",
+      "content":"Video Settings"
     },
     {
-      "type": "select",
-      "id": "image_position",
-      "label": "Image alignment",
-      "default": "center center",
-      "options": [
+      "type":"image_picker",
+      "id":"image",
+      "label":"Cover image",
+      "info":"Always shown on mobile devices"
+    },
+    {
+      "type":"select",
+      "id":"image_position",
+      "label":"Image alignment",
+      "default":"center center",
+      "options":[
         {
-          "label": "Top left",
-          "value": "left top"
+          "label":"Top left",
+          "value":"left top"
         },
         {
-          "label": "Top center",
-          "value": "center top"
+          "label":"Top center",
+          "value":"center top"
         },
         {
-          "label": "Top right",
-          "value": "right top"
+          "label":"Top right",
+          "value":"right top"
         },
         {
-          "label": "Middle left",
-          "value": "left center"
+          "label":"Middle left",
+          "value":"left center"
         },
         {
-          "label": "Middle center",
-          "value": "center center"
+          "label":"Middle center",
+          "value":"center center"
         },
         {
-          "label": "Middle right",
-          "value": "right center"
+          "label":"Middle right",
+          "value":"right center"
         },
         {
-          "label": "Bottom left",
-          "value": "left bottom"
+          "label":"Bottom left",
+          "value":"left bottom"
         },
         {
-          "label": "Bottom center",
-          "value": "center bottom"
+          "label":"Bottom center",
+          "value":"center bottom"
         },
         {
-          "label": "Bottom right",
-          "value": "right bottom"
+          "label":"Bottom right",
+          "value":"right bottom"
         }
       ]
     },
     {
-      "type": "video_url",
-      "id": "video_link",
-      "label": "Video link",
-      "accept": [
+      "type":"video_url",
+      "id":"video_link",
+      "label":"Video link",
+      "accept":[
         "youtube",
         "vimeo"
       ],
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      "default":"https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
-      "type": "checkbox",
-      "id": "show_overlay",
-      "label": "Show overlay",
-      "default": true
+      "type":"checkbox",
+      "id":"show_overlay",
+      "label":"Show overlay",
+      "default":true
     },
     {
-      "type": "select",
-      "id": "style",
-      "label": "Style",
-      "default": "image_with_play",
-      "options": [
+      "type":"select",
+      "id":"style",
+      "label":"Style",
+      "default":"image_with_play",
+      "options":[
         {
-          "label": "Image with play button",
-          "value": "image_with_play"
+          "label":"Image with play button",
+          "value":"image_with_play"
         },
         {
-          "label": "Background video",
-          "value": "background"
+          "label":"Background video",
+          "value":"background"
         }
       ]
     },
     {
-      "type": "select",
-      "id": "height",
-      "label": "Video height",
-      "default": "medium",
-      "options": [
+      "type":"select",
+      "id":"height",
+      "label":"Video height",
+      "default":"medium",
+      "options":[
         {
-          "label": "Small",
-          "value": "small"
+          "label":"Small",
+          "value":"small"
         },
         {
-          "label": "Medium",
-          "value": "medium"
+          "label":"Medium",
+          "value":"medium"
         },
         {
-          "label": "Large",
-          "value": "large"
+          "label":"Large",
+          "value":"large"
         }
       ]
     },
     {
-      "type": "text",
-      "id": "video_title",
-      "label": "Video Title"
+      "type":"text",
+      "id":"video_title",
+      "label":"Video Title"
     },
     {
-      "type": "select",
-      "id": "text_size",
-      "label": "Text size",
-      "default": "medium",
-      "options": [
+      "type":"text",
+      "id":"cta_text",
+      "label":"CTA text"
+    },
+    {
+      "type":"url",
+      "id":"cta_url",
+      "label":"CTA link"
+    },
+    {
+      "type":"select",
+      "id":"text_size",
+      "label":"Text size",
+      "default":"medium",
+      "options":[
         {
-          "label": "Medium",
-          "value": "medium"
+          "label":"Medium",
+          "value":"medium"
         },
         {
-          "label": "Large",
-          "value": "large"
+          "label":"Large",
+          "value":"large"
         }
       ]
     }
