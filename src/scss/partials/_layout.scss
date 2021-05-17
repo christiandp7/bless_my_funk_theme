@@ -36,3 +36,10 @@ body {
 
 // Layout Classes
 // .medium
+
+
+.main-content {
+  @include media-max-width($medium-down) {
+    padding-top: 55px
+  }
+}
