@@ -14,6 +14,9 @@
 .img-w-t {
   .img-w-t__heading {
     // text-transform: uppercase;
+    @include media-max-width($medium-down) {
+      line-height: 1.2 !important;
+    }
   }
   .img-w-t_img-container {
     img {
