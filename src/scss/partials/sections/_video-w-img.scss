@@ -5,6 +5,7 @@
 		position: relative;
 		padding: 3px 2px;
 		text-transform: uppercase;
+		font-family: $font-family-primary-regular;
 
 		&::after {
 			content: '';
