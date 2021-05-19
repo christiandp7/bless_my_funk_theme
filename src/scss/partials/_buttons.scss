@@ -1,35 +1,41 @@
 .btn-round {
-  display: inline-block;
-  padding: 0.8em 2em;
-  margin: 1em;
-  min-width: 10em;
-  border-radius: 4em;
-  font-size: 1.3rem;
-  border: 5px solid $color-bg-primary;
-  background-color: $color-bg-secondary;
-  color: $font-color;
-  font-family: $font-family-secondary;
+	display: inline-block;
+	padding: 0.8em 2em;
+	margin: 1em;
+	min-width: 10em;
+	border-radius: 4em;
+	font-size: 1.3rem;
+	border: 5px solid $color-bg-primary;
+	background-color: $color-bg-secondary;
+	color: $font-color;
+	font-family: $font-family-secondary;
 
-  &.btn__hollow {
-    background-color: transparent;
-  }
-  &.btn__big {
-    font-size: 1.3rem;
-    padding: 0.8em 2.6em;
-    border-width: 6px;
-  }
+	&.btn__hollow {
+		background-color: transparent;
+	}
+	&.btn__big {
+		font-size: 1.3rem;
+		padding: 0.8em 2.6em;
+		border-width: 6px;
+	}
 }
 .btn:not([disabled]):hover,
-.shopify-payment-button .shopify-payment-button__button--unbranded:not([disabled]):hover,
+.shopify-payment-button
+	.shopify-payment-button__button--unbranded:not([disabled]):hover,
 .btn:focus,
 .shopify-payment-button .shopify-payment-button__button--unbranded:focus {
-  background-color: $color-bg-primary;
-  color: $font-color-hover;
+	background-color: $color-bg-primary;
+	color: $font-color-hover;
 }
 
 .btn-nintendo {
-  -webkit-animation: nintendo-button 0.8s infinite both;
-  animation: nintendo-button 0.8s infinite both;
-  // -webkit-animation: blink-1 2s infinite both;
-  // animation: blink-1 2s infinite both;
+	-webkit-animation: nintendo-button 0.8s infinite both;
+	animation: nintendo-button 0.8s infinite both;
+	// -webkit-animation: blink-1 2s infinite both;
+	// animation: blink-1 2s infinite both;
+}
+
+.btn-wide {
+	width: 100% !important;
+	padding: 15px;
 }
