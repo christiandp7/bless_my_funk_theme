@@ -660,7 +660,7 @@ header.site-header .mobile-nav > li:first-child {
   position: relative;
   padding: 3px 2px;
   text-transform: uppercase;
-  font-family: "Druk Wide Medium Regular", Arial, Helvetica, sans-serif;
+  font-family: "Druk Wide Bold", Arial, Helvetica, sans-serif;
 }
 .video-w-img--heading .video-w-img--heading-h2::after {
   content: "";
@@ -672,6 +672,11 @@ header.site-header .mobile-nav > li:first-child {
   z-index: -1;
 }
 
+@media screen and (min-width: 1136px) {
+  .video-w-img--wrapper.full {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 599px) {
   .video-w-img--wrapper.video-section-wrapper--medium.video-section-wrapper--min-height {
     min-height: 180px;
