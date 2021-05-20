@@ -19,6 +19,11 @@ opacity: 0;
 }
 {% endstyle %}
 {%- endif -%}
+
+
+{% include 'difusers-lines-bottom', width: '100%', height: '880px' %}
+
+
 <div class="page-width {% if section.settings.fullwidth %}full{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section">
 
 
@@ -154,7 +159,7 @@ opacity: 0;
 {% schema %}
 {
   "name":"Video w Img 2 - Difusers",
-  "class":"index-section video-section",
+  "class":"index-section video-section difusers-section",
   "settings":[
     {
       "type":"header",

@@ -19,8 +19,12 @@ opacity: 0;
 }
 {% endstyle %}
 {%- endif -%}
-<div class="page-width {% if section.settings.fullwidth %}full{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section">
 
+
+{% include 'difusers-lines-top', width: '100%', height: '211px' %}
+
+
+<div class="page-width {% if section.settings.fullwidth %}full{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section">
 
   <div class="video-w-img--heading">
     <h2 class="video-w-img--heading-h2 h1">{{ section.settings.heading | escape }}</h2>
@@ -154,7 +158,7 @@ opacity: 0;
 {% schema %}
 {
   "name":"Video w Img - Difusers",
-  "class":"index-section video-section",
+  "class":"index-section video-section difusers-section",
   "settings":[
     {
       "type":"header",

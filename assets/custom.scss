@@ -154,6 +154,22 @@ body h6 {
   text-transform: uppercase;
 }
 
+.difusers-section {
+  position: relative;
+}
+
+.difusers-line-top {
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+
+.difusers-line-bottom {
+  position: absolute;
+  top: -42.2%;
+  left: 0;
+}
+
 .collection-item {
   margin-bottom: 30px;
 }
