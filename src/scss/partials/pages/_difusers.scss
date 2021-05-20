@@ -2,14 +2,40 @@
 .difusers-section {
 	position: relative;
 }
+
+// SVG Shapes
 .difusers-line-top {
 	position: absolute;
 	top: -7px;
 	left: 0;
+	display: block;
+	@include media-max-width(989px) {
+		height: 302px !important;
+	}
+	@include media-max-width(989px) {
+		height: 302px !important;
+	}
 }
 
 .difusers-line-bottom {
 	position: absolute;
-	top: -42.2%;
+	top: -426px;
 	left: 0;
+	display: block;
+	@include media-max-width(989px) {
+		height: 1100px !important;
+		top: -343px;
+	}
+	@include media-max-width(749px) {
+		top: -363px;
+		path {
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8) {
+				display: none;
+			}
+		}
+	}
 }

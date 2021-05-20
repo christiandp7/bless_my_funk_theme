@@ -1,45 +1,51 @@
 .page-width {
-  &.page-width-large {
-    max-width: 1500px;
-  }
-  &.page-width__about {
-    max-width: 1600px;
-  }
+	&.page-width-large {
+		max-width: 1500px;
+	}
+	&.page-width__about {
+		max-width: 1600px;
+	}
+	&.page-width-nopadd {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 body {
-  text-transform: lowercase;
-  p,
-  input,
-  select,
-  button {
-    text-transform: lowercase;
-  }
+	text-transform: lowercase;
+	p,
+	input,
+	select,
+	button {
+		text-transform: lowercase;
+	}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-transform: uppercase;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-transform: uppercase;
+	}
 
-  &:not(.template-index) {
-    .main-content {
-      @include media-min-width(750px) {
-        padding-top: 135px;
-      }
-    }
-  }
+	&:not(.template-index) {
+		.main-content {
+			@include media-min-width(750px) {
+				padding-top: 120px;
+			}
+			@include media-max-width(749px) {
+				padding-top: 85px;
+			}
+		}
+	}
 }
 
 // Layout Classes
 // .medium
 
-
 .main-content {
-  @include media-max-width($medium-down) {
-    padding-top: 55px
-  }
+	@include media-max-width($medium-down) {
+		padding-top: 55px;
+	}
 }
