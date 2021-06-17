@@ -149,9 +149,6 @@ body h6 {
 .img-w-t .img-w-t_img-container img {
   width: 100%;
 }
-.img-w-t .rte p {
-  word-break: break-all;
-}
 
 .imgs {
   margin-top: 50px;
@@ -643,6 +640,12 @@ header.site-header .mobile-nav > li:first-child {
 
 .hero-2 {
   position: relative;
+}
+.hero-2 .hero__inner {
+  padding-top: 35px;
+}
+.hero-2 .hero__inner > .page-width {
+  height: 100%;
 }
 .hero-2 .btn__sound {
   position: absolute;
