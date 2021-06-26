@@ -619,6 +619,52 @@ header.site-header .mobile-nav > li:first-child {
   color: #000;
   background: #fff;
 }
+.header-full-height__container .header-full-height__menu .h-f-h--child-linklist li.h-f-h--has-grandchild {
+  position: relative;
+}
+@media screen and (min-width: 1136px) {
+  .header-full-height__container .header-full-height__menu .h-f-h--child-linklist li.h-f-h--has-grandchild:hover .h-f-h--grandchild-linklist {
+    display: block;
+  }
+}
+.header-full-height__container .header-full-height__menu .h-f-h--grandchild-linklist {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  top: 100%;
+  z-index: 3;
+}
+.header-full-height__container .h-f-h--coming-soon-link {
+  position: relative;
+}
+.header-full-height__container .h-f-h--coming-soon-link:before {
+  content: "coming soon...";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: calc(10px + 0.2rem) 15px 10px;
+  font-size: 1rem;
+  color: #000;
+  background: #fff;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+}
+.header-full-height__container .h-f-h--coming-soon-link span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header-full-height__container .h-f-h--coming-soon-link:hover:before {
+  opacity: 1;
+}
 
 .hero--adapt,
 .hero-fixed-width__image {

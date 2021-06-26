@@ -18,8 +18,27 @@
         {% if link.links != blank %}
         <ul class="h-f-h--child-linklist">
           {% for childlink in link.links %}
-              <li>
-                <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+              <li class="{% if link.links != blank %}h-f-h--has-grandchild{% endif %}">
+                {% if childlink.url == "#coming-soon" %}
+                  <a class="h-f-h--coming-soon-link" href="#">{{ childlink.title }} </a>
+                {% else %}
+                  <a href="{{ childlink.url }}">{{ childlink.title }}</a>
+                {% endif %}
+
+
+                {% if childlink.links != blank %}
+                <ul class="h-f-h--grandchild-linklist">
+                  {% for grandchildlink in childlink.links %}
+                  <li>
+                    <a href="{{ grandchildlink.url }}" class="site-nav__link site-nav__child-link" {% if grandchildlink.current %}
+                      aria-current="page" {% endif %}>{{ grandchildlink.title | escape }}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+
+
               </li>
           {% endfor %}
         </ul>
