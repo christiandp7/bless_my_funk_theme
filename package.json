@@ -10,7 +10,8 @@
   "scripts": {
     "start": "theme watch --allow-live",
     "sass": "sass --no-source-map --watch src/scss/index.scss assets/custom.scss",
-    "sass:production": "postcss -r ./assets/custom.scss",
+    "sass:build": "sass --no-source-map src/scss/index.scss assets/custom.scss",
+    "sass:production": "npm run sass:build && postcss -r ./assets/custom.scss",
     "deploy": "theme deploy --allow-live"
   },
   "repository": {

@@ -9,8 +9,20 @@
 	}
 }
 
+//ul
 .site-footer__icon-list {
 	display: flex;
-	// justify-content: flex-end;
-	justify-content: flex-start;
+	justify-content: flex-end;
+
+	// li
+	.social-icons__item {
+		padding: 0 12px;
+	}
+	// a
+	.social-icons__link {
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+	}
 }
