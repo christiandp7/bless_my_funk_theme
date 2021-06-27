@@ -1,0 +1,14 @@
+{% comment %}
+Renders a product image only card using "Grid" style and object-fit css prop
+Usage:
+{% include 'product-card-grid', product: product %}
+{% endcomment %}
+
+
+
+{%- assign preview_image = product.featured_media.preview_image -%}
+
+
+<a class="product-grid-flex__link" href="{{ product.url | within: collection }}">
+  <img class="product-grid-flex__img img-cover" src="{{ preview_image | img_url: 'large' }}" alt="{{ preview_image.alt }}">
+</a>

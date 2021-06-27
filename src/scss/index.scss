@@ -1,41 +1,43 @@
 //  settings
-@import "partials/variables";
-@import "partials/mixins";
+@import 'partials/variables';
+@import 'partials/mixins';
 
 // fonts
-@import "partials/fonts";
+@import 'partials/fonts';
 
 // globals
-@import "partials/globals";
+@import 'partials/globals';
 // @import "partials/preloader";
 
 // Layout
-@import "partials/layout";
+@import 'partials/layout';
 
 // components
-@import "partials/buttons";
+@import 'partials/buttons';
+@import 'partials/image';
 
 // Pages
-@import "partials/pages/home";
-@import "partials/pages/about";
-@import "partials/pages/difusers";
+@import 'partials/pages/home';
+@import 'partials/pages/about';
+@import 'partials/pages/difusers';
 
 // Templates
-@import "partials/templates/collections";
-@import "partials/templates/product";
-@import "partials/templates/cart";
+@import 'partials/templates/collections';
+@import 'partials/templates/product';
+@import 'partials/templates/cart';
 
 // Sections
-@import "partials/sections/header";
-@import "partials/sections/header-full-height";
-@import "partials/sections/featured-collection";
-@import "partials/sections/hero";
-@import "partials/footer";
-@import "partials/sections/hero-2";
-@import "partials/sections/image-bar-svg";
-@import "partials/sections/super-heading";
-@import "partials/sections/video-w-img";
+@import 'partials/sections/header';
+@import 'partials/sections/header-full-height';
+@import 'partials/sections/featured-collection-flex';
+@import 'partials/sections/hero';
+@import 'partials/footer';
+@import 'partials/sections/hero-2';
+@import 'partials/sections/image-bar-svg';
+@import 'partials/sections/super-heading';
+@import 'partials/sections/video-w-img';
+@import 'partials/sections/featured-collection-flex';
 
 // Animations
-@import "partials/animations";
-@import "partials/keyframes";
+@import 'partials/animations';
+@import 'partials/keyframes';

@@ -1,0 +1,22 @@
+$padding-grid: 8px;
+
+.grid.grid--flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 0;
+	padding: 0 $padding-grid;
+}
+
+.grid--flex__item {
+	padding: $padding-grid;
+}
+
+// product-card-grid-flex
+.product-grid-flex__link {
+	display: block;
+	line-height: 0;
+	height: 100%;
+}
+.product-grid-flex__img {
+	width: 100%;
+}
