@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/christiandp7/bless_my_funk_theme/issues"
   },
-  "homepage": "https://github.com/christiandp7/bless_my_funk_theme#readme"
+  "homepage": "https://github.com/christiandp7/bless_my_funk_theme#readme",
+  "browserslist": [
+    ">0.2%",
+    "last 20 versions",
+    "not dead",
+    "not op_mini all"
+  ]
 }
