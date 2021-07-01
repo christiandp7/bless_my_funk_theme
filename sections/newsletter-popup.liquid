@@ -1,0 +1,35 @@
+<div class="section--{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="name-height-section">
+
+
+  <div id="newsletter-popup" class="newsletter-popup">
+    <div class="newsletter-popup_heading">
+      <div class="nws-p_heading-text">{% include 'newsletter_heading' %}</div>
+      <div class="nws-p_close-button-container">
+        <a href="#" class="btn nws-p_close-button" rel="modal:close">
+          {% include 'newsletter_close' %}
+        </a>
+      </div>
+    </div>
+    <div class="newsletter-popup_content">{% include 'newsletter_content' %}</div>
+    <button class="btn btn-round newsletter-popup_btn">{% include 'newsletter_button-text' %}</button>
+    <!-- <a href="#" class="close-jqmodal" rel="modal:close">Close</a> -->
+  </div>
+
+  <!-- <a href="#newsletter-popup" rel="modal:open">Login</a> -->
+
+
+
+
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Newsletter Popup",
+  "class": "newsletterPopup",
+  "settings": [
+    
+  ]
+}
+{% endschema %}

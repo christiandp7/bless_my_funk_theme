@@ -37,7 +37,11 @@
 @import 'partials/sections/super-heading';
 @import 'partials/sections/video-w-img';
 @import 'partials/sections/featured-collection-flex';
+@import 'partials/sections/newsletter-popup';
 
 // Animations
 @import 'partials/animations';
 @import 'partials/keyframes';
+
+// vendors
+@import 'partials/vendors/jquery-modal';
