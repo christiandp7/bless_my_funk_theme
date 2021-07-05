@@ -508,6 +508,71 @@ header.site-header .mobile-nav > li:first-child {
   display: none;
 }
 
+.site-nav.site-nav-megamenu {
+  position: static;
+}
+.site-nav.site-nav-megamenu:after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 225px;
+  background-color: black;
+  z-index: 1;
+}
+.site-nav.site-nav-megamenu:hover .site-nav--has-dropdown > .megamenu--child-linklist {
+  display: block;
+}
+.site-nav.site-nav-megamenu:hover:after {
+  display: block;
+}
+.site-nav.site-nav-megamenu .megamenu--child-linklist {
+  display: none;
+  position: absolute;
+  left: initial;
+  top: initial;
+  max-width: 100%;
+  padding-top: 25px;
+  text-align: left;
+  z-index: 2;
+}
+.site-nav.site-nav-megamenu .megamenu--child-linklist li .site-nav__link {
+  display: block;
+  padding: 6px 10px;
+  color: #fff;
+  white-space: normal;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.site-nav.site-nav-megamenu .megamenu--child-linklist li .site-nav__link:hover {
+  color: #000;
+  background: #fff;
+}
+.site-nav.site-nav-megamenu .megamenu--child-linklist li.megamenu--has-grandchild {
+  position: relative;
+}
+@media screen and (min-width: 1136px) {
+  .site-nav.site-nav-megamenu .megamenu--child-linklist li.megamenu--has-grandchild:hover .megamenu--grandchild-linklist {
+    display: block;
+  }
+}
+.site-nav.site-nav-megamenu .megamenu--grandchild-linklist {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  top: 100%;
+  z-index: 3;
+}
+
+@media screen and (min-width: 1136px) {
+  .site-header__mobile-nav {
+    position: static;
+  }
+}
+
 .header-full-height__container {
   display: -webkit-box;
   display: -webkit-flex;
