@@ -8,12 +8,17 @@
 <div data-section-id="{{ section.id }}" class="section--{{ section.id  }}" data-section-type="header-full-height-section">
   <div class="header-full-height__container">
 
+    {%- comment -%}Spots Background{%- endcomment -%}
+    <div class="header-full-height__spots">
+      {% include 'icon-spot-top_right' %}
+      {% include 'icon-spot-bottom_left' %}
+      {% include 'icon-spot-circle' %}
+    </div>
+
+
+    {%- comment -%} Toolbar {%- endcomment -%}
+
     <div class="header-full-height__toolbar">
-
-
-
-
-
 
       <div class="site-header__icons-wrapper">
 

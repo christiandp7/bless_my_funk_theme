@@ -626,34 +626,27 @@ header.site-header.header_divided_nav .site-header__mobile-nav > nav.grid__item 
 }
 
 .header-full-height__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .header-full-height__container a,
 .header-full-height__container button {
   font-family: "Blair ITC Medium", Arial, Helvetica, sans-serif;
 }
 .header-full-height__container .header-full-height__logo {
-  width: 75%;
+  width: 95%;
   max-width: 100%;
   margin-bottom: 35px;
+  z-index: 1;
 }
 @media screen and (min-width: 600px) {
   .header-full-height__container .header-full-height__logo {
-    width: 60%;
+    width: 95%;
   }
 }
 .header-full-height__container .header-full-height__logo img {
@@ -663,6 +656,7 @@ header.site-header.header_divided_nav .site-header__mobile-nav > nav.grid__item 
   width: 100%;
   padding: 0 15px;
   padding-top: 18px;
+  z-index: 1;
 }
 @media screen and (min-width: 600px) {
   .header-full-height__container .header-full-height__toolbar {
@@ -691,6 +685,7 @@ header.site-header.header_divided_nav .site-header__mobile-nav > nav.grid__item 
 .header-full-height__container .header-full-height__menu {
   width: 100%;
   padding-bottom: 35px;
+  z-index: 1;
 }
 .header-full-height__container .header-full-height__menu .h-f-h--linklist {
   position: relative;
@@ -800,6 +795,51 @@ header.site-header.header_divided_nav .site-header__mobile-nav > nav.grid__item 
 }
 .header-full-height__container .h-f-h--coming-soon-link:hover:before {
   opacity: 1;
+}
+
+.header-full-height__spots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.header-full-height__spots svg {
+  position: absolute;
+}
+.header-full-height__spots svg.spot-top-right {
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 38%;
+}
+@media screen and (max-width: 1135px) {
+  .header-full-height__spots svg.spot-top-right {
+    height: 30%;
+  }
+}
+.header-full-height__spots svg.spot-bottom-left {
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 75%;
+}
+@media screen and (max-width: 1135px) {
+  .header-full-height__spots svg.spot-bottom-left {
+    height: 65%;
+  }
+}
+.header-full-height__spots svg.spot-circle {
+  bottom: 22%;
+  right: 16%;
+  width: auto;
+  height: 20vh;
+}
+@media screen and (max-width: 1135px) {
+  .header-full-height__spots svg.spot-circle {
+    bottom: 10%;
+    right: 8%;
+    height: 26vh;
+  }
 }
 
 .grid.grid--flex {
