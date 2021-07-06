@@ -91,6 +91,9 @@ body h6 {
     padding-top: 55px;
   }
 }
+.main-content.main-index {
+  padding-top: 0 !important;
+}
 
 .btn-round {
   display: inline-block;
@@ -1363,6 +1366,7 @@ header.site-header .mobile-nav > li:first-child {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.75);
   text-align: center;
+  backdrop-filter: blur(8px);
 }
 
 .blocker:before {

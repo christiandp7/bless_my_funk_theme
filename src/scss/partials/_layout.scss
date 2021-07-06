@@ -48,4 +48,8 @@ body {
 	@include media-max-width($medium-down) {
 		padding-top: 55px;
 	}
+
+	&.main-index {
+		padding-top: 0 !important;
+	}
 }
