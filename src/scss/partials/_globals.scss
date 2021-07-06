@@ -1,45 +1,51 @@
+html {
+	@include media-max-width($medium-down) {
+		font-size: 12px;
+	}
+}
+
 .page-width.full {
-  max-width: none;
+	max-width: none;
 }
 
 /* Home */
 .index-section-pad {
-  padding-top: 55px;
-  padding-bottom: 55px;
+	padding-top: 55px;
+	padding-bottom: 55px;
 }
 
 .adornment-rect {
-  display: inline-block;
-  // height: 0.8em;
-  min-width: 100px;
-  letter-spacing: -0.5em;
+	display: inline-block;
+	// height: 0.8em;
+	min-width: 100px;
+	letter-spacing: -0.5em;
 }
 
 // Search Drawer
 .search-bar.drawer--top {
-  height: 100% !important;
+	height: 100% !important;
 
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 // Images
 .img-fullwidth {
-  width: 100%;
+	width: 100%;
 }
 
 // Silhouettes
 .silhouette_container {
-  position: relative;
+	position: relative;
 }
 .silhouette_bg_container {
-  background-repeat: no-repeat;
-  background-size: contain;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 .silhouette_img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	z-index: -1;
 }

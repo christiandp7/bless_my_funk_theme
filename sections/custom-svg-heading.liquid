@@ -17,6 +17,18 @@
   .section--{{ section.id }} .custom-heading_heading-2 svg path {
     fill: {{ section.settings.c-h-2_color }};
   }
+
+  
+  @media screen and (max-width: 599px) {
+    .section--{{ section.id }} .custom-heading_heading-1 img {
+      width: {{ section.settings.c-h-1_width--mobile }}%;
+    }
+    .section--{{ section.id }} .custom-heading_heading-2 img {
+      width: {{ section.settings.c-h-2_width--mobile }}%;
+    }
+  }
+
+
 </style> 
 
 <div class="section--{{ section.id }} index-section-pad" data-section-id="{{ section.id }}" data-section-type="custom-heading-height-section">
@@ -73,6 +85,16 @@
       "default": 50
     },
     {
+      "type": "range",
+      "id": "c-h-1_width--mobile",
+      "label": "Heading 1 width - Mobile",
+      "unit": "%",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "default": 50
+    },
+    {
       "type": "header",
       "content": "Heading svg 2"
     },
@@ -91,6 +113,16 @@
       "type": "range",
       "id": "c-h-2_width",
       "label": "Heading 2 width",
+      "unit": "%",
+      "min": 10,
+      "max": 100,
+      "step": 2,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "c-h-2_width--mobile",
+      "label": "Heading 2 width - Mobile",
       "unit": "%",
       "min": 10,
       "max": 100,
