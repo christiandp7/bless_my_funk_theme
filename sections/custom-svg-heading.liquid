@@ -35,10 +35,16 @@
   <div class="page-width full">
     <div class="custom-heading text-center">
       <div class="custom-heading_heading-1 text-center">
-        <img src="{{ section.settings.c-h-1_svg }}">
+        <img class="{% if section.settings.c-h-1_svg__mobile != blank %}hidden-down-md{% endif %}" src="{{ section.settings.c-h-1_svg }}">
+        {% if section.settings.c-h-1_svg__mobile != blank %}
+          <img class="hidden-up-md" src="{{ section.settings.c-h-1_svg__mobile }}">
+        {% endif %}
       </div>
       <div class="custom-heading_heading-2 text-center">
-        <img src="{{ section.settings.c-h-2_svg }}">
+        <img class="{% if section.settings.c-h-2_svg__mobile != blank %}hidden-down-md{% endif %}" src="{{ section.settings.c-h-2_svg }}">
+        {% if section.settings.c-h-2_svg__mobile != blank %}
+        <img class="hidden-up-md" src="{{ section.settings.c-h-2_svg__mobile }}">
+        {% endif %}
       </div>
     </div>
     
@@ -67,6 +73,11 @@
       "type": "url",
       "id": "c-h-1_svg",
       "label": "Svg image 1"
+    },
+    {
+      "type": "url",
+      "id": "c-h-1_svg__mobile",
+      "label": "Svg image 1 - Mobile"
     },
     {
       "type": "color",
@@ -102,6 +113,11 @@
       "type": "url",
       "id": "c-h-2_svg",
       "label": "Svg image 2"
+    },
+    {
+      "type": "url",
+      "id": "c-h-2_svg__mobile",
+      "label": "Svg image 2 - Mobile"
     },
     {
       "type": "color",

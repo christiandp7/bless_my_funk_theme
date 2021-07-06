@@ -1,10 +1,32 @@
 .site-footer {
 	.list--inline {
+		@include media-max-width($medium-down) {
+			justify-content: center;
+		}
+
 		& > li {
 			display: block;
 			a {
 				font-size: 1.2rem;
 			}
+		}
+	}
+
+	.site-footer__item {
+		@include media-max-width($medium-down) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.site-footer__linklist-item {
+		@include media-max-width($medium-down) {
+			padding: 8px 0;
+		}
+	}
+
+	.site-footer__copyright-content {
+		@include media-max-width($medium-down) {
+			font-size: 0.85rem;
 		}
 	}
 }

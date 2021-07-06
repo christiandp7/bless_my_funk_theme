@@ -1,0 +1,16 @@
+.hidden {
+	display: none !important;
+}
+
+.hidden-up-md {
+	@include hidden-up($medium-up);
+}
+.hidden-down-md {
+	@include hidden-down($medium-down);
+}
+.hidden-up-lg {
+	@include hidden-up($large-up);
+}
+.hidden-down-lg {
+	@include hidden-down($large-down);
+}

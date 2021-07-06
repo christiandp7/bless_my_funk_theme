@@ -165,46 +165,20 @@
 
     </div>
 
+
+    {%- comment -%} MOBILE NAV {%- endcomment -%}
+
     <nav class="mobile-nav-wrapper medium-up--hide" role="navigation">
 
-
-      <div class="site-header__icons-wrapper">
-        
-        {% if settings.search_enabled %}
-          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top">
-            {% include 'icon-search' %}
-          </button>
-        {% endif %}
-
-        {% if shop.customer_accounts_enabled %}
-          {% if customer %}
-            <a href="{{ routes.account_url }}" class="site-header__icon site-header__account">
-              {% include 'icon-login' %}
-            </a>
-          {% else %}
-            <a href="{{ routes.account_login_url }}" class="site-header__icon site-header__account">
-              {% include 'icon-login' %}
-            </a>
-          {% endif %}
-        {% endif %}
-
-        <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
-          {% include 'icon-cart' %}
-          <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
-          <div id="CartCount" class="site-header__cart-count{% if cart.item_count == 0 %} hide{% endif %}" data-cart-count-bubble>
-            <span data-cart-count>{{ cart.item_count }}</span>
-            <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
-          </div>
-        </a>
-      </div>
-
-
-
       <ul id="MobileNav" class="mobile-nav">
+
+        {% include 'site-header__icons-mobile' %}
+
+
         {% for link in linklists[section.settings.main_linklist].links %}
           {%- assign outerLoopIndex = forloop.index -%}
 
-          <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
+          <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %} {% if forloop.index == 1 %}hidden{% endif %} ">
             {% if link.links != blank %}
               {% capture child_list_handle %}{{ link.handle }}-{{ outerLoopIndex }}{% endcapture %}
               <button type="button" class="btn--link js-toggle-submenu mobile-nav__link{% if link.child_active %} mobile-nav__link--active{% endif %}" data-target="{{ child_list_handle }}" data-level="1" aria-expanded="false">

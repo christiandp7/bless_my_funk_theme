@@ -73,6 +73,11 @@ header.site-header {
 				font-size: 0.8rem;
 			}
 		}
+		&.site-header__icons-wrapper__mobile {
+			.site-header__icon {
+				padding: 10px;
+			}
+		}
 	}
 
 	.mobile-nav--open,
@@ -143,7 +148,7 @@ header.site-header {
 	// Mobile nav
 	.mobile-nav {
 		> li:first-child {
-			display: none;
+			// display: none;
 		}
 	}
 }
