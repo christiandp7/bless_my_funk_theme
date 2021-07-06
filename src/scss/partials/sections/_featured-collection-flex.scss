@@ -20,3 +20,19 @@ $padding-grid: 8px;
 .product-grid-flex__img {
 	width: 100%;
 }
+
+.section-header {
+	@include media-max-width($medium-down) {
+		font-size: 1rem;
+		& h2 {
+			line-height: 1.6;
+			&:first-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.section-header__with-adornment {
+		line-height: 1.6;
+	}
+}
