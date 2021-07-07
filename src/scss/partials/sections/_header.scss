@@ -48,6 +48,7 @@ header.site-header {
 		}
 		.site-nav__link {
 			font-size: 0.85rem;
+			font-weight: 300;
 			@include media-max-width(1400px) {
 				font-size: 0.8rem;
 			}
@@ -130,6 +131,7 @@ header.site-header {
 				}
 			}
 			> .site-header__icons {
+				font-weight: 300;
 				@include media-max-width($header-desktop-down) {
 					display: none;
 				}

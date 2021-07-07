@@ -39,10 +39,15 @@ body {
 			}
 		}
 	}
-}
 
-// Layout Classes
-// .medium
+	a {
+		color: $font-color;
+		&:focus,
+		&:not([disabled]):hover {
+			color: $font-color-hover-secondary;
+		}
+	}
+}
 
 .main-content {
 	@include media-max-width($medium-down) {
@@ -52,4 +57,25 @@ body {
 	&.main-index {
 		padding-top: 0 !important;
 	}
+}
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }

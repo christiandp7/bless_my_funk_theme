@@ -66,24 +66,34 @@
         {% endunless %}
       </div>
 
-
-
-
-
-
     </div>
 
-    <a class="header-full-height__logo">
-      {% if section.settings.logo != blank %}
+    {%- comment -%} Logo {%- endcomment -%}
+
+    <div class="header-full-height__logo-container">
+      <a class="header-full-height__logo">
+        {% if section.settings.logo != blank %}
         <img src="{{ logo | img_url: 'master' }}" alt="logo">
       {% else %}
-        {% if section.settings.logo_svg != blank %}
+      {% if section.settings.logo_svg != blank %}
           <img src="{{ section.settings.logo_svg }}" alt="logo">
           {% else %}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {% endif %}
-      {% endif %}
-    </a>
+        {% endif %}
+      </a>
+
+      <div class="header-full-height__menu header-full-height__menu-mobile">
+        {%- assign menu = section.settings.menu -%}
+        {% if menu != blank %}
+        {% include 'site-nav_header-full-height' %}
+        {% endif %}
+      </div>
+    </div>
+
+
+
+    {%- comment -%} Menu {%- endcomment -%}
 
     <div class="header-full-height__menu">
       {%- assign menu = section.settings.menu -%}
