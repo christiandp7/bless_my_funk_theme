@@ -863,12 +863,14 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
     margin: 0 5px;
   }
 }
-.header-full-height__container .header-full-height__menu.header-full-height__menu-mobile .h-f-h--linklist .h-f-h--linklist-item a {
+.header-full-height__container .header-full-height__menu.header-full-height__menu-mobile .h-f-h--linklist .h-f-h--linklist-item a,
+.header-full-height__container .header-full-height__menu.header-full-height__menu-mobile .h-f-h--linklist .h-f-h--linklist-item .h-f-h--coming-soon-link:before {
   font-size: 0.85rem;
   font-weight: 300;
 }
 @media screen and (max-width: 599px) {
-  .header-full-height__container .header-full-height__menu.header-full-height__menu-mobile .h-f-h--linklist .h-f-h--linklist-item a {
+  .header-full-height__container .header-full-height__menu.header-full-height__menu-mobile .h-f-h--linklist .h-f-h--linklist-item a,
+.header-full-height__container .header-full-height__menu.header-full-height__menu-mobile .h-f-h--linklist .h-f-h--linklist-item .h-f-h--coming-soon-link:before {
     font-size: 0.7rem;
   }
 }

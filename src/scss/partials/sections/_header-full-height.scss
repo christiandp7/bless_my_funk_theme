@@ -213,8 +213,9 @@
 					@include media-max-width($large-down) {
 						margin: 0 5px;
 					}
-					// a
-					a {
+					// a & comming soon
+					a,
+					.h-f-h--coming-soon-link:before {
 						font-size: 0.85rem;
 						font-weight: 300;
 						@include media-max-width($medium-down) {
