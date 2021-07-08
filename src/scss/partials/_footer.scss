@@ -1,4 +1,8 @@
 .site-footer {
+	@include media-max-width($medium-down) {
+		margin-top: 0;
+	}
+
 	.list--inline {
 		@include media-max-width($medium-down) {
 			justify-content: center;

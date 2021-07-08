@@ -101,6 +101,12 @@ body a:focus, body a:not([disabled]):hover {
   padding-top: 0 !important;
 }
 
+@media screen and (max-width: 599px) {
+  .section-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -282,6 +288,11 @@ body a:focus, body a:not([disabled]):hover {
   bottom: 0;
   right: 0;
 }
+@media screen and (max-width: 599px) {
+  .product-card__collection .price-item {
+    font-size: 1.2rem;
+  }
+}
 
 .collection-banner {
   width: 100%;
@@ -318,6 +329,13 @@ body a:focus, body a:not([disabled]):hover {
   position: initial !important;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 599px) {
+  .template-collection .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .product-title {
@@ -406,12 +424,58 @@ body a:focus, body a:not([disabled]):hover {
   text-align-last: center;
 }
 
+.cart__buttons-container {
+  max-width: 85%;
+}
+
 .cart__submit {
-  background-color: #eaa9cb;
+  background-color: #000;
+  white-space: nowrap;
 }
 @media screen and (min-width: 750px) {
   .cart__submit {
     padding: 15px 25px;
+  }
+}
+.cart__submit::focus {
+  background-color: #000;
+}
+
+@media screen and (max-width: 599px) {
+  .list-view-item__title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .product-details {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cart__remove {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cart__row td,
+.cart__row th {
+    padding: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cart__product-information {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cart__image-wrapper {
+    flex: 100% 0 0;
+    margin-bottom: 8px;
   }
 }
 
@@ -995,6 +1059,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   }
 }
 
+@media screen and (max-width: 599px) {
+  .site-footer {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 599px) {
   .site-footer .list--inline {
     justify-content: center;

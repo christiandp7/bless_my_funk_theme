@@ -1,7 +1,54 @@
-
+.cart__buttons-container {
+	max-width: 85%;
+}
 .cart__submit {
-  background-color: $color-secondary;
-  @include media-min-width(750px) {
-    padding: 15px 25px;
-  }
+	background-color: $color-bg-primary;
+	white-space: nowrap;
+
+	@include media-min-width(750px) {
+		padding: 15px 25px;
+	}
+	&::focus {
+		background-color: $color-bg-primary;
+	}
+}
+
+// Items view cart
+.list-view-item__title {
+	@include media-max-width($medium-down) {
+		font-size: 1.2rem;
+	}
+}
+
+.product-details {
+	@include media-max-width($medium-down) {
+		font-size: 1rem;
+	}
+}
+
+.cart__remove {
+	@include media-max-width($medium-down) {
+		font-size: 1.2rem;
+	}
+}
+
+.cart__row {
+	td,
+	th {
+		@include media-max-width($medium-down) {
+			padding: 10px 0px;
+		}
+	}
+}
+
+.cart__product-information {
+	@include media-max-width($medium-down) {
+		flex-wrap: wrap;
+	}
+}
+.cart__image-wrapper {
+	@include media-max-width($medium-down) {
+		flex: 100% 0 0;
+		margin-bottom: 8px;
+	}
 }

@@ -59,6 +59,14 @@ body {
 	}
 }
 
+.section-header {
+	h1 {
+		@include media-max-width($medium-down) {
+			font-size: 1.5rem;
+		}
+	}
+}
+
 // Scrollbar
 /* width */
 ::-webkit-scrollbar {
