@@ -7581,6 +7581,9 @@ $(document).ready(function () {
 		},
 	)
 
+	// initialize Selectric 
+	$('select.single-option-selector-product-template').selectric();
+
 	// Headers search
 
 	// Preloader
