@@ -131,16 +131,33 @@
     {%- endcomment -%}
 
     <div class="grid__item">
-      <div class="product-single__media-slideshow">
-        {%- for media in product.media -%}
+
+      <div class="product-single__media-slideshow_container">
+        <div class="product-single__media-slideshow">
+          {%- for media in product.media -%}
           {% include 'media-ctb', media: media, featured_media: featured_media, height: 600 %}
-        {%- endfor -%}
+          {%- endfor -%}
+        </div>
+        <div class="product-single__media-slideshow_nav">
+          <button type="button"
+            class="btn btn--link product-ctb--slider__btn product-ctb--slider__prev">
+            {% include 'icon-chevron-left' %}
+            <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
+          </button>
+          <button type="button"
+          class="btn btn--link product-ctb--slider__btn product-ctb--slider__next">
+          {% include 'icon-chevron-right' %}
+          <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
+        </button>
       </div>
+      </div>
+
       <div class="product-single__thumbs-slideshow">
         {% for media in product.media %}
           <img class="product-single__thumbnail-image" src="{{ media.preview_image | img_url: '130x130', scale: 2 }}" alt="{{ media.alt  }}">
         {% endfor %}
       </div>
+
     </div>
       
     

@@ -7612,22 +7612,30 @@ $(document).ready(function () {
 	$('.product-single__media-slideshow').slick({
 		lazyLoad: 'ondemand',
 		slidesToShow: 1,
-  	// aadaptiveHeight: true,
 		infinite: true,
-		// fade: true,
+		// arrows: false,
+		prevArrow: '.product-ctb--slider__prev',
+		nextArrow: '.product-ctb--slider__next',
+		appendArrows: '.product-single__media-slideshow_nav',
+		fade: true,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					swipe: true
+					swipe: true,
+					fade: false,
 				}
 			}
 		],
 		asNavFor: '.product-single__thumbs-slideshow',
 	})
 	$('.product-single__thumbs-slideshow').slick({
-		slidesToShow: 10,
+		slidesToShow: 6,
 		adaptiveHeight: true,
+		autoplay: true,
+		autoplaySpeed: 3500,
+		arrows: false,
+		focusOnSelect: true,
 		responsive: [
 			{
 				breakpoint: 768,
@@ -7636,7 +7644,7 @@ $(document).ready(function () {
 				}
 			},
 			{
-				breakpoint: 550,
+				breakpoint: 500,
 				settings: {
 					slidesToShow: 3
 				}
