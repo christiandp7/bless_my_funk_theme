@@ -1,0 +1,19 @@
+#shopify-section-product-template-ctb {
+	background-color: #f4ee9c;
+	// position: relative;
+	// top: -50px;
+	// padding-top: 75px;
+}
+
+.product_bmf.product_ctb {
+	.product-single__description {
+		> p {
+			font-size: 0.86rem;
+			text-transform: lowercase;
+			text-align: left !important;
+			line-height: 1.8;
+			letter-spacing: 1.5px;
+			margin-bottom: 0px !important;
+		}
+	}
+}

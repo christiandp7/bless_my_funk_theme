@@ -1,6 +1,13 @@
 .hero-2 {
 	position: relative;
 
+	.hero__overlay:before {
+		@include media-max-width(600px) {
+			// display: none;
+			opacity: 0.2;
+		}
+	}
+
 	.hero__inner {
 		padding-top: 35px;
 		& > .page-width {
