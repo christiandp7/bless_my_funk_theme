@@ -7531,7 +7531,9 @@ function onYouTubeIframeAPIReady() {
 
 $(theme.init)
 
-/* ================= CUSTOM ================= */
+
+
+/* ================================ CUSTOM ==================================== */
 
 $(document).ready(function () {
 	/* Header Scroll */
@@ -7591,8 +7593,6 @@ $(document).ready(function () {
 	//   $(".loader-container").fadeOut(1000)
 	// })
 
-
-
 	// Newsletter modal
 
 	$(window).load(function () {
@@ -7606,6 +7606,53 @@ $(document).ready(function () {
 			sessionStorage.setItem('newsletterShowed', true);
 		}
 	})
+
+
+	//  CTB product carousel
+	$('.product-single__media-slideshow').slick({
+		lazyLoad: 'ondemand',
+		slidesToShow: 1,
+  	// aadaptiveHeight: true,
+		infinite: true,
+		// fade: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					swipe: true
+				}
+			}
+		],
+		asNavFor: '.product-single__thumbs-slideshow',
+	})
+	$('.product-single__thumbs-slideshow').slick({
+		slidesToShow: 10,
+		adaptiveHeight: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 3
+				}
+			}
+		],
+		asNavFor: '.product-single__media-slideshow',
+	})
+
+	$('.product-single__media-slideshow').on('afterChange', function(event, slick, direction){
+		var currentSlideHeight = $(this).find('.slick-current').height();
+		$(this).find('.slick-list').height(currentSlideHeight)
+	});
+	$('.product-single__media-slideshow').on('setPosition', function(event, slick, direction){
+		var currentSlideHeight = $(this).find('.slick-current').height();
+		$(this).find('.slick-list').height(currentSlideHeight)
+	});
 
 	
 })

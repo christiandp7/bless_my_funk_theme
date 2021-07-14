@@ -445,6 +445,12 @@ body a:focus, body a:not([disabled]):hover {
   margin-bottom: 0px !important;
 }
 
+.product-single__media-slideshow .slick-list {
+  transition: height 0.5s ease;
+}
+.product-single__media-slideshow img {
+  width: 100%;
+}
 .cart__buttons-container {
   max-width: 85%;
 }
