@@ -14,6 +14,7 @@
 
 	.newsletter-popup_heading {
 		display: flex;
+		justify-content: flex-end;
 		margin-bottom: 22px;
 
 		.nws-p_heading-text {
@@ -49,7 +50,8 @@
 		}
 	}
 	.newsletter-popup_content {
-		margin-bottom: 22px;
+		font-family: $font-family-secondary;
+		margin-bottom: 25px;
 		& svg {
 			&:first-child {
 				@include media-max-width($medium-down) {
@@ -94,8 +96,29 @@
 	p {
 		color: $font-color;
 	}
+
+	// inputs
+	.form-container {
+		padding-top: 8px;
+	}
+	.form-group {
+		padding: 12px 0;
+		input {
+			width: 100%;
+			border: solid 2px $newsletter-secondary;
+			border-radius: 50px;
+			background-color: transparent;
+			outline: none;
+		}
+	}
 }
 
 .jquery-modal.blocker {
 	background-color: rgba(0, 0, 0, 0.7);
+}
+
+// Steps
+.step-2,
+.step-3 {
+	display: none;
 }

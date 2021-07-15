@@ -1,56 +1,49 @@
-$bg: #fff;
-$fill: #E573D5;
+$bg: $newsletter-primary; // #fff
+$fill: $newsletter-secondary; //e573d5
 $border: #000;
 
-.loader-container{
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  z-index: 1000;
+// .loader-container{
+//   width: 100%;
+//   height: 100vh;
+//   background-color: #fff;
+//   position: fixed;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   top: 0;
+//   z-index: 1000;
+// }
+
+.hourglass {
+	display: block;
+	background: $bg;
+	margin: 1em auto;
+	width: 2em;
+	height: 4em;
+	animation: hourglass 1s linear infinite;
 }
 
-.hourglass{
-  display:block;
-  background:$bg;
-  margin:3em auto;
-  width:2.5em;
-  height:5em;
-  animation:hourglass 1s linear infinite;
-  
+.hourglass_outer {
+	fill: $border;
+}
+.hourglass_middle {
+	fill: $bg;
 }
 
-.hourglass_outer{
-  fill:$border;
-}
-.hourglass_middle{
-  fill:$bg;
-}
-
-@keyframes hourglass{
-  0%{
-      transform:rotate(0deg);
-      box-shadow:
-          inset $fill 0 -0em 0 0,
-          inset $bg 0 -2.5em 0 0,
-          inset $fill 0 -5em 0 0;
-  }
-  80%{
-      transform:rotate(0deg);
-      box-shadow:
-          inset $fill 0 -2.5em 0 0,
-          inset $bg 0 -2.5em 0 0,
-          inset $fill 0 -2.5em 0 0;
-  }
-  100%{
-      transform:rotate(180deg);
-      box-shadow:
-          inset $fill 0 -2.5em 0 0,
-          inset $bg 0 -2.5em 0 0,
-          inset $fill 0 -2.5em 0 0;
-  }
+@keyframes hourglass {
+	0% {
+		transform: rotate(0deg);
+		box-shadow: inset $fill 0 -0em 0 0, inset $bg 0 -2em 0 0,
+			inset $fill 0 -4em 0 0;
+	}
+	80% {
+		transform: rotate(0deg);
+		box-shadow: inset $fill 0 -2em 0 0, inset $bg 0 -2em 0 0,
+			inset $fill 0 -2em 0 0;
+	}
+	100% {
+		transform: rotate(180deg);
+		box-shadow: inset $fill 0 -2em 0 0, inset $bg 0 -2em 0 0,
+			inset $fill 0 -2em 0 0;
+	}
 }

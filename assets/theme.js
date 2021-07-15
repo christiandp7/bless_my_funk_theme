@@ -7603,8 +7603,15 @@ $(document).ready(function () {
 				showClose: false,
 				fadeDuration: 350
 			});
-			sessionStorage.setItem('newsletterShowed', true);
+			// sessionStorage.setItem('newsletterShowed', true);
 		}
+	})
+	
+	
+	$('.newsletter-popup_btn').click(function() {
+		$('.step-1').hide()
+		$('.step-2').fadeIn()
+		// $('.step-3').delay(2000).fadeIn()
 	})
 
 

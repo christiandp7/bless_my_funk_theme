@@ -10,8 +10,31 @@
         </a>
       </div>
     </div>
-    <div class="newsletter-popup_content">{% include 'newsletter_content' %}</div>
-    <button class="btn btn-round newsletter-popup_btn">{% include 'newsletter_button-text' %}</button>
+    <div class="newsletter-popup_content">
+      <div class="">
+        {% include 'newsletter_content' %}
+      </div>
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            {% include 'newsletter-name' %}
+            <input type="text" name="name" id="">
+          </div>
+          <div class="form-group">
+            {% include 'newsletter-email' %}
+            <input type="email" name="email" id="">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <button class="btn btn-round newsletter-popup_btn step-1">{% include 'newsletter_button-text' %}</button>
+    <div class="step-2">
+      {% include 'preloader' %}
+    </div>
+    <div class="step-3">
+      <h3>success</h3>
+    </div>
     <!-- <a href="#" class="close-jqmodal" rel="modal:close">Close</a> -->
   </div>
 
