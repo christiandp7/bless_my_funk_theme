@@ -120,13 +120,13 @@
 		}
 		.newsletter-name {
 			@include media-max-width($medium-down) {
-				width: calc(110px / 2 + 5);
+				width: calc(110px / 2 + 5px);
 				height: auto;
 			}
 		}
 		.newsletter-email {
 			@include media-max-width($medium-down) {
-				width: calc(280px / 2 + 15);
+				width: calc(280px / 2 + 15px);
 				height: auto;
 			}
 		}

@@ -1669,15 +1669,15 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 }
 @media screen and (max-width: 599px) {
   #newsletter-popup .form-group .newsletter-name {
-    width: -webkit-calc(110px / 2 + 5);
-    width: calc(110px / 2 + 5);
+    width: -webkit-calc(110px / 2 + 5px);
+    width: calc(110px / 2 + 5px);
     height: auto;
   }
 }
 @media screen and (max-width: 599px) {
   #newsletter-popup .form-group .newsletter-email {
-    width: -webkit-calc(280px / 2 + 15);
-    width: calc(280px / 2 + 15);
+    width: -webkit-calc(280px / 2 + 15px);
+    width: calc(280px / 2 + 15px);
     height: auto;
   }
 }
