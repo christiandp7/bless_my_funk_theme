@@ -11,8 +11,8 @@
 
 	// video section wrapper
 	.video-section-wrapper {
-		@include media-max-width($medium-down) {
-			min-height: 180px !important;
+		@include media-max-width(420px) {
+			min-height: 200px !important;
 		}
 	}
 

@@ -342,9 +342,9 @@ body a:focus, body a:not([disabled]):hover {
   padding: 0;
   max-width: none;
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 420px) {
   .premiere-video-section .video-section-wrapper {
-    min-height: 180px !important;
+    min-height: 200px !important;
   }
 }
 .premiere-video-section .video__text-content {
