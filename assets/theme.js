@@ -7603,7 +7603,7 @@ $(document).ready(function () {
 				showClose: false,
 				fadeDuration: 350
 			});
-			// sessionStorage.setItem('newsletterShowed', true);
+			sessionStorage.setItem('newsletterShowed', true);
 		}
 	})
 	
