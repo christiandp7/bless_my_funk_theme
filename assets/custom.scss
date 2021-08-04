@@ -1076,14 +1076,18 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 .header-full-height__container .h-f-h--coming-soon-link:before {
   content: "coming soon...";
   position: absolute;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  padding: calc(10px + 0.2rem) 15px 10px;
+  padding: 0 15px;
   font-size: 1rem;
   color: #000;
   background: #fff;
+  white-space: nowrap;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
