@@ -1,0 +1,44 @@
+.premiere-video-section {
+	padding-top: 75px !important;
+	@include media-max-width($large-down) {
+		padding-top: 45px !important;
+	}
+
+	> div.page-width {
+		padding: 0;
+		max-width: none;
+	}
+
+	// video section wrapper
+	.video-section-wrapper {
+		@include media-max-width($medium-down) {
+			min-height: 180px !important;
+		}
+	}
+
+	// video text content
+	.video__text-content {
+		transform: translateX(0) !important;
+	}
+
+	// video play button
+	.btn.video-control__play {
+		background-color: #e472b6;
+		&:hover {
+			background-color: #000;
+		}
+	}
+	// mobile video play button
+	.video-control__play-wrapper-mobile {
+		top: 48%;
+		left: calc(50% - 38px / 2);
+		.btn.video-control__play {
+			width: 38px;
+			height: 38px;
+			svg {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+}

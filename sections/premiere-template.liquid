@@ -1,0 +1,28 @@
+<div class="section--{{ section.id }} premiere-show" data-section-id="{{ section.id }}" data-section-type="Premiere-height-section">
+
+
+  {% if section.settings.banner %}
+    <img class="premiere-banner" src="{{ section.settings.banner | img_url: '1920x' }}"
+    alt="bottom banner">
+  {% endif %}
+
+
+</div>
+
+{% schema %}
+{
+  "name": "Premiere",
+  "class": "premiere-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner",
+      "label": "Bottom banner"
+    }
+  ]
+}
+{% endschema %}
