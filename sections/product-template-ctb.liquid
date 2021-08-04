@@ -250,6 +250,9 @@
                 {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
                 {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
               >
+              {% if section.settings.download_btn_url != blank %}
+                <a target="_blank" class="btn btn--ctb-download" href="{{ section.settings.download_btn_url }}" download>{{ section.settings.download_btn_text }}</a>
+              {% endif %}
                 <button type="submit" name="add"
                   {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                   aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
@@ -706,6 +709,21 @@
       "id": "fullwidth",
       "label": "Fullwidth",
       "default": true
+    },
+    {
+      "type": "header",
+      "content": "Catalogue"
+    },
+    {
+      "type": "url",
+      "id": "download_btn_url",
+      "label": "Download btn url"
+    },
+    {
+      "type": "text",
+      "id": "download_btn_text",
+      "label": "Download btn text",
+      "default": "Download Catalogue"
     }
   ]
 }

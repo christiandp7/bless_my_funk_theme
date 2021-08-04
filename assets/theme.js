@@ -7596,14 +7596,14 @@ $(document).ready(function () {
 	// Newsletter modal
 
 	$(window).load(function () {
-		var newsletter = sessionStorage.getItem('newsletterShowed') || false;
+		var newsletter = sessionStorage.getItem('newsletterPopupShowed') || false;
 		if( !newsletter ) {
 			$('#newsletter-popup').modal({
 				modalClass: 'jqmodal',
 				showClose: false,
 				fadeDuration: 350
 			});
-			sessionStorage.setItem('newsletterShowed', true);
+			sessionStorage.setItem('newsletterPopupShowed', true);
 		}
 	})
 	

@@ -30,9 +30,13 @@
                 <ul class="h-f-h--grandchild-linklist">
                   {% for grandchildlink in childlink.links %}
                   <li>
+                    {% if grandchildlink.url == "#coming-soon" %}
+                    <a class="h-f-h--coming-soon-link" href="#">{{ grandchildlink.title }} </a>
+                    {% else %}
                     <a href="{{ grandchildlink.url }}" class="site-nav__link site-nav__child-link" {% if grandchildlink.current %}
                       aria-current="page" {% endif %}>{{ grandchildlink.title | escape }}
                     </a>
+                    {% endif %}
                   </li>
                   {% endfor %}
                 </ul>
