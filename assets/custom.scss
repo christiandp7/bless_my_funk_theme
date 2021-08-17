@@ -406,6 +406,22 @@ body a:focus, body a:not([disabled]):hover {
 .bmf-grid.grid .grid__item .grid-view-item.product-card {
   margin-bottom: 0;
   height: 100%;
+  min-height: 100px;
+}
+@media screen and (min-width: 600px) {
+  .bmf-grid.grid .grid__item .grid-view-item.product-card {
+    min-height: 200px;
+  }
+}
+@media screen and (min-width: 1136px) {
+  .bmf-grid.grid .grid__item .grid-view-item.product-card {
+    min-height: 300px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .bmf-grid.grid .grid__item .grid-view-item.product-card {
+    min-height: 350px;
+  }
 }
 .bmf-grid.grid .grid__item .product-card__image-with-placeholder-wrapper {
   height: 100%;

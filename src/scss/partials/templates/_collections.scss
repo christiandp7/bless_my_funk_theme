@@ -36,6 +36,16 @@
 		.grid-view-item.product-card {
 			margin-bottom: 0;
 			height: 100%;
+			min-height: 100px;
+			@include media-min-width($medium-up) {
+				min-height: 200px;
+			}
+			@include media-min-width($large-up) {
+				min-height: 300px;
+			}
+			@include media-min-width($xlarge-up) {
+				min-height: 350px;
+			}
 		}
 
 		.product-card__image-with-placeholder-wrapper {
