@@ -168,7 +168,7 @@
 
     {%- comment -%} MOBILE NAV {%- endcomment -%}
 
-    <nav class="mobile-nav-wrapper medium-up--hide" role="navigation">
+    <nav class="mobile-nav-wrapper medium-up--hide cdp7" role="navigation">
 
       <ul id="MobileNav" class="mobile-nav">
 
@@ -199,7 +199,13 @@
                       </button>
                     </div>
                     <span class="mobile-nav__sublist-link mobile-nav__sublist-header mobile-nav__sublist-header--main-nav-parent">
-                      <span class="mobile-nav__label">{{ link.title | escape }}</span>
+                      <span class="mobile-nav__label">
+                        {% if link.url == "#coming-soon" %}
+                        coming soon..
+                        {% else %}
+                        {{ link.title | escape }}
+                        {% endif %}
+                      </span>
                     </span>
                   </div>
                 </li>
@@ -225,32 +231,52 @@
                                 {% include 'icon-chevron-left' %}
                               </button>
                             </div>
+                            {% if childlink.url == "#coming-soon" %}
+                              <a href="#"
+                                class="mobile-nav__sublist-link mobile-nav__sublist-header">
+                                <span class="mobile-nav__label">coming soon...</span>
+                              </a>
+                            {% else %}
                             <a href="{{ childlink.url }}"
                               class="mobile-nav__sublist-link mobile-nav__sublist-header"
                               {% if childlink.current %} aria-current="page"{% endif %}
-                            >
+                              >
                               <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
                             </a>
+                          {% endif %}
                           </div>
                         </li>
                         {% for grandchildlink in childlink.links %}
                           <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
-                            <a href="{{ grandchildlink.url }}"
-                              class="mobile-nav__sublist-link"
-                              {% if grandchildlink.current %} aria-current="page"{% endif %}
-                            >
-                              <span class="mobile-nav__label">{{ grandchildlink.title | escape }}</span>
-                            </a>
+                            {% if grandchildlink.url == "#coming-soon" %}
+                              <a href="#" class="mobile-nav__sublist-link">
+                                <span class="mobile-nav__label">coming soon...</span>
+                              </a>
+                            {% else %}
+                              <a href="{{ grandchildlink.url }}"
+                                class="mobile-nav__sublist-link"
+                                {% if grandchildlink.current %} aria-current="page"{% endif %}
+                              >
+                                <span class="mobile-nav__label">{{ grandchildlink.title | escape }}</span>
+                              </a>
+                            {% endif %}
                           </li>
                         {% endfor %}
                       </ul>
                     {% else %}
-                      <a href="{{ childlink.url }}"
-                        class="mobile-nav__sublist-link"
-                        {% if childlink.current %} aria-current="page"{% endif %}
-                      >
-                        <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
+                      {% if childlink.url == "#coming-soon" %}
+                      <a href="#"
+                        class="mobile-nav__sublist-link">
+                        <span class="mobile-nav__label">coming soon...</span>
                       </a>
+                      {% else %}
+                        <a href="{{ childlink.url }}"
+                          class="mobile-nav__sublist-link"
+                          {% if childlink.current %} aria-current="page"{% endif %}
+                        >
+                          <span class="mobile-nav__label">{{ childlink.title | escape }}</span>
+                        </a>
+                      {% endif %}
                     {% endif %}
                   </li>
                 {% endfor %}
