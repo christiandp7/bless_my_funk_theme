@@ -1,7 +1,11 @@
+.hero-section.index-section {
+	padding-top: 0;
+}
+
 .hero--adapt,
 .hero-fixed-width__image {
-  max-height: none !important;
-  @include media-min-width(750px) {
-    max-height: none !important;
-  }
+	max-height: none !important;
+	@include media-min-width(750px) {
+		max-height: none !important;
+	}
 }

@@ -1240,6 +1240,10 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   line-height: 1.6;
 }
 
+.hero-section.index-section {
+  padding-top: 0;
+}
+
 .hero--adapt,
 .hero-fixed-width__image {
   max-height: none !important;
@@ -1650,6 +1654,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 .step-2,
 .step-3 {
   display: none;
+}
+
+.video-2.index-section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .animated.bounce-top {
