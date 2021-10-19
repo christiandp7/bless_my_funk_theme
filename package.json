@@ -12,7 +12,7 @@
     "sass": "sass --no-source-map --watch src/scss/index.scss assets/custom.scss",
     "sass:build": "sass --no-source-map src/scss/index.scss assets/custom.scss",
     "sass:production": "npm run sass:build && postcss -r ./assets/custom.scss",
-    "deploy": "theme deploy --allow-live"
+    "deploy": "npm run sass:production && theme deploy --allow-live"
   },
   "repository": {
     "type": "git",

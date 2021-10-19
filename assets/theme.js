@@ -7607,12 +7607,40 @@ $(document).ready(function () {
 		}
 	})
 	
-	
-	$('.newsletter-popup_btn').click(function() {
-		$('.step-1').hide()
-		$('.step-2').fadeIn()
-		// $('.step-3').delay(2000).fadeIn()
+	// Newsletter popup form submit
+	$('#NewsleterPopupForm').submit(function(event){
+		event.preventDefault()
+		// console.log('action: ' + $(this).prop('action'))
+		$('.step-1').hide();
+		$('.step-2').fadeIn();
+		$.post({
+			// type: "POST",
+      url: $(this).prop('action'),
+      data: $( this ).serialize(),
+      encode: true,
+      // dataType: "json",
+    }).done(function (data) {
+      console.log(data);
+			$('.step-2').hide();
+			$('.step-3').fadeIn();
+			$('.step-3').delay(3000).hide();
+			$('.step-1').fadeIn();
+    })
+		// .fail(function() {
+		// 	$('.step-2').hide();
+		// 	$('.step-3').fadeIn().html('<h3>Fail to register, please try again.</h3>')
+		// })
+		// .always(function() {
+		// 	$('.step-3').fadeIn()
+		// });
 	})
+	
+	// $('.newsletter-popup_btn').click(function() {
+	// 	// $('.step-1').hide()
+	// 	// $('.step-2').fadeIn()
+	// 	// $('.step-3').delay(2000).fadeIn()
+	// 	$('#NewsleterPopupForm').submit()
+	// })
 
 
 	//  CTB product carousel
