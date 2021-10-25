@@ -1,3 +1,5 @@
+{% if section.settings.show_section %}
+
 {%- case section.settings.height -%}
 {%- when 'small' -%}
 {%- assign mobile_height = 175 -%}
@@ -157,6 +159,10 @@ opacity: 0;
   {%- endif -%}
 </div>
 
+
+{% endif %}
+
+
 {% schema %}
 {
   "name":"Video w Img 2 - Difusers",
@@ -165,6 +171,13 @@ opacity: 0;
     {
       "type":"header",
       "content":"Layout"
+    },
+    {
+      "type":"checkbox",
+      "id":"show_section",
+      "label":"Show Section",
+      "default": true,
+      "info":"Show current section"
     },
     {
       "type":"text",
