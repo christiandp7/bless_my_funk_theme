@@ -1,4 +1,4 @@
-{% if section.settings.show_section %}
+{% if section.settings.show_section == true %}
 
 {%- case section.settings.height -%}
 {%- when 'small' -%}
@@ -26,7 +26,7 @@ opacity: 0;
 {% include 'difusers-lines-bottom', width: '104%', height: '1338px' %}
 
 
-<div class="page-width page-width-nopadd {% if section.settings.fullwidth %}full{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section">
+<div class="page-width page-width-nopadd video-w-img-difusers {% if section.settings.fullwidth %}full{% endif %}" data-section-id="{{ section.id }}" data-section-type="video-section">
 
 
   <div class="video-w-img--heading">

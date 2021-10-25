@@ -1,0 +1,35 @@
+.video-w-img-difusers {
+	// Video Wrapper
+	// .video-w-img--wrapper {
+	& .video-control__play-wrapper-mobile {
+		display: none;
+	}
+	& .video-control__play-wrapper {
+		@include media-max-width(750px) {
+			display: block;
+			height: auto;
+			margin-top: 0;
+		}
+		& .video-control__play {
+			@include media-max-width(750px) {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+	& .video-w-img--inner-content {
+		& .mega-title {
+			@include media-max-width($medium-down) {
+				margin-bottom: 25px;
+			}
+		}
+		& a.btn {
+			@include media-max-width($medium-down) {
+				padding: 12px 24px;
+			}
+		}
+	}
+	// }
+}
