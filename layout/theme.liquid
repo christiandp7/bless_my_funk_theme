@@ -109,7 +109,8 @@
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
   {{ content_for_header }}
-</head>
+{% include 'bucks-cc' %}
+            </head>
 
 <body class="template-{{ request.page_type | handle }}">
   
