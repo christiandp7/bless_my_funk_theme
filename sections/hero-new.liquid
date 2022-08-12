@@ -1,0 +1,62 @@
+<div class="section--{{ section.id }} hero-new__inner" data-section-id="{{ section.id }}" data-section-type="Hero New-height-section">
+
+  <div class="hero-new__logo">
+    {% render 'blessmyfunk-white-logo', width: '300', height: 'auto' %}
+  </div>
+    
+  {%- if section.settings.hero_new_desktop != blank -%}
+    <img class="hero-new__img lazyload lazypreload"
+      src="{{ section.settings.hero_new_desktop | img_url: '1920x' }}"
+      data-src="{{ img_url }}"
+      data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+      data-aspectratio="{{ section.settings.hero_new_desktop.aspect_ratio }}"
+      data-sizes="auto"
+      style="object-position: {{ section.settings.alignment }};"
+      alt="{{ section.settings.hero_new_desktop.alt | escape }}">
+  {%- else -%}
+    <span>
+      {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+      {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+    </span>
+  {%- endif -%}
+
+
+  <div class="hero-new__content">
+    <h1>{{ section.settings.title }}</h1>
+  </div>
+
+</div>
+{% schema %}
+{
+  "name": "Hero New",
+  "class": "hero_new",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_new_desktop",
+      "label": "Hero Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_new_mobile",
+      "label": "Hero Mobile"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "html",
+      "id": "title",
+      "label": "Title",
+      "info": "Html field, please be careful"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero New",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
