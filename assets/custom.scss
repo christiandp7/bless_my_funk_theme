@@ -1418,8 +1418,9 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   display: flex;
 }
 .video-w-img--wrapper .video-w-img--inner .video-w-img--img-overlay {
-  width: auto;
+  width: 40%;
   height: 100%;
+  object-fit: cover;
   -webkit-animation: slide-in-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

@@ -1,35 +1,112 @@
 {
   "current": {
+    "color_text": "#000000",
+    "color_body_text": "#000000",
+    "color_sale_text": "#EA0606",
+    "color_button": "#000000",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#000000",
+    "color_text_field_text": "#000000",
+    "color_text_field_border": "#cccccc",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#685858",
+    "image_overlay_opacity": 40,
+    "color_borders": "#ebebeb",
+    "color_body_bg": "#ffffff",
+    "type_header_font": "helvetica_n7",
+    "type_header_font_custom": "\"Blair ITC Medium\"",
+    "type_header_base_size": 26,
+    "type_base_font": "helvetica_n4",
+    "type_base_font_custom": "\"Blair ITC Medium\"",
+    "type_base_size": 16,
+    "search_enabled": false,
+    "social_pinterest_link": "https:\/\/pinterest.com\/542c513407011ec056602d6279b72c",
+    "social_instagram_link": "https:\/\/instagram.com\/blessmyfunkhome?igshid=1q4z3uuynm30y",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCtjSrPAHSnTuWBF9oVoHsfw",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/BMFH_LOGO.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#5f95b9",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#eaa9cb",
+    "checkout_button_color": "#eaa9cb",
+    "checkout_error_color": "#e22120",
     "sections": {
       "header": {
         "type": "header",
-        "settings": {}
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/BMFH_LOGO.png",
+          "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/Logo_Bless_Nuevo.svg?v=1625582434",
+          "logo_max_width": 185,
+          "main_linklist": "main-menu",
+          "contact_email": "info@blessmyfunk.com",
+          "message": false,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff"
+        }
       },
       "hero-1": {
         "type": "hero",
         "settings": {
-          "hero_size": "large",
-          "text_size": "large"
+          "image": "shopify:\/\/shop_images\/FotoMujerDormida-09.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "large",
+          "title": "",
+          "text": "",
+          "button_label": "find out more",
+          "button_link": "shopify:\/\/collections\/pillows",
+          "button_animation_duration": 0.8
         }
       },
       "feature-row": {
         "type": "feature-row",
-        "settings": {}
+        "settings": {
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": ""
+        }
       },
       "feature-columns": {
         "type": "feature-columns",
         "blocks": {
           "feature-columns-0": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
           },
           "feature-columns-1": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
           },
           "feature-columns-2": {
             "type": "text_block",
-            "settings": {}
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": ""
+            }
           }
         },
         "block_order": [
@@ -38,19 +115,8 @@
           "feature-columns-2"
         ],
         "settings": {
-          "title": ""
-        }
-      },
-      "collection": {
-        "type": "collection",
-        "settings": {
-          "grid": 4
-        }
-      },
-      "hero-2": {
-        "type": "hero",
-        "settings": {
-          "text_size": "large"
+          "title": "",
+          "align_text": "left"
         }
       },
       "quotes": {
@@ -58,15 +124,24 @@
         "blocks": {
           "quotes-0": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
           },
           "quotes-1": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
           },
           "quotes-2": {
             "type": "quote",
-            "settings": {}
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
           }
         },
         "block_order": [
@@ -83,15 +158,24 @@
         "blocks": {
           "image-bar-0": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
           },
           "image-bar-1": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
           },
           "image-bar-2": {
             "type": "image",
-            "settings": {}
+            "settings": {
+              "alignment": "center",
+              "cta_label": ""
+            }
           }
         },
         "block_order": [
@@ -99,37 +183,508 @@
           "image-bar-1",
           "image-bar-2"
         ],
-        "settings": {}
+        "settings": {
+          "section_height": "medium"
+        }
       },
       "footer": {
         "type": "footer",
         "blocks": {
           "footer-0": {
             "type": "link_list",
-            "settings": {}
+            "settings": {
+              "title": "",
+              "menu": "footer"
+            }
           },
-          "footer-1": {
-            "type": "newsletter",
-            "settings": {}
+          "de5b2576-24c9-4dbb-a2e2-3728b80f20d0": {
+            "type": "link_list",
+            "settings": {
+              "title": "",
+              "menu": "footer-menu-2"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "de5b2576-24c9-4dbb-a2e2-3728b80f20d0"
         ],
         "settings": {
-          "show_payment_icons": true
+          "show_payment_icons": true,
+          "color_footer_bg": "#ffffff",
+          "color_footer_text": "#000000",
+          "show_locale_selector": false,
+          "show_currency_selector": true
+        }
+      },
+      "header-full-height": {
+        "type": "header-full-height",
+        "settings": {
+          "bg_color": "#1bd9a2",
+          "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/Logo_Bless_Nuevo.svg?v=1625582434",
+          "menu": "main-menu-home",
+          "contact_email": "veronica@blessmyfunk.com"
+        }
+      },
+      "1612038966e7e5032d": {
+        "type": "custom-svg-heading",
+        "settings": {
+          "bg_color": "#000000",
+          "c-h-1_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/LetrasFranjaNegra-04.svg?v=1614950998",
+          "c-h-1_svg__mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/its-not-for-everyone-mobile.svg?v=1625574657",
+          "c-h-1_color": "#ffffff",
+          "c-h-1_width": 90,
+          "c-h-1_width--mobile": 90,
+          "c-h-2_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/LetrasFranjaNegra-03.svg?v=1614950998",
+          "c-h-2_svg__mobile": "",
+          "c-h-2_color": "#a7abf2",
+          "c-h-2_width": 30,
+          "c-h-2_width--mobile": 70
+        }
+      },
+      "1613132499aef178d8": {
+        "type": "hero-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Studio_Session-065_as_Smart_Object-1MB.jpg",
+          "image_mobile": "shopify:\/\/shop_images\/Studio_Session-094_as_Smart_Object-1_copy.tif_3b9bc2ea-429f-46ea-8d51-3d5d8137b25b.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "adapt",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "Let's party",
+          "button_link": "shopify:\/\/products\/coffee-table-book"
+        }
+      },
+      "1613136972888c9a57": {
+        "type": "image-bar-svg",
+        "blocks": {
+          "1613136972888c9a57-1": {
+            "type": "image",
+            "settings": {
+              "svg_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/madrid-design-festival-02__logo.svg?v=1614950998",
+              "width": "25%",
+              "alignment": "center",
+              "link": ""
+            }
+          },
+          "1613136972888c9a57-2": {
+            "type": "image",
+            "settings": {
+              "svg_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/architectural-digest.svg?v=1614950998",
+              "width": "25%",
+              "alignment": "center",
+              "link": ""
+            }
+          },
+          "1613136972888c9a57-0": {
+            "type": "image",
+            "settings": {
+              "svg_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/vogue-talents.svg?v=1614950998",
+              "width": "50%",
+              "alignment": "center",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1613136972888c9a57-1",
+          "1613136972888c9a57-2",
+          "1613136972888c9a57-0"
+        ],
+        "settings": {
+          "section_height": "small"
+        }
+      },
+      "161331063317aefa0b": {
+        "type": "super-heading",
+        "settings": {
+          "bg_color": "#f5ef9d",
+          "padding": 120,
+          "heading": "WHEN LUXURY MEETS FUN",
+          "heading_color": "#000000",
+          "heading_font-size": 3.5,
+          "heading_font-size_mobile": 1.8
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "a43490d9-44ae-4424-bd2a-1b0e13d181df": {
+            "type": "collection",
+            "settings": {
+              "collection": "permanent-collection"
+            }
+          }
+        },
+        "block_order": [
+          "a43490d9-44ae-4424-bd2a-1b0e13d181df"
+        ],
+        "settings": {
+          "heading": "DISCOVER OUR SELECTION OF UNIQUE PILLOWS, DESIGNED AND CREATED IN DOMINICAN REPUBLIC",
+          "display_type": "all",
+          "sort": "alphabetical_reversed",
+          "grid": 3,
+          "bottom_banner": "shopify:\/\/shop_images\/FotoMujerDormida-09.jpg",
+          "fullwidth": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": false,
+          "media_size": "full-2",
+          "enable_image_zoom": false,
+          "enable_video_looping": false,
+          "fullwidth": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "super-heading__product": {
+        "type": "super-heading__product",
+        "settings": {
+          "bg_color": "#ffff43",
+          "padding": 30,
+          "heading": "For those who dare to play",
+          "heading_color": "#000000",
+          "heading_font-size": 1,
+          "heading_font-size_mobile": 1
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "fullwidth": true,
+          "heading": "Discover our selectionof unique pillows, designed and created in Dominican Republic",
+          "layout": "grid",
+          "grid": 3,
+          "rows": 3,
+          "bottom_banner": "shopify:\/\/shop_images\/FotoMujerDormida-09.jpg",
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": false
+        }
+      },
+      "img-with-text__about": {
+        "type": "img-with-text__about",
+        "settings": {
+          "heading": "ABOUT <br>\nUS",
+          "heading_font_size": 2.5,
+          "heading_line_height": 1.5,
+          "image": "shopify:\/\/shop_images\/BMFH_ABOUT_ASSETS-02.jpg",
+          "text": "<p>In 2019, fashion designer Verónica Modesto launched Bless My Funk Home, a modern homeware brand and design studio based in the Dominican Republic. Bless My Funk Home’s signature approach to bold colors, crafting textiles, and pattern printing with humor and a strong focus on uniqueness is inspired by the retro-future aesthetic, surrealism, and pop culture. The studio feels the need to reflect today’s society and consumer, aiming to create a fun and enjoyable environment for those who dare to play.<\/p><p><br\/>The brand has taken part in design events such as the Madrid Design Festival (2019) and Design Week RD (2019). Bless My Funk Home has also been featured in magazines like Vogue Talent, The Girl Mob, Santo Domingo Times, and Archivos de Arquitectura Antillana.<br\/><br\/>Verónica is an enthusiastic innovator and illustrator who graduated from Istituto Marangoni in Milan. Painting and drawing since she was a child helped her hone her art, fashion, and product design skills. As a designer, she wants to bring a new approach by merging fashion with the interior design industry.<br\/><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><\/p><p><br\/><\/p>",
+          "text_font_size": 1.2,
+          "silhouette": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/abut-us__ovalo-1.svg?v=1624756476",
+          "silhouette_styles": "width: 50%;\ntop: -25px;\nleft: 16%;"
+        }
+      },
+      "imgs__about": {
+        "type": "imgs__about",
+        "settings": {
+          "heading_top_offset": 0,
+          "heading_margin_top_bottom": 40,
+          "heading": "for the spouses <br>\nthat dont cook, <br>\nfor the love that <br>\ndont yield. <br>",
+          "heading_font_size": 1.8,
+          "heading_line_height": 2.6,
+          "image_1": "shopify:\/\/shop_images\/Studio_Session-013_as_Smart_Object-1_copy.jpg",
+          "image_2": "shopify:\/\/shop_images\/BMFH_ABOUT_ASSETS-01.jpg",
+          "silhouette": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/abut-us__ovalo-2.svg?v=1624756476",
+          "silhouette_styles": "top: -120px;\nwidth: 55%;"
+        }
+      },
+      "video-w-img__difusers": {
+        "type": "video-w-img__difusers",
+        "settings": {
+          "heading": "INSIDE THE CLOSET",
+          "fullwidth": true,
+          "image_overlay": "shopify:\/\/shop_images\/DIFUSOR_1.jpg",
+          "image": "shopify:\/\/shop_images\/WhatsApp_Image_2021-10-22_at_5.09.08_PM.jpg",
+          "image_position": "center center",
+          "video_link": "https:\/\/youtu.be\/yic4rDzYyBw",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "medium",
+          "video_title": "INSIDE THE CLOSET HOME FRAGRANCE",
+          "cta_text": "Shop Now",
+          "cta_url": "shopify:\/\/products\/inside-the-closet",
+          "text_size": "medium"
+        }
+      },
+      "video-w-img_2__difusers": {
+        "type": "video-w-img_2__difusers",
+        "settings": {
+          "show_section": true,
+          "heading": "PIANTINI GIRLS",
+          "fullwidth": true,
+          "image_overlay": "shopify:\/\/shop_images\/DSC03367.jpg",
+          "image": "shopify:\/\/shop_images\/Sin_titulo-2.jpg",
+          "image_position": "center center",
+          "video_link": "https:\/\/youtu.be\/DCLYmZAkHo8",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "large",
+          "video_title": "PIANTINI GIRLS      HOME FRAGRANCE",
+          "cta_text": "Shop Now",
+          "cta_url": "shopify:\/\/products\/piantini-girls",
+          "text_size": "medium"
+        }
+      },
+      "img-with-text__trade-services": {
+        "type": "img-with-text__trade-services",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/bmfhomepic1.png",
+          "layout": "left",
+          "title": "TRADE SERVICES",
+          "text": "<p>Our trade program is designed to make your job easily, to have on hand anything you need for your projects and to have exclusive access for commissions (custom products) and early access to new products and promotions. Available for national and international designers.<\/p>",
+          "button_label": "Apply Now",
+          "button_link": "shopify:\/\/pages\/trade-services-application"
+        }
+      },
+      "text-cols-w-img__trade-services": {
+        "type": "text-cols-w-img__trade-services",
+        "blocks": {
+          "c65cf439-e3d5-42a3-9078-baa1e67bc3cb": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "",
+              "text": "<p>10% off trade pricing and cash back<\/p><p>Physical and digital catalogues<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "8a4c622d-398b-4da6-aec7-787292304eb5": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "",
+              "text": "<p>Commission projects<\/p><p>Exclusive early access to promotions<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "b4a8fd2b-adc8-4737-aae7-a9f58ab2d774": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "",
+              "text": "<p>Exclusive early access to new products<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "c65cf439-e3d5-42a3-9078-baa1e67bc3cb",
+          "8a4c622d-398b-4da6-aec7-787292304eb5",
+          "b4a8fd2b-adc8-4737-aae7-a9f58ab2d774"
+        ],
+        "settings": {
+          "title": "MEMBER BENEFITS",
+          "align_text": "center"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": false
+        }
+      },
+      "16247580409bfc5188": {
+        "type": "featured-collection-flex",
+        "settings": {
+          "title": "Discover our selection",
+          "subtitle": "Of unique pillows",
+          "bg_color": "#000000",
+          "heading_color": "#a7abf2",
+          "text_color": "#ffffff",
+          "collection": "permanent-collection",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false,
+          "show_only_images": true
+        }
+      },
+      "text-cols-w-img__catalogue": {
+        "type": "text-cols-w-img__catalogue",
+        "blocks": {
+          "959a2300-7022-47bb-83b8-c7fdb082a6de": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "2018-2019 Pillows Catalogue",
+              "text": "",
+              "button_label": "PDF · Download",
+              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/BMFH_CATALOGUE_2019-20_PLLWS.pdf?v=1626194412"
+            }
+          },
+          "d9756313-087a-4743-8be7-9e69898fd50f": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "2020-2021 Pillows Catalogue",
+              "text": "",
+              "button_label": "PDF · Download",
+              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/BMFH_CATALOGUE_2021_PLLWS.pdf?v=1626194412"
+            }
+          },
+          "136dcc86-0ba4-4dbb-967a-7642a2550b83": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "2021 Pillows Catalogue",
+              "text": "",
+              "button_label": "PDF · Download",
+              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/catalogodigital2021_BMFH_2.pdf?v=1637241947"
+            }
+          },
+          "7f888023-1fda-4c1b-beb3-fc7f4ff15743": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "Coffee Table Book Catalogue",
+              "text": "",
+              "button_label": "PDF · Download",
+              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/CTB_CATALOGUE.pdf?v=1626194412"
+            }
+          },
+          "29bd631a-6ffc-47db-a467-4bd093e5257d": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "2022 PILLOWS OUTLET SALE",
+              "text": "",
+              "button_label": "PDF · DOWNLOAD",
+              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/OUTLET_SALE_BMFH_2.pdf?v=1645723181"
+            }
+          },
+          "47af25ff-53f8-4cb1-9297-3b08418e4703": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "2022 Shop & Relax catalogue",
+              "text": "",
+              "button_label": "PDF · Download",
+              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/PILLOWS_SPA-SHOP_RELAX.pdf?v=1660076685"
+            }
+          }
+        },
+        "block_order": [
+          "959a2300-7022-47bb-83b8-c7fdb082a6de",
+          "d9756313-087a-4743-8be7-9e69898fd50f",
+          "136dcc86-0ba4-4dbb-967a-7642a2550b83",
+          "7f888023-1fda-4c1b-beb3-fc7f4ff15743",
+          "29bd631a-6ffc-47db-a467-4bd093e5257d",
+          "47af25ff-53f8-4cb1-9297-3b08418e4703"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "center"
+        }
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+        }
+      },
+      "product-template-ctb": {
+        "type": "product-template-ctb",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "full",
+          "enable_image_zoom": false,
+          "enable_video_looping": false,
+          "fullwidth": true,
+          "download_btn_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/CTB_CATALOGUE.pdf?v=1626194412",
+          "download_btn_text": "Download Catalogue"
+        }
+      },
+      "super-heading__product-ctb": {
+        "type": "super-heading__product-ctb",
+        "settings": {
+          "bg_color": "#1bd8a1",
+          "padding": 65,
+          "heading": "Our Coffee Table Books are limited edition and made to order, please allow us from 7 to 10 business days to ship your piece.",
+          "heading_color": "#000000",
+          "heading_font-size": 1,
+          "heading_font-size_mobile": 1
+        }
+      },
+      "premiere-template": {
+        "type": "premiere-template",
+        "settings": {
+          "banner": "shopify:\/\/shop_images\/PREMIERE_SHOW-01.jpg"
+        }
+      },
+      "premiere-video": {
+        "type": "premiere-video",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/PREMIERE_SHOW-01_1.jpg",
+          "image_position": "center center",
+          "video_link": "https:\/\/www.youtube.com\/watch?v=l6aviwi5iag",
+          "show_overlay": false,
+          "style": "image_with_play",
+          "height": "medium",
+          "video_title": "",
+          "text_size": "medium"
+        }
+      },
+      "1630963986caf63f7f": {
+        "type": "video",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/PREMIERE_SHOW-01_1.jpg",
+          "image_position": "center center",
+          "video_link": "https:\/\/www.youtube.com\/watch?v=l6aviwi5iag",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "large",
+          "video_title": "",
+          "text_size": "medium"
+        }
+      },
+      "1630965626620528d0": {
+        "type": "video-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/PREMIERE_SHOW-01_1.jpg",
+          "image_position": "center top",
+          "video_link": "https:\/\/www.youtube.com\/watch?v=l6aviwi5iag",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "medium",
+          "video_title": "",
+          "text_size": "medium"
         }
       }
     },
     "content_for_index": [
+      "1630963986caf63f7f",
+      "1630965626620528d0",
       "hero-1",
-      "feature-row",
-      "feature-columns",
-      "collection",
-      "hero-2",
-      "quotes",
-      "image-bar"
+      "16247580409bfc5188",
+      "1612038966e7e5032d",
+      "1613132499aef178d8",
+      "1613136972888c9a57",
+      "161331063317aefa0b"
     ]
   },
   "presets": {
@@ -137,7 +692,8 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "hero-1": {
           "type": "hero",
@@ -148,22 +704,26 @@
         },
         "feature-row": {
           "type": "feature-row",
-          "settings": {}
+          "settings": {
+          }
         },
         "feature-columns": {
           "type": "feature-columns",
           "blocks": {
             "feature-columns-0": {
               "type": "text_block",
-              "settings": {}
+              "settings": {
+              }
             },
             "feature-columns-1": {
               "type": "text_block",
-              "settings": {}
+              "settings": {
+              }
             },
             "feature-columns-2": {
               "type": "text_block",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -173,12 +733,6 @@
           ],
           "settings": {
             "title": ""
-          }
-        },
-        "collection": {
-          "type": "collection",
-          "settings": {
-            "grid": 4
           }
         },
         "hero-2": {
@@ -192,15 +746,18 @@
           "blocks": {
             "quotes-0": {
               "type": "quote",
-              "settings": {}
+              "settings": {
+              }
             },
             "quotes-1": {
               "type": "quote",
-              "settings": {}
+              "settings": {
+              }
             },
             "quotes-2": {
               "type": "quote",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -217,15 +774,18 @@
           "blocks": {
             "image-bar-0": {
               "type": "image",
-              "settings": {}
+              "settings": {
+              }
             },
             "image-bar-1": {
               "type": "image",
-              "settings": {}
+              "settings": {
+              }
             },
             "image-bar-2": {
               "type": "image",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -233,18 +793,21 @@
             "image-bar-1",
             "image-bar-2"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": {}
+              "settings": {
+              }
             },
             "footer-1": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -260,7 +823,6 @@
         "hero-1",
         "feature-row",
         "feature-columns",
-        "collection",
         "hero-2",
         "quotes",
         "image-bar"
@@ -361,15 +923,6 @@
             "autorotate_speed": 5
           }
         },
-        "featured-collections": {
-          "type": "collection",
-          "settings": {
-            "grid": 3,
-            "rows": 1,
-            "show_vendor": true,
-            "show_view_all": true
-          }
-        },
         "product-template": {
           "type": "product-template",
           "settings": {
@@ -396,20 +949,23 @@
         },
         "1492033809691": {
           "type": "map",
-          "settings": {}
+          "settings": {
+          }
         },
         "1492033877875": {
           "type": "quotes",
           "blocks": {
             "1492033877875-0": {
               "type": "quote",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "1492033877875-0"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "1492033924902": {
           "type": "custom-content",
@@ -435,15 +991,18 @@
           "blocks": {
             "1492096252560-0": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "1492096252560-1": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "1492096252560-2": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -482,15 +1041,18 @@
           "blocks": {
             "link_list": {
               "type": "link_list",
-              "settings": {}
+              "settings": {
+              }
             },
             "text": {
               "type": "text",
-              "settings": {}
+              "settings": {
+              }
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -506,7 +1068,6 @@
       },
       "content_for_index": [
         "hero",
-        "featured-collections",
         "slideshow",
         "1492033924902",
         "1492096252560",
