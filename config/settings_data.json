@@ -674,9 +674,25 @@
           "video_title": "",
           "text_size": "medium"
         }
+      },
+      "166056303963e65136": {
+        "type": "hero-new",
+        "settings": {
+          "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_1.png",
+          "title": ""
+        }
+      },
+      "1660563045905a93ed": {
+        "type": "hero-new-2",
+        "settings": {
+          "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_2_2000.jpg",
+          "title": "Need a <br>\nLittle <br>\nMe Time?"
+        }
       }
     },
     "content_for_index": [
+      "166056303963e65136",
+      "1660563045905a93ed",
       "1630963986caf63f7f",
       "1630965626620528d0",
       "hero-1",
