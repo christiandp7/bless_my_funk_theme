@@ -688,11 +688,23 @@
           "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_2_2000.jpg",
           "title": "Enjoy <br>\nA <span>peaceful<\/span> Stay <br>\nWhile Choosing <br>\nYour Favorite Pillows."
         }
+      },
+      "1660563214f92a06e7": {
+        "type": "img-w-text-full",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/FONDO_4.jpg",
+          "layout": "left",
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
       }
     },
     "content_for_index": [
       "166056303963e65136",
       "1660563045905a93ed",
+      "1660563214f92a06e7",
       "1630963986caf63f7f",
       "1630965626620528d0",
       "hero-1",
