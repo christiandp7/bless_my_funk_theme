@@ -679,14 +679,14 @@
         "type": "hero-new",
         "settings": {
           "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_1.png",
-          "title": ""
+          "title": "Need a <br>\nLittle <br>\nMe Time?"
         }
       },
       "1660563045905a93ed": {
         "type": "hero-new-2",
         "settings": {
           "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_2_2000.jpg",
-          "title": "Need a <br>\nLittle <br>\nMe Time?"
+          "title": "Enjoy <br>\nA <span>peaceful<\/span> Stay <br>\nWhile Choosing <br>\nYour Favorite Pillows."
         }
       }
     },
