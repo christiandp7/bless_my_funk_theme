@@ -8,8 +8,7 @@
       {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
       {% include 'image-style', image: section.settings.image, height: 545, wrapper_id: wrapper_id, img_id: img_id %}
       {%- endcomment -%}
-            <img id="{{ img_id }}"
-                 class="feature-row__image lazyload"
+            <img class="feature-row__image lazyload"
                  data-src="{{ section.settings.image | img_url: '1000x' }}"
                  {%- comment -%}
                  data-src="{{ img_url }}"
@@ -34,9 +33,20 @@
     {% endif %}
 
     <div class="feature-row__item feature-row__text">
+      {% if section.settings.content_bg != blank %}
+        <div class="content-bg__container">
+          <img class="content-bg__img lazyload"
+            data-src="{{ section.settings.content_bg | img_url: '2000x' }}"
+            data-sizes="auto"
+            alt="{{ section.settings.content_bg.alt | escape }}">
+        </div>
+      {% endif %}
+        
+
+
       <div class="feature-row__inner">
         {% if section.settings.title != blank %}
-          <h2 class="h3">{{ section.settings.title | escape }}</h2>
+          <h2 class="h3">{{ section.settings.title }}</h2>
         {% endif %}
         {% if section.settings.text != blank %}
           <div class="rte rte-setting featured-row__subtext">{{ section.settings.text }}</div>
@@ -173,7 +183,11 @@
       ]
     },
     {
-      "type": "text",
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "html",
       "id": "title",
       "label": {
         "da": "Overskrift",
@@ -307,6 +321,11 @@
         "zh-CN": "按钮链接",
         "zh-TW": "按鈕連結"
       }
+    },
+    {
+      "type": "image_picker",
+      "id": "content_bg",
+      "label": "Content Background Image"
     }
   ],
   "presets": [
