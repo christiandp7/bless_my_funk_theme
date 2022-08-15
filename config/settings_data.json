@@ -706,12 +706,19 @@
           "button_label": "",
           "button_link": ""
         }
+      },
+      "16605732388e37e59c": {
+        "type": "marquee",
+        "settings": {
+          "text": "Coming Soon"
+        }
       }
     },
     "content_for_index": [
       "166056303963e65136",
       "1660563045905a93ed",
       "1660563214f92a06e7",
+      "16605732388e37e59c",
       "1630963986caf63f7f",
       "1630965626620528d0",
       "hero-1",
