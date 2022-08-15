@@ -701,10 +701,11 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/FONDO_4_fixed.jpg",
           "layout": "left",
-          "title": "Image with text",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "title": "REST. RESET &amp; <br>\nBOUNCE BACK",
+          "text": "",
           "button_label": "",
-          "button_link": ""
+          "button_link": "",
+          "content_bg": "shopify:\/\/shop_images\/FONDE_3__2000x_585c9a03-ef1a-4e5a-ab11-9afe2e92ca5d.jpg"
         }
       },
       "16605732388e37e59c": {
