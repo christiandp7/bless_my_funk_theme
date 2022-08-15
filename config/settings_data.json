@@ -56,6 +56,7 @@
       },
       "hero-1": {
         "type": "hero",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/FotoMujerDormida-09.jpg",
           "alignment": "center",
@@ -228,6 +229,7 @@
       },
       "1612038966e7e5032d": {
         "type": "custom-svg-heading",
+        "disabled": true,
         "settings": {
           "bg_color": "#000000",
           "c-h-1_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/LetrasFranjaNegra-04.svg?v=1614950998",
@@ -244,6 +246,7 @@
       },
       "1613132499aef178d8": {
         "type": "hero-2",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/Studio_Session-065_as_Smart_Object-1MB.jpg",
           "image_mobile": "shopify:\/\/shop_images\/Studio_Session-094_as_Smart_Object-1_copy.tif_3b9bc2ea-429f-46ea-8d51-3d5d8137b25b.jpg",
@@ -259,6 +262,7 @@
       },
       "1613136972888c9a57": {
         "type": "image-bar-svg",
+        "disabled": true,
         "blocks": {
           "1613136972888c9a57-1": {
             "type": "image",
@@ -299,6 +303,7 @@
       },
       "161331063317aefa0b": {
         "type": "super-heading",
+        "disabled": true,
         "settings": {
           "bg_color": "#f5ef9d",
           "padding": 120,
@@ -506,6 +511,7 @@
       },
       "16247580409bfc5188": {
         "type": "featured-collection-flex",
+        "disabled": true,
         "settings": {
           "title": "Discover our selection",
           "subtitle": "Of unique pillows",
@@ -664,6 +670,7 @@
       },
       "1630965626620528d0": {
         "type": "video-2",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/PREMIERE_SHOW-01_1.jpg",
           "image_position": "center top",
