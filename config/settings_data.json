@@ -699,7 +699,7 @@
       "1660563214f92a06e7": {
         "type": "img-w-text-full",
         "settings": {
-          "image": "shopify:\/\/shop_images\/FONDO_4.jpg",
+          "image": "shopify:\/\/shop_images\/FONDO_4_fixed.jpg",
           "layout": "left",
           "title": "Image with text",
           "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
