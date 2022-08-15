@@ -713,6 +713,13 @@
         "settings": {
           "text": "Coming Soon"
         }
+      },
+      "1660573690d9d21400": {
+        "type": "banner-blur",
+        "settings": {
+          "title": "The Blessed Trade",
+          "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...<\/p><p>Quality products, dedicated services, and exclusive pricing through our Trade\/Desian Concierge Program<\/p>"
+        }
       }
     },
     "content_for_index": [
@@ -720,6 +727,7 @@
       "1660563045905a93ed",
       "1660563214f92a06e7",
       "16605732388e37e59c",
+      "1660573690d9d21400",
       "1630963986caf63f7f",
       "1630965626620528d0",
       "hero-1",
