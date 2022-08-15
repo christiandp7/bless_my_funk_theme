@@ -1,0 +1,39 @@
+<div class="section--{{ section.id }} banner-blur__inner" data-section-id="{{ section.id }}" data-section-type="banner-blur-height-section">
+
+  <div class="bubble green"></div>
+  <div class="bubble orange"></div>
+  <div class="bubble yellow"></div>
+  <div class="bubble purple"></div>
+
+  <div class="banner-blur__content">
+    <h2>{{ section.settings.title | escape }}</h2>
+    {{ section.settings.text }}
+  </div>
+
+</div>
+{% schema %}
+{
+  "name": "Banner Blur",
+  "class": "banner-blur",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "The Blessed Trade"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Lorem ipsum dolor...</p>"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Blur",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

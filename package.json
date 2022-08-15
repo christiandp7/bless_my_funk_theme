@@ -9,9 +9,9 @@
   },
   "scripts": {
     "start": "theme watch --allow-live",
-    "sass": "sass --no-source-map --watch src/scss/index.scss assets/custom.scss",
-    "sass:build": "sass --no-source-map src/scss/index.scss assets/custom.scss",
-    "sass:production": "npm run sass:build && postcss -r ./assets/custom.scss",
+    "sass": "sass --no-source-map --watch src/scss/index.scss assets/custom.css",
+    "sass:build": "sass --no-source-map src/scss/index.scss assets/custom.css",
+    "sass:production": "npm run sass:build && postcss -r ./assets/custom.css",
     "deploy": "npm run sass:production && theme deploy --allow-live"
   },
   "repository": {

@@ -7697,5 +7697,11 @@ $(document).ready(function () {
 		$(this).find('.slick-list').height(currentSlideHeight)
 	});
 
+	$('.marquee').marquee({
+		duration: 16000,
+		gap: 0,
+		delayBeforeStart: 0,
+		duplicated: true
+	});
 	
 })

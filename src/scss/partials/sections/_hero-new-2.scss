@@ -1,0 +1,33 @@
+.hero_new_2 {
+  .hero-new__inner {
+    position: relative;
+    line-height: 0;
+  }
+  .hero-new__logo {
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .hero-new__img {
+    width: 100%;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+  .hero-new__content {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    color: #fff;
+    font-size: 2.1875em;
+    line-height: 1.5;
+
+    span {
+      color: rgb(244, 243, 173);
+    }
+  }
+}
