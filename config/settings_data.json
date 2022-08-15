@@ -703,8 +703,8 @@
           "layout": "left",
           "title": "REST. RESET &amp; <br>\nBOUNCE BACK",
           "text": "",
-          "button_label": "",
-          "button_link": "",
+          "button_label": "Find out more",
+          "button_link": "shopify:\/\/collections\/all",
           "content_bg": "shopify:\/\/shop_images\/FONDE_3__2000x_585c9a03-ef1a-4e5a-ab11-9afe2e92ca5d.jpg"
         }
       },
