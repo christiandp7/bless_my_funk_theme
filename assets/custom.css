@@ -1963,14 +1963,45 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .pillows-spa .pillows-spa__body {
+  flex: 1;
+}
+.pillows-spa .pillows-spa__body-wrapper {
   display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+.pillows-spa .pillows-spa__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+.pillows-spa .pillows-spa__content-container {
+  text-align: center;
+}
+.pillows-spa .pillows-spa__content-container h2 {
+  font-size: 2rem;
+}
+.pillows-spa .pillows-spa__pillows {
+  width: 65%;
+  display: flex;
+  align-items: flex-end;
+}
+.pillows-spa .pillows-spa__pillows-container {
+  width: 100%;
+  position: relative;
+  bottom: -16%;
 }
 .pillows-spa .pillows-spa__footer {
   background-color: #E5A1C1;
   width: 100%;
-  height: 20%;
+  height: 22%;
 }
 
 .animated.bounce-top {

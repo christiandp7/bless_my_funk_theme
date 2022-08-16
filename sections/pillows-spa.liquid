@@ -10,8 +10,23 @@
 
   <div class="pillows-spa__wrapper">
     <div class="pillows-spa__body">
-      <div class="pillows-spa__content"></div>
-      <div class="pillows-spa__pillows"></div>
+      <div class="pillows-spa__body-wrapper">
+      <div class="pillows-spa__content">
+        <div class="pillows-spa__content-container">
+          <p>{{ section.settings.pretitle }}</p>
+          <h2>{{ section.settings.title | escape }}</h2>
+          <p>{{ section.settings.subtitle }}</p>
+          {% if section.settings.cta_url != blank %}
+            <a class="btn" href="{{ section.settings.cta_url }}">{{ section.settings.cta_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="pillows-spa__pillows">
+        <div class="pillows-spa__pillows-container">
+          2
+        </div>
+      </div>
+    </div>
     </div>
     <div class="pillows-spa__footer"></div>
   </div>

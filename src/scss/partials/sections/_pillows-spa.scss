@@ -14,15 +14,46 @@
     left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .pillows-spa__body {
-    display: flex;
+    flex: 1;
   }
-  .pillows-spa__content {}
-  .pillows-spa__pillows {}
+  .pillows-spa__body-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+  }
+  .pillows-spa__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+  }
+  .pillows-spa__content-container {
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .pillows-spa__pillows {
+    width: 65%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .pillows-spa__pillows-container {
+    width: 100%;
+    position: relative;
+    bottom: -16%;
+  }
+
   .pillows-spa__footer {
     background-color: #E5A1C1;
     width: 100%;
-    height: 20%;
+    height: 22%;
   }
 }
