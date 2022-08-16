@@ -23,7 +23,18 @@
       </div>
       <div class="pillows-spa__pillows">
         <div class="pillows-spa__pillows-container">
-          2
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_1 | img_url: '300x300' }}" alt="{{ section.settings.pillow_1.alt | escape }}">
+          </div>
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_2 | img_url: '300x300' }}" alt="{{ section.settings.pillow_2.alt | escape }}">
+          </div>
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_3 | img_url: '300x300' }}" alt="{{ section.settings.pillow_3.alt | escape }}">
+          </div>
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_4 | img_url: '300x300' }}" alt="{{ section.settings.pillow_4.alt | escape }}">
+          </div>
         </div>
       </div>
     </div>
