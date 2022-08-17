@@ -720,11 +720,23 @@
           "title": "The Blessed Trade",
           "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...<\/p><p>Quality products, dedicated services, and exclusive pricing through our Trade\/Desian Concierge Program<\/p>"
         }
+      },
+      "1660737062158ee8fe": {
+        "type": "pillows-spa",
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/FONDE_3__2000x_e87ca881-e65c-420c-8d78-73e14d6dac2a.jpg",
+          "pretitle": "We Present",
+          "title": "Pillow's Spa",
+          "subtitle": "Collection",
+          "cta_text": "Shop & Relax",
+          "cta_url": "shopify:\/\/collections\/all"
+        }
       }
     },
     "content_for_index": [
       "166056303963e65136",
       "1660563045905a93ed",
+      "1660737062158ee8fe",
       "1660563214f92a06e7",
       "16605732388e37e59c",
       "1660573690d9d21400",
