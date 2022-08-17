@@ -731,6 +731,20 @@
           "cta_text": "Shop & Relax",
           "cta_url": "shopify:\/\/collections\/all"
         }
+      },
+      "1660742240f0a7760d": {
+        "type": "a-little-sneak-peek",
+        "settings": {
+          "title": "A Little Sneak Peek?",
+          "line_1": "Early Access",
+          "line_2": "Custom Products",
+          "line_3": "BIM\/CAD Models",
+          "line_4": "Private Events",
+          "line_5": "Dedicated Concierge",
+          "cta_text": "I want to apply",
+          "cta_url": "shopify:\/\/collections\/all",
+          "img": "shopify:\/\/shop_images\/FONDO_5__1000x_633d68a6-32ff-4709-bbcc-be66b448aa8a.jpg"
+        }
       }
     },
     "content_for_index": [
@@ -740,6 +754,7 @@
       "1660563214f92a06e7",
       "16605732388e37e59c",
       "1660573690d9d21400",
+      "1660742240f0a7760d",
       "1630963986caf63f7f",
       "1630965626620528d0",
       "hero-1",
