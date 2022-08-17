@@ -2178,6 +2178,7 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 .piantini-girls__wrapper {
   position: relative;
   padding: 100px 0;
+  overflow: hidden;
 }
 .piantini-girls__wrapper .piantini-girls__inner {
   display: flex;
