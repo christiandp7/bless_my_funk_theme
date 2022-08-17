@@ -1,0 +1,106 @@
+<div class="section--{{ section.id }}" data-section-id="{{ section.id }}">
+  <div class="sneak-peek__wrapper">
+    <div class="sneak-peek__content-col">
+      <div class="sneak-peek__content">
+        <h2 class="sneak-peek__title">{{ section.settings.title | escape }}</h2>
+        <div class="sneak-peek__line">{{ section.settings.line_1 | escape}}</div>
+        <div class="sneak-peek__line">{{ section.settings.line_2 | escape}}</div>
+        <div class="sneak-peek__line">{{ section.settings.line_3 | escape}}</div>
+        <div class="sneak-peek__line">{{ section.settings.line_4 | escape}}</div>
+        <div class="sneak-peek__line">{{ section.settings.line_5 | escape}}</div>
+        {% if section.settings.cta_url != blank %}
+          <div class="sneak-peek__cta-container">
+            <a href="{{ section.settings.cta_url }}" class="btn">{{ section.settings.cta_text | escape }}</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="sneak-peek__img-col">
+      <div>
+        {% render 'bmf-stamp', class: "sneak-peek__stamp", width: 150, height: 150 %}
+      </div>
+      {% if section.settings.img != blank %}
+        <img class="sneak-peek__img lazyload"
+          data-src="{{ section.settings.img | img_url: '1000x' }}"
+          data-sizes="auto"
+          alt="{{ section.settings.img.alt | escape }}">
+      {% else %}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "A Little Sneak Peek",
+  "class": "sneak-peek",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "A Little Sneak Peek?"
+    },
+    {
+      "type": "text",
+      "id": "line_1",
+      "label": "Line 1",
+      "default": "Early Access"
+    },
+    {
+      "type": "text",
+      "id": "line_2",
+      "label": "Line 2",
+      "default": "Custom Products"
+    },
+    {
+      "type": "text",
+      "id": "line_3",
+      "label": "Line 3",
+      "default": "BIM/CAD Models"
+    },
+    {
+      "type": "text",
+      "id": "line_4",
+      "label": "Line 4",
+      "default": "Private Events"
+    },
+    {
+      "type": "text",
+      "id": "line_5",
+      "label": "Line 5",
+      "default": "Dedicated Concierge"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "I want to apply"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "A Little Sneak Peek",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

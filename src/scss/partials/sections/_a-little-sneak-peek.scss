@@ -1,0 +1,117 @@
+.sneak-peek__wrapper {
+  display: flex;
+  @include media-max-width($large-down) {
+    flex-wrap: wrap;
+  }
+
+  .sneak-peek__img-col, .sneak-peek__content-col {
+    width: 50%;
+
+    @include media-max-width($large-down) {
+      width: 100%;
+    }
+  }
+
+  .sneak-peek__content-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #282828;
+  }
+  .sneak-peek__content {
+    text-align: center;
+    padding: 35px 20px;
+  }
+  .sneak-peek__title {
+    color: #266B66;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .sneak-peek__line {
+    padding: 10px 8px;
+    margin-bottom: 1px;
+    text-align: center;
+    
+    &:nth-child(2) {
+      background-color: #EA8B78;
+    }
+    &:nth-child(3) {
+      background-color: #F0D3B8;
+    }
+    &:nth-child(4) {
+      background-color: #E5A1C1;
+    }
+    &:nth-child(5) {
+      background-color: #C2D4B4;
+    }
+    &:nth-child(6) {
+      background-color: #B0BAC8;
+    }
+  }
+  .sneak-peek__cta-container {
+    margin-top: 38px;
+    text-align: center;
+    .btn {
+      border-radius: 8px;
+      color: #000;
+      border-color: #000;
+      background-color: #9C72FF;
+      &:hover {
+        color: #fff;
+        background-color: #000;
+      }
+    }
+  }
+
+  .sneak-peek__img-col {
+    position: relative;
+    line-height: 0;
+  }
+  .sneak-peek__img {
+    width: 100%;
+  }
+
+  .sneak-peek__stamp {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    text-transform: uppercase;  
+    -webkit-animation: rotate-center 8s linear infinite ;
+	        animation: rotate-center 8s linear infinite ;
+    
+    @include media-max-width($medium-down) {
+      width: 100px;
+      height: 100px;
+      left: 22px;
+    }
+    text {
+      font-family: "Blair ITC Medium", Arial, Helvetica, sans-serif;
+    }
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: translateY(-50%) rotate(0);
+            transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) rotate(360deg);
+            transform: translateY(-50%) rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: translateY(-50%) rotate(0);
+            transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) rotate(360deg);
+            transform: translateY(-50%) rotate(360deg);
+  }
+}
