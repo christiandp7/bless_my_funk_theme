@@ -729,7 +729,11 @@
           "title": "Pillow's Spa",
           "subtitle": "Collection",
           "cta_text": "Shop & Relax",
-          "cta_url": "shopify:\/\/collections\/all"
+          "cta_url": "shopify:\/\/collections\/all",
+          "pillow_1": "shopify:\/\/shop_images\/25.png",
+          "pillow_2": "shopify:\/\/shop_images\/28.png",
+          "pillow_3": "shopify:\/\/shop_images\/26.png",
+          "pillow_4": "shopify:\/\/shop_images\/10.png"
         }
       },
       "1660742240f0a7760d": {
