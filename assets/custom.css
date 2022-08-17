@@ -2175,6 +2175,181 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
     transform: translateY(-50%) rotate(360deg);
   }
 }
+.piantini-girls__wrapper {
+  position: relative;
+  padding: 100px 0;
+}
+.piantini-girls__wrapper .piantini-girls__inner {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1740px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.piantini-girls__wrapper .piantini-girl__card {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 62vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 50px 20px;
+}
+@media screen and (max-width: 1499px) {
+  .piantini-girls__wrapper .piantini-girl__card {
+    width: 75vw;
+  }
+}
+.piantini-girls__wrapper .piantini-girls__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.piantini-girls__wrapper .piantini-girls__title {
+  font-size: 3rem;
+  margin-bottom: 28px;
+}
+.piantini-girls__wrapper .piantini-girls__richtext {
+  max-width: 500px;
+  color: #fff;
+}
+.piantini-girls__wrapper .piantini-girls__richtext p {
+  direction: rtl;
+  text-align: justify;
+  color: #fff;
+}
+.piantini-girls__wrapper .btn {
+  margin-top: 20px;
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+  border-radius: 8px;
+}
+.piantini-girls__wrapper .piantini-girls__img {
+  position: absolute;
+  top: -10%;
+  left: -2%;
+  width: 32%;
+  transform: rotate(345deg);
+}
+.piantini-girls__wrapper .piantini-girls__img.float {
+  -webkit-animation: floating 3s ease-in-out infinite;
+  animation: floating 3s ease-in-out infinite;
+}
+.piantini-girls__wrapper .piantini-girls__img.piantini-girls__img_blur {
+  top: -8%;
+  left: -9%;
+  width: 37%;
+  -webkit-animation: floating-blur 3s ease-in-out infinite;
+  animation: floating-blur 3s ease-in-out infinite;
+}
+.piantini-girls__wrapper .bubble {
+  position: absolute;
+  border-radius: 50%;
+}
+.piantini-girls__wrapper .bubble.orange_1 {
+  background-color: #FB5341;
+  top: -34vw;
+  left: -15vw;
+  width: 60vw;
+  height: 60vw;
+  filter: blur(14vw);
+}
+.piantini-girls__wrapper .bubble.orange_2 {
+  background-color: #FB5341;
+  bottom: -10vw;
+  left: 46vw;
+  width: 18vw;
+  height: 18vw;
+  filter: blur(8vw);
+}
+.piantini-girls__wrapper .bubble.pink_1 {
+  background-color: #FA0971;
+  top: -12vw;
+  right: -14vw;
+  width: 58vw;
+  height: 40vw;
+  filter: blur(12vw);
+}
+.piantini-girls__wrapper .bubble.pink_2 {
+  background-color: #F8B7D6;
+  bottom: -22%;
+  right: -5%;
+  width: 20vw;
+  height: 20vw;
+  filter: blur(85px);
+}
+.piantini-girls__wrapper .bubble.pink_3 {
+  background-color: #F8B7D6;
+  bottom: -8vw;
+  left: 0%;
+  width: 20vw;
+  height: 20vw;
+  filter: blur(5vw);
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+  }
+  50% {
+    -webkit-transform: translateY(-2%) rotate(345deg);
+    transform: translateY(-2%) rotate(345deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+  }
+  50% {
+    -webkit-transform: translateY(-2.5%) rotate(345deg);
+    transform: translateY(-2.5%) rotate(345deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+  }
+}
+@-webkit-keyframes floating-blur {
+  0% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+    filter: blur(0);
+  }
+  50% {
+    -webkit-transform: translateY(1%) rotate(345deg);
+    transform: translateY(1%) rotate(345deg);
+    filter: blur(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+    filter: blur(0);
+  }
+}
+@keyframes floating-blur {
+  0% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+    filter: blur(0);
+  }
+  50% {
+    -webkit-transform: translateY(1%) rotate(345deg);
+    transform: translateY(1%) rotate(345deg);
+    filter: blur(15px);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(345deg);
+    transform: translateY(0) rotate(345deg);
+    filter: blur(0);
+  }
+}
 .animated.bounce-top {
   -webkit-animation: bounce-top 1s;
   animation: bounce-top 1s;
