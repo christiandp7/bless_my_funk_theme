@@ -1,0 +1,91 @@
+<div class="section--{{ section.id }}" data-section-id="{{ section.id }}">
+  <div class="piantini-girls__wrapper">
+
+    <div class="bubble orange_1"></div>
+    <div class="bubble orange_2"></div>
+    <div class="bubble pink_1"></div>
+    <div class="bubble pink_2"></div>
+    <div class="bubble pink_3"></div>
+
+    <div class="piantini-girls__inner">
+      <div class="piantini-girl__card">
+        <div class="piantini-girls__content">
+          <h2 class="piantini-girls__title">{{ section.settings.title }}</h2>
+          <div class="piantini-girls__richtext">{{ section.settings.text }}</div>
+          {% if section.settings.cta_url != blank %}
+          <a class="btn" href="{{ section.settings.cta_url }}">{{ section.settings.cta_text }}</a>
+          {% endif %}
+        </div>
+        {% if section.settings.img_blur != blank %}
+          <img class="piantini-girls__img piantini-girls__img_blur lazyload"
+            data-src="{{ section.settings.img_blur | img_url: '500x' }}"
+            data-sizes="auto"
+            alt="{{ section.settings.img_blur.alt | escape }}">
+        {% endif %}
+        {% if section.settings.img != blank %}
+          <img class="piantini-girls__img float lazyload"
+            data-src="{{ section.settings.img | img_url: '500x' }}"
+            data-sizes="auto"
+            alt="{{ section.settings.img.alt | escape }}">
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Piantini Girls",
+  "class": "piantini-girls",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Piantini Girls"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Piantini Girls is a ...</p>"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Hook me up"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_blur",
+      "label": "Image Blur"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Piantini Girls",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
