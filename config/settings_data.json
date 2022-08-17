@@ -749,6 +749,17 @@
           "cta_url": "shopify:\/\/collections\/all",
           "img": "shopify:\/\/shop_images\/FONDO_5__1000x_633d68a6-32ff-4709-bbcc-be66b448aa8a.jpg"
         }
+      },
+      "166077378500f3bed9": {
+        "type": "piantini-girls",
+        "settings": {
+          "title": "Piantini Girls",
+          "text": "<p>Piantini Girls is a powerful, bubbly and rosy scent; a craving for a properly chilled champagne<\/p><p>The Piantini Girls scent will transport you to an exclusive atmosphere. Let your nose guide you through a voyage of everlasting flower waves<\/p>",
+          "cta_text": "Hook me up",
+          "cta_url": "shopify:\/\/collections\/all",
+          "img": "shopify:\/\/shop_images\/BOTTLE_cropped.png",
+          "img_blur": "shopify:\/\/shop_images\/BOTELLA_BLUR_cropped.png"
+        }
       }
     },
     "content_for_index": [
@@ -759,6 +770,7 @@
       "16605732388e37e59c",
       "1660573690d9d21400",
       "1660742240f0a7760d",
+      "166077378500f3bed9",
       "1630963986caf63f7f",
       "1630965626620528d0",
       "hero-1",
