@@ -7703,5 +7703,30 @@ $(document).ready(function () {
 		delayBeforeStart: 0,
 		duplicated: true
 	});
+
+	$('.pillows-spa__pillows-container').slick({
+		slidesToShow: 4,
+		// adaptiveHeight: true,
+		arrows: false,
+		// focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					variableWidth: true,
+					autoplay: true,
+					autoplaySpeed: 3500,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 500,
+				settings: {
+					slidesToShow: 2,
+				}
+			}
+		],
+	})
 	
 })

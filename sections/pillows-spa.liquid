@@ -1,0 +1,121 @@
+<div class="section--{{ section.id }}" data-section-id="{{ section.id }}">
+  {% if section.settings.bg_image != blank %}
+    <div class="pillows-spa__bg-container">
+      <img class="pillows-spa__bg-img lazyload"
+      data-src="{{ section.settings.bg_image | img_url: '2000x' }}"
+      data-sizes="auto"
+      alt="{{ section.settings.bg_image.alt | escape }}">
+    </div>
+  {% endif %}
+
+  <div class="pillows-spa__wrapper">
+    <div class="pillows-spa__body">
+      <div class="pillows-spa__content">
+        <div class="pillows-spa__content-container">
+          <p>{{ section.settings.pretitle }}</p>
+          <h2>{{ section.settings.title | escape }}</h2>
+          <p>{{ section.settings.subtitle }}</p>
+          {% if section.settings.cta_url != blank %}
+            <a class="btn" href="{{ section.settings.cta_url }}">{{ section.settings.cta_text }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="pillows-spa__pillows">
+        <div class="pillows-spa__pillows-container">
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_1 | img_url: '300x300' }}" alt="{{ section.settings.pillow_1.alt | escape }}">
+          </div>
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_2 | img_url: '300x300' }}" alt="{{ section.settings.pillow_2.alt | escape }}">
+          </div>
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_3 | img_url: '300x300' }}" alt="{{ section.settings.pillow_3.alt | escape }}">
+          </div>
+          <div class="pillow-item">
+            <img src="{{ section.settings.pillow_4 | img_url: '300x300' }}" alt="{{ section.settings.pillow_4.alt | escape }}">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pillows-spa__footer"></div>
+  </div>
+
+
+
+</div>
+{% schema %}
+{
+  "name": "Pillows Spa",
+  "class": "pillows-spa",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "BG Image"
+    },
+    {
+      "type": "text",
+      "id": "pretitle",
+      "label": "Pretitle",
+      "default": "We Present"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Pillow's Spa"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Collection"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button Text",
+      "default": "Shop & Relax"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Pillows"
+    },
+    {
+      "type": "image_picker",
+      "id": "pillow_1",
+      "label": "Pillow Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "pillow_2",
+      "label": "Pillow Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "pillow_3",
+      "label": "Pillow Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "pillow_4",
+      "label": "Pillow Image 4"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pillows Spa",
+      "category": "image"
+    }
+  ]
+}
+{% endschema %}
