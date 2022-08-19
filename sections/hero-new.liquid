@@ -5,7 +5,7 @@
   </div>
     
   {%- if section.settings.hero_new_desktop != blank -%}
-    <img class="hero-new__img lazyload lazypreload"
+    <img class="hero-new__img hero-new__img--desktop lazyload lazypreload"
       src="{{ section.settings.hero_new_desktop | img_url: '1920x' }}"
       data-src="{{ img_url }}"
       data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
@@ -19,6 +19,19 @@
       {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
     </span>
   {%- endif -%}
+
+  {%- if section.settings.hero_new_mobile != blank -%}
+    <img class="hero-new__img hero-new__img--mobile lazyload lazypreload"
+      src="{{ section.settings.hero_new_mobile | img_url: '768x' }}"
+      data-src="{{ img_url }}"
+      data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+      data-aspectratio="{{ section.settings.hero_new_mobile.aspect_ratio }}"
+      data-sizes="auto"
+      style="object-position: {{ section.settings.alignment }};"
+      alt="{{ section.settings.hero_new_mobile.alt | escape }}">
+  {%- endif -%}
+
+  
 
 
   <div class="hero-new__content">
