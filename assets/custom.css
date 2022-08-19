@@ -2252,19 +2252,23 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   direction: rtl;
   text-align: justify;
   color: #fff;
+  font-family: "Montserrat";
+  font-size: 1.35rem;
 }
 .piantini-girls__wrapper .btn {
-  margin-top: 20px;
+  margin-top: 22px;
   color: #000;
   background-color: #fff;
   border-color: #000;
   border-radius: 8px;
+  font-family: "Montserrat";
+  font-size: 1rem;
 }
 .piantini-girls__wrapper .piantini-girls__img {
   position: absolute;
   top: -10%;
-  left: -2%;
-  width: 32%;
+  left: -4%;
+  width: 485px;
   transform: rotate(345deg);
 }
 .piantini-girls__wrapper .piantini-girls__img.float {
@@ -2273,8 +2277,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 }
 .piantini-girls__wrapper .piantini-girls__img.piantini-girls__img_blur {
   top: -8%;
-  left: -9%;
-  width: 37%;
+  left: -11%;
+  width: 500px;
   -webkit-animation: floating-blur 3s ease-in-out infinite;
   animation: floating-blur 3s ease-in-out infinite;
 }

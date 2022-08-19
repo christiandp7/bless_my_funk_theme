@@ -39,22 +39,26 @@
       direction: rtl;
       text-align: justify;
       color: #fff;
+      font-family: "Montserrat";
+      font-size: 1.35rem;
     }
   }
 
   .btn {
-    margin-top: 20px;
+    margin-top: 22px;
     color: #000;
     background-color: #fff;
     border-color: #000;
     border-radius: 8px;
+    font-family: "Montserrat";
+    font-size: 1rem;
   }
 
   .piantini-girls__img {
     position: absolute;
     top: -10%;
-    left: -2%;
-    width: 32%;
+    left: -4%;
+    width: 485px;
     transform: rotate(345deg);
 
     &.float {
@@ -64,8 +68,8 @@
 
     &.piantini-girls__img_blur {
       top: -8%;
-      left: -9%;
-      width: 37%;
+      left: -11%;
+      width: 500px;
       -webkit-animation: floating-blur 3s ease-in-out infinite;
             animation: floating-blur 3s ease-in-out infinite;
     }
