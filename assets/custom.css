@@ -1773,13 +1773,16 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   z-index: 1;
 }
 .banner-blur .banner-blur__content h2 {
-  font-size: 2.1875em;
-  margin-bottom: 30px;
+  font-size: 3.5em;
+  margin-bottom: 45px;
+  font-family: "Playfair Display";
+  font-weight: 500;
 }
 .banner-blur .banner-blur__content p {
   color: #fff;
-  font-size: 1.15rem;
+  font-size: 1.85rem;
   line-height: 1.75;
+  font-family: "Montserrat";
 }
 .banner-blur .bubble {
   position: absolute;
