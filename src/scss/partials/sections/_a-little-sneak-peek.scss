@@ -26,11 +26,17 @@
     color: #266B66;
     text-transform: uppercase;
     margin-bottom: 30px;
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.6rem;
   }
   .sneak-peek__line {
     padding: 10px 8px;
     margin-bottom: 1px;
     text-align: center;
+    font-family: "Playfair Display";
+    text-transform: none;
+    font-size: 1.5rem;
     
     &:nth-child(2) {
       background-color: #EA8B78;
@@ -56,6 +62,9 @@
       color: #000;
       border-color: #000;
       background-color: #9C72FF;
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      font-size: 1rem;
       &:hover {
         color: #fff;
         background-color: #000;
