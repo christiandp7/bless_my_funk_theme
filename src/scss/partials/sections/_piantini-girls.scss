@@ -9,17 +9,28 @@
     max-width: 1740px;
     padding: 0 30px;
     margin: 0 auto;
+    
+    @include media-max-width(768px) {
+      padding: 0 20px;
+    }
   }
   .piantini-girl__card {
     position: relative;
     display: flex;
     justify-content: flex-end;
     width: 62vw;
-    background-color: rgba(0,0,0,0.25);
-    padding: 50px 20px;
 
     @include media-max-width($xlarge-down) {
-      width: 100%;
+      width: 80vw;
+    }
+  }
+  .piantini-girl__card-inner {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 50px 20px;
+    width: 100%;
+    @include media-max-width(1080px) {
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.4);
     }
   }
   .piantini-girls__content {
@@ -29,11 +40,17 @@
     text-align: right;
   }
   .piantini-girls__title {
-    font-size: 3rem;
+    width: 50%;
     margin-bottom: 28px;
+    @include media-max-width(1280px) {
+      width: 70%;
+    }
+    @include media-max-width(768px) {
+      width: 85%;
+    }
   }
   .piantini-girls__richtext {
-    max-width: 500px;
+    max-width: 470px;
     color: #fff;
     p {
       direction: rtl;
@@ -61,8 +78,8 @@
     width: 485px;
     transform: rotate(345deg);
 
-    @include media-max-width($large-down) {
-      display: none;
+    @include media-max-width(1080px) {
+      // display: none;
     }
 
     &.float {
@@ -90,6 +107,10 @@
       width: 60vw;
       height: 60vw;
       filter: blur(14vw);
+      @include media-max-width(1080px) {
+        width: 70%;
+        height: 70%;
+      }
     }
     &.orange_2 {
       background-color: #FB5341;
@@ -98,6 +119,13 @@
       width: 18vw;
       height: 18vw;
       filter: blur(8vw);
+      @include media-max-width(1080px) {
+        width: 65%;
+        height: 85%;
+        bottom: -20vw;
+        left: 42vw;
+        filter: blur(10vw);
+      }
     }
     &.pink_1 {
       background-color: #FA0971;
@@ -106,6 +134,11 @@
       width: 58vw;
       height: 40vw;
       filter: blur(12vw);
+      @include media-max-width(1080px) {
+        width: 70%;
+        height: 50%;
+        filter: blur(10vw);
+      }
     }
     &.pink_2 {
       background-color: #F8B7D6;
@@ -114,6 +147,13 @@
       width: 20vw;
       height: 20vw;
       filter: blur(85px);
+      @include media-max-width(1080px) {
+        width: 45%;
+        height: 45%;
+        right: 50%;
+        bottom: -18%;
+        filter: blur(4vw);
+      }
     }
     &.pink_3 {
       background-color: #F8B7D6;
@@ -122,6 +162,11 @@
       width: 20vw;
       height: 20vw;
       filter: blur(5vw);
+      @include media-max-width(1080px) {
+        width: 60%;
+        height: 60%;
+        left: -30vw;
+      }
     }
   }
 }

@@ -9,12 +9,14 @@
 
     <div class="piantini-girls__inner">
       <div class="piantini-girl__card">
-        <div class="piantini-girls__content">
-          <h2 class="piantini-girls__title">{{ section.settings.title }}</h2>
-          <div class="piantini-girls__richtext">{{ section.settings.text }}</div>
-          {% if section.settings.cta_url != blank %}
-          <a class="btn" href="{{ section.settings.cta_url }}">{{ section.settings.cta_text }}</a>
-          {% endif %}
+        <div class="piantini-girl__card-inner">
+          <div class="piantini-girls__content">
+            <div class="piantini-girls__title">{% render 'piantini-girls-title' %}</div>
+            <div class="piantini-girls__richtext">{{ section.settings.text }}</div>
+            {% if section.settings.cta_url != blank %}
+            <a class="btn" href="{{ section.settings.cta_url }}">{{ section.settings.cta_text }}</a>
+            {% endif %}
+          </div>
         </div>
         {% if section.settings.img_blur != blank %}
           <img class="piantini-girls__img piantini-girls__img_blur lazyload"
@@ -28,8 +30,9 @@
             data-sizes="auto"
             alt="{{ section.settings.img.alt | escape }}">
         {% else %}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {% endif %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        
       </div>
     </div>
   </div>

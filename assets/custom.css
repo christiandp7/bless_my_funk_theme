@@ -2342,17 +2342,31 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   padding: 0 30px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .piantini-girls__wrapper .piantini-girls__inner {
+    padding: 0 20px;
+  }
+}
 .piantini-girls__wrapper .piantini-girl__card {
   position: relative;
   display: flex;
   justify-content: flex-end;
   width: 62vw;
-  background-color: rgba(0, 0, 0, 0.25);
-  padding: 50px 20px;
 }
 @media screen and (max-width: 1499px) {
   .piantini-girls__wrapper .piantini-girl__card {
-    width: 100%;
+    width: 80vw;
+  }
+}
+.piantini-girls__wrapper .piantini-girl__card-inner {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 50px 20px;
+  width: 100%;
+}
+@media screen and (max-width: 1080px) {
+  .piantini-girls__wrapper .piantini-girl__card-inner {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 .piantini-girls__wrapper .piantini-girls__content {
@@ -2362,11 +2376,21 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   text-align: right;
 }
 .piantini-girls__wrapper .piantini-girls__title {
-  font-size: 3rem;
+  width: 50%;
   margin-bottom: 28px;
 }
+@media screen and (max-width: 1280px) {
+  .piantini-girls__wrapper .piantini-girls__title {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .piantini-girls__wrapper .piantini-girls__title {
+    width: 85%;
+  }
+}
 .piantini-girls__wrapper .piantini-girls__richtext {
-  max-width: 500px;
+  max-width: 470px;
   color: #fff;
 }
 .piantini-girls__wrapper .piantini-girls__richtext p {
@@ -2392,11 +2416,6 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 485px;
   transform: rotate(345deg);
 }
-@media screen and (max-width: 1135px) {
-  .piantini-girls__wrapper .piantini-girls__img {
-    display: none;
-  }
-}
 .piantini-girls__wrapper .piantini-girls__img.float {
   -webkit-animation: floating 3s ease-in-out infinite;
   animation: floating 3s ease-in-out infinite;
@@ -2420,6 +2439,12 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   height: 60vw;
   filter: blur(14vw);
 }
+@media screen and (max-width: 1080px) {
+  .piantini-girls__wrapper .bubble.orange_1 {
+    width: 70%;
+    height: 70%;
+  }
+}
 .piantini-girls__wrapper .bubble.orange_2 {
   background-color: #FB5341;
   bottom: -10vw;
@@ -2427,6 +2452,15 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 18vw;
   height: 18vw;
   filter: blur(8vw);
+}
+@media screen and (max-width: 1080px) {
+  .piantini-girls__wrapper .bubble.orange_2 {
+    width: 65%;
+    height: 85%;
+    bottom: -20vw;
+    left: 42vw;
+    filter: blur(10vw);
+  }
 }
 .piantini-girls__wrapper .bubble.pink_1 {
   background-color: #FA0971;
@@ -2436,6 +2470,13 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   height: 40vw;
   filter: blur(12vw);
 }
+@media screen and (max-width: 1080px) {
+  .piantini-girls__wrapper .bubble.pink_1 {
+    width: 70%;
+    height: 50%;
+    filter: blur(10vw);
+  }
+}
 .piantini-girls__wrapper .bubble.pink_2 {
   background-color: #F8B7D6;
   bottom: -22%;
@@ -2444,6 +2485,15 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   height: 20vw;
   filter: blur(85px);
 }
+@media screen and (max-width: 1080px) {
+  .piantini-girls__wrapper .bubble.pink_2 {
+    width: 45%;
+    height: 45%;
+    right: 50%;
+    bottom: -18%;
+    filter: blur(4vw);
+  }
+}
 .piantini-girls__wrapper .bubble.pink_3 {
   background-color: #F8B7D6;
   bottom: -8vw;
@@ -2451,6 +2501,13 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 20vw;
   height: 20vw;
   filter: blur(5vw);
+}
+@media screen and (max-width: 1080px) {
+  .piantini-girls__wrapper .bubble.pink_3 {
+    width: 60%;
+    height: 60%;
+    left: -30vw;
+  }
 }
 
 @-webkit-keyframes floating {
