@@ -17,17 +17,34 @@
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none;
+
+    &.hero-new__img--desktop {
+      @include media-max-width(768px) {
+        display: none;
+      }
+    }
+    &.hero-new__img--mobile {
+      @include media-min-width(769px) {
+        display: none;
+      }
+    }
   }
   .hero-new__content {
     position: absolute;
     bottom: 1%;
     left: 1%;
     color: #fff;
-    font-size: 2.1875em;
     line-height: 1.5;
     font-size: 5rem;
     font-family: "Playfair Display";
     text-transform: none;
+    
+    @include media-max-width($xlarge-down) {
+      font-size: 4rem;
+    }
+    @include media-max-width(768px) {
+      font-size: 3rem;
+    }
 
     span {
       color: rgb(244, 243, 173);

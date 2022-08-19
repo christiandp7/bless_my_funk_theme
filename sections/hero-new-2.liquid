@@ -1,19 +1,28 @@
 <div class="section--{{ section.id }} hero-new__inner" data-section-id="{{ section.id }}" data-section-type="Hero New-height-section">
     
   {%- if section.settings.hero_new_desktop != blank -%}
-    <img class="hero-new__img lazyload lazypreload"
+    <img class="hero-new__img hero-new__img--desktop lazyload lazypreload"
       src="{{ section.settings.hero_new_desktop | img_url: '1920x' }}"
       data-src="{{ img_url }}"
       data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
       data-aspectratio="{{ section.settings.hero_new_desktop.aspect_ratio }}"
       data-sizes="auto"
-      style="object-position: {{ section.settings.alignment }};"
       alt="{{ section.settings.hero_new_desktop.alt | escape }}">
   {%- else -%}
     <span>
       {% capture current %}{% cycle 1, 2 %}{% endcapture %}
       {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
     </span>
+  {%- endif -%}
+
+  {%- if section.settings.hero_new_mobile != blank -%}
+    <img class="hero-new__img hero-new__img--mobile lazyload lazypreload"
+      src="{{ section.settings.hero_new_mobile | img_url: '768x' }}"
+      data-src="{{ img_url }}"
+      data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+      data-aspectratio="{{ section.settings.hero_new_mobile.aspect_ratio }}"
+      data-sizes="auto"
+      alt="{{ section.settings.hero_new_mobile.alt | escape }}">
   {%- endif -%}
 
 
