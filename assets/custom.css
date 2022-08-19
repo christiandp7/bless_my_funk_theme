@@ -1933,6 +1933,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 }
 .img-w-text-full .feature-row__inner .h3 {
   margin-bottom: 30px;
+  font-family: "Montserrat";
+  font-size: 2.85rem;
 }
 .img-w-text-full .feature-row__text {
   display: flex;
@@ -1951,6 +1953,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   color: #000;
   border-radius: 8px;
   border-color: #000;
+  font-family: "Montserrat";
+  font-size: 1rem;
 }
 
 .pillows-spa {
