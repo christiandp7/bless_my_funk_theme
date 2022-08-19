@@ -534,6 +534,28 @@ $color-slideshow-dots: #fff;
   url("Blair-ITC-Std-Light.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
 
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  src: url({{ "PlayfairDisplay-Regular.ttf" | asset_url }}) format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  src: url({{ "PlayfairDisplay-Medium.ttf" | asset_url }}) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url({{ "Montserrat-Light.ttf" | asset_url }}) format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url({{ "Montserrat-Medium.ttf" | asset_url }}) format("truetype");
+}
+
 
 {% comment %}
 {% assign header_font = settings.type_header_font %}
