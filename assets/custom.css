@@ -2020,6 +2020,9 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   border-color: #000;
   color: #000;
   margin-top: 26px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 .pillows-spa .pillows-spa__pillows {
   width: 65%;
