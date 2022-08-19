@@ -2295,7 +2295,7 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 }
 @media screen and (max-width: 1499px) {
   .piantini-girls__wrapper .piantini-girl__card {
-    width: 75vw;
+    width: 100%;
   }
 }
 .piantini-girls__wrapper .piantini-girls__content {
@@ -2334,6 +2334,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   left: -4%;
   width: 485px;
   transform: rotate(345deg);
+}
+@media screen and (max-width: 1135px) {
+  .piantini-girls__wrapper .piantini-girls__img {
+    display: none;
+  }
 }
 .piantini-girls__wrapper .piantini-girls__img.float {
   -webkit-animation: floating 3s ease-in-out infinite;

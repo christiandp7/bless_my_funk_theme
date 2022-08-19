@@ -19,7 +19,7 @@
     padding: 50px 20px;
 
     @include media-max-width($xlarge-down) {
-      width: 75vw;
+      width: 100%;
     }
   }
   .piantini-girls__content {
@@ -60,6 +60,10 @@
     left: -4%;
     width: 485px;
     transform: rotate(345deg);
+
+    @include media-max-width($large-down) {
+      display: none;
+    }
 
     &.float {
       -webkit-animation: floating 3s ease-in-out infinite;
