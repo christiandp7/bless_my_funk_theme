@@ -1802,7 +1802,7 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 }
 @media screen and (max-width: 768px) {
   .hero_new_2 .hero-new__content {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
 .hero_new_2 .hero-new__content span {
@@ -2225,6 +2225,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 .sneak-peek__wrapper .sneak-peek__content {
   text-align: center;
   padding: 35px 20px;
+}
+@media screen and (max-width: 768px) {
+  .sneak-peek__wrapper .sneak-peek__content {
+    padding: 70px 20px;
+  }
 }
 .sneak-peek__wrapper .sneak-peek__title {
   color: #266B66;
