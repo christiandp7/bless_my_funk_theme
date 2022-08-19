@@ -13,17 +13,23 @@
     margin: 0 auto;
     text-align: center;
     z-index: 1;
+    padding: 0 20px;
     
     h2 {
       font-size: 3.5em;
       margin-bottom: 45px;
       font-family: "Playfair Display";
       font-weight: 500;
+
+      @include media-max-width($large-down) {
+        font-size: 2.1em;
+        margin-bottom: 35px;
+      }
     }
 
     p {
       color: #fff;
-      font-size: 1.85rem;
+      font-size: 1.7rem;
       line-height: 1.75;
       font-family: "Montserrat";
     }
@@ -39,9 +45,17 @@
       left: -2vw;
       width: 30vw;
       height: 24vw;
-      filter: blur(60px);
-      -webkit-animation: blob-green 5s infinite;
-	        animation: blob-green 5s infinite;
+      filter: blur(4vw);
+      -webkit-animation: blob-green 8s infinite;
+	        animation: blob-green 8s infinite;
+
+      @include media-max-width($large-down) {
+        width: 90%;
+        height: 50%;
+        top: -18vw;
+        left: -15vw;
+        filter: blur(5vw);
+      }
     }
     &.orange {
       background-color: #EF927E;
@@ -49,9 +63,17 @@
       left: -8vw;
       width: 70vw;
       height: 28vw;
-      filter: blur(150px);
-      -webkit-animation: blob-orange 5s infinite;
-	        animation: blob-orange 5s infinite;
+      filter: blur(8vw);
+      -webkit-animation: blob-orange 8s infinite;
+	        animation: blob-orange 8s infinite;
+
+      @include media-max-width($large-down) {
+        width: 105%;
+        height: 85%;
+        bottom: -30vw;
+        left: -35vw;
+        filter: blur(10vw);
+      }
     }
     &.yellow {
       background-color: #FBE682;
@@ -59,9 +81,17 @@
       right: -20vw;
       width: 55vw;
       height: 38vw;
-      filter: blur(150px);
-      -webkit-animation: blob-yellow 5s infinite;
-	        animation: blob-yellow 5s infinite;
+      filter: blur(8vw);
+      -webkit-animation: blob-yellow 8s infinite;
+	        animation: blob-yellow 8s infinite;
+
+      @include media-max-width($large-down) {
+        width: 65%;
+        height: 55%;
+        bottom: -20vw;
+        right: -16vw;
+        filter: blur(10vw);
+      }
     }
     &.purple {
       background-color: #79727A;
@@ -69,10 +99,18 @@
       left: 36vw;
       width: 30vw;
       height: 45vw;
-      filter: blur(100px);
+      filter: blur(5vw);
       transform: skewX(-20deg);
-      -webkit-animation: blob-purple 5s infinite;
-	        animation: blob-purple 5s infinite;
+      -webkit-animation: blob-purple 8s infinite;
+	        animation: blob-purple 8s infinite;
+
+      @include media-max-width($large-down) {
+        width: 70%;
+        height: 80%;
+        top: -27vw;
+        left: 46vw;
+        filter: blur(8vw);
+      }
     }
   }
 }
@@ -103,10 +141,10 @@
     transform: translate(0, 0) scale(1);
   }
   33% {
-    transform: translate(-140, 39px) scale(1.25);
+    transform: translate(-78x, 89px) scale(0.83);
   }
   66% {
-    transform: translate(-78x, 89px) scale(0.83);
+    transform: translate(-150, -49px) scale(1.25);
   }
   100% {
     transform: translate(0, 0) scale(1);
