@@ -2002,14 +2002,24 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   padding: 30px 20px;
 }
 .pillows-spa .pillows-spa__content-container h2 {
-  font-size: 2rem;
+  font-size: 4rem;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.pillows-spa .pillows-spa__content-container p {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-bottom: 14px;
 }
 .pillows-spa .pillows-spa__content-container .btn {
   background-color: #A072FF;
   border-radius: 8px;
   border-color: #000;
   color: #000;
-  margin-top: 25px;
+  margin-top: 26px;
 }
 .pillows-spa .pillows-spa__pillows {
   width: 65%;
