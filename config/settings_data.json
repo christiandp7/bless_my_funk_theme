@@ -686,6 +686,7 @@
         "type": "hero-new",
         "settings": {
           "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_1.png",
+          "hero_new_mobile": "shopify:\/\/shop_images\/render1.jpg",
           "title": "Need a <br>\nLittle <br>\nMe Time?"
         }
       },
@@ -693,6 +694,7 @@
         "type": "hero-new-2",
         "settings": {
           "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_2_2000.jpg",
+          "hero_new_mobile": "shopify:\/\/shop_images\/render_2.jpg",
           "title": "Enjoy <br>\nA <span>peaceful<\/span> Stay <br>\nWhile Choosing <br>\nYour Favorite Pillows."
         }
       },
@@ -718,7 +720,7 @@
         "type": "banner-blur",
         "settings": {
           "title": "The Blessed Trade",
-          "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...<\/p><p>Quality products, dedicated services, and exclusive pricing through our Trade\/Desian Concierge Program<\/p>"
+          "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...<\/p><p>Quality products, dedicated services, and exclusive pricing through our Trade & Design Concierge Program<\/p>"
         }
       },
       "1660737062158ee8fe": {
