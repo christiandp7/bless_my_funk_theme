@@ -2438,6 +2438,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 60vw;
   height: 60vw;
   filter: blur(14vw);
+  -webkit-animation: blob-green 8s infinite;
+  animation: blob-green 8s infinite;
 }
 @media screen and (max-width: 1080px) {
   .piantini-girls__wrapper .bubble.orange_1 {
@@ -2452,6 +2454,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 18vw;
   height: 18vw;
   filter: blur(8vw);
+  -webkit-animation: blob-purple 8s infinite;
+  animation: blob-purple 8s infinite;
 }
 @media screen and (max-width: 1080px) {
   .piantini-girls__wrapper .bubble.orange_2 {
@@ -2469,6 +2473,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 58vw;
   height: 40vw;
   filter: blur(12vw);
+  -webkit-animation: blob-yellow 8s infinite;
+  animation: blob-yellow 8s infinite;
 }
 @media screen and (max-width: 1080px) {
   .piantini-girls__wrapper .bubble.pink_1 {
@@ -2484,6 +2490,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 20vw;
   height: 20vw;
   filter: blur(85px);
+  -webkit-animation: blob-purple 8s infinite;
+  animation: blob-purple 8s infinite;
 }
 @media screen and (max-width: 1080px) {
   .piantini-girls__wrapper .bubble.pink_2 {
@@ -2501,6 +2509,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   width: 20vw;
   height: 20vw;
   filter: blur(5vw);
+  -webkit-animation: blob-purple 8s infinite;
+  animation: blob-purple 8s infinite;
 }
 @media screen and (max-width: 1080px) {
   .piantini-girls__wrapper .bubble.pink_3 {
@@ -2516,8 +2526,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
     transform: translateY(0) rotate(345deg);
   }
   50% {
-    -webkit-transform: translateY(-2%) rotate(345deg);
-    transform: translateY(-2%) rotate(345deg);
+    -webkit-transform: translateY(-2.5%) rotate(345deg);
+    transform: translateY(-2.5%) rotate(345deg);
   }
   100% {
     -webkit-transform: translateY(0) rotate(345deg);

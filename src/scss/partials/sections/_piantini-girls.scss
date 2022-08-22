@@ -107,6 +107,9 @@
       width: 60vw;
       height: 60vw;
       filter: blur(14vw);
+      -webkit-animation: blob-green 8s infinite;
+      animation: blob-green 8s infinite;
+
       @include media-max-width(1080px) {
         width: 70%;
         height: 70%;
@@ -119,6 +122,9 @@
       width: 18vw;
       height: 18vw;
       filter: blur(8vw);
+      -webkit-animation: blob-purple 8s infinite;
+      animation: blob-purple 8s infinite;
+
       @include media-max-width(1080px) {
         width: 65%;
         height: 85%;
@@ -134,6 +140,9 @@
       width: 58vw;
       height: 40vw;
       filter: blur(12vw);
+      -webkit-animation: blob-yellow 8s infinite;
+      animation: blob-yellow 8s infinite;
+
       @include media-max-width(1080px) {
         width: 70%;
         height: 50%;
@@ -147,6 +156,8 @@
       width: 20vw;
       height: 20vw;
       filter: blur(85px);
+      -webkit-animation: blob-purple 8s infinite;
+      animation: blob-purple 8s infinite;
       @include media-max-width(1080px) {
         width: 45%;
         height: 45%;
@@ -162,6 +173,9 @@
       width: 20vw;
       height: 20vw;
       filter: blur(5vw);
+      -webkit-animation: blob-purple 8s infinite;
+      animation: blob-purple 8s infinite;
+
       @include media-max-width(1080px) {
         width: 60%;
         height: 60%;
@@ -178,8 +192,8 @@
             transform: translateY(0) rotate(345deg);
   }
   50% {
-    -webkit-transform: translateY(-2%) rotate(345deg);
-            transform: translateY(-2%) rotate(345deg);
+    -webkit-transform: translateY(-2.5%) rotate(345deg);
+            transform: translateY(-2.5%) rotate(345deg);
   }
   100% {
     -webkit-transform: translateY(0) rotate(345deg);
