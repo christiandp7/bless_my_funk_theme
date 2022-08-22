@@ -54,17 +54,17 @@
     //   bottom: 8%;
     // }
     @include media-max-width(768px) {
-      top: auto;
-      bottom: 8%;
+      top: 16%;
     }
 
     h1 {
       text-align: center;
       font-family: "Playfair Display";
       font-size: 5rem;
+      text-transform: none;
 
       @include media-max-width($large-down) {
-        font-size: 4rem;
+        font-size: 4.3rem;
       }
     }
   }

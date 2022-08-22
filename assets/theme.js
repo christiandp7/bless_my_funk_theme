@@ -7716,14 +7716,21 @@ $(document).ready(function () {
 					slidesToShow: 3,
 					variableWidth: true,
 					autoplay: true,
-					autoplaySpeed: 3500,
+					autoplaySpeed: 2000,
 					infinite: true,
+					pauseOnHover: false,
+					pauseOnFocus: false
 				}
 			},
 			{
 				breakpoint: 500,
 				settings: {
 					slidesToShow: 2,
+					autoplay: true,
+					autoplaySpeed: 2000,
+					infinite: true,
+					pauseOnHover: false,
+					pauseOnFocus: false
 				}
 			}
 		],
