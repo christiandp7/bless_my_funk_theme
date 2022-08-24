@@ -1703,7 +1703,8 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 @media screen and (max-width: 768px) {
   .hero_new .hero-new__logo {
     max-width: 65%;
-    top: 4%;
+    top: auto;
+    bottom: 6%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1744,6 +1745,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
     top: 16%;
   }
 }
+@media screen and (max-width: 500px) {
+  .hero_new .hero-new__content {
+    top: 2%;
+  }
+}
 .hero_new .hero-new__content h1 {
   text-align: center;
   font-family: "Playfair Display";
@@ -1753,6 +1759,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 @media screen and (max-width: 1135px) {
   .hero_new .hero-new__content h1 {
     font-size: 4.3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero_new .hero-new__content h1 {
+    font-size: 4rem;
   }
 }
 
