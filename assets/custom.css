@@ -2233,11 +2233,6 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1135px) {
-  .sneak-peek__wrapper .sneak-peek__content-col {
-    order: 1;
-  }
-}
 .sneak-peek__wrapper .sneak-peek__content {
   text-align: center;
   padding: 35px 20px;
