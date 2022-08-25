@@ -16,9 +16,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include media-max-width($large-down) {
-      order: 1;
-    }
+    // @include media-max-width($large-down) {
+    //   order: 1;
+    // }
     // background-color: #282828;
   }
   .sneak-peek__content {
