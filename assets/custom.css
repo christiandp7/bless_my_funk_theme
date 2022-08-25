@@ -1742,12 +1742,12 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 }
 @media screen and (max-width: 768px) {
   .hero_new .hero-new__content {
-    top: 16%;
+    top: 52vw;
   }
 }
 @media screen and (max-width: 500px) {
   .hero_new .hero-new__content {
-    top: 2%;
+    top: 54vw;
   }
 }
 .hero_new .hero-new__content h1 {
@@ -1764,6 +1764,11 @@ header.site-header.header_divided_nav .site-header__mobile-nav > .site-header__i
 @media screen and (max-width: 500px) {
   .hero_new .hero-new__content h1 {
     font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_new .hero-new__content h1 span {
+    color: #B095A8;
   }
 }
 
