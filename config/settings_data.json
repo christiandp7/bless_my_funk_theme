@@ -569,16 +569,6 @@
               "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/CTB_CATALOGUE.pdf?v=1626194412"
             }
           },
-          "29bd631a-6ffc-47db-a467-4bd093e5257d": {
-            "type": "text_block",
-            "settings": {
-              "enable_image": false,
-              "title": "2022 PILLOWS OUTLET SALE",
-              "text": "",
-              "button_label": "PDF · DOWNLOAD",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/OUTLET_SALE_BMFH_2.pdf?v=1645723181"
-            }
-          },
           "47af25ff-53f8-4cb1-9297-3b08418e4703": {
             "type": "text_block",
             "settings": {
@@ -589,14 +579,14 @@
               "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/PILLOWS_SPA-SHOP_RELAX.pdf?v=1660076685"
             }
           },
-          "c16b89db-9411-4662-9aa5-1cd188cebe15": {
+          "47dc0153-44db-412f-8202-2b94dc1f015a": {
             "type": "text_block",
             "settings": {
               "enable_image": false,
-              "title": "Add a title or tagline",
+              "title": "2022 PILLOWS OUTLET SALE",
               "text": "",
-              "button_label": "PDF DOWNLOAD",
-              "button_link": ""
+              "button_label": "PDF · Download",
+              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/CATALOGO_OUTLET_SALE.pdf?v=1662756977"
             }
           }
         },
@@ -605,9 +595,8 @@
           "d9756313-087a-4743-8be7-9e69898fd50f",
           "136dcc86-0ba4-4dbb-967a-7642a2550b83",
           "7f888023-1fda-4c1b-beb3-fc7f4ff15743",
-          "29bd631a-6ffc-47db-a467-4bd093e5257d",
           "47af25ff-53f8-4cb1-9297-3b08418e4703",
-          "c16b89db-9411-4662-9aa5-1cd188cebe15"
+          "47dc0153-44db-412f-8202-2b94dc1f015a"
         ],
         "settings": {
           "title": "",
