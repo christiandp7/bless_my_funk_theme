@@ -588,6 +588,16 @@
               "button_label": "PDF · Download",
               "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/PILLOWS_SPA-SHOP_RELAX.pdf?v=1660076685"
             }
+          },
+          "c16b89db-9411-4662-9aa5-1cd188cebe15": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "Add a title or tagline",
+              "text": "",
+              "button_label": "PDF DOWNLOAD",
+              "button_link": ""
+            }
           }
         },
         "block_order": [
@@ -596,7 +606,8 @@
           "136dcc86-0ba4-4dbb-967a-7642a2550b83",
           "7f888023-1fda-4c1b-beb3-fc7f4ff15743",
           "29bd631a-6ffc-47db-a467-4bd093e5257d",
-          "47af25ff-53f8-4cb1-9297-3b08418e4703"
+          "47af25ff-53f8-4cb1-9297-3b08418e4703",
+          "c16b89db-9411-4662-9aa5-1cd188cebe15"
         ],
         "settings": {
           "title": "",
