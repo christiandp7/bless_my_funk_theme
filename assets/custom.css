@@ -369,6 +369,25 @@ body a:focus, body a:not([disabled]):hover {
   height: 18px;
 }
 
+.trade-application-page {
+  background-color: #4A3B8E;
+  color: #E8A7C9;
+}
+.trade-application-page input {
+  background-color: #25234F;
+  border-color: #25234F;
+  color: #E8A7C9;
+}
+.trade-application-page input[type=submit] {
+  background-color: #E8A7C9;
+  color: #25234F;
+  border: solid 2px #25234F;
+  border-radius: 2px;
+}
+.trade-application-page .contact-form label:nth-child(2) {
+  text-align: right;
+}
+
 .collection-item {
   margin-bottom: 30px;
 }

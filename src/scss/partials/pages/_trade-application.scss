@@ -1,0 +1,23 @@
+.trade-application-page {
+  background-color: #4A3B8E;
+  color: #E8A7C9;
+  
+  input {
+    background-color: #25234F;
+    border-color: #25234F;
+    color: #E8A7C9;
+  }
+  
+  input[type=submit] {
+    background-color: #E8A7C9;
+    color: #25234F;
+    border: solid 2px #25234F;
+    border-radius: 2px;
+  }
+
+
+  .contact-form label:nth-child(2) {
+    text-align: right;
+  }
+
+}

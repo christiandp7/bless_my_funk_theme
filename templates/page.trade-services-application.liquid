@@ -1,8 +1,9 @@
+<div class="trade-application-page">
 <div class="page-width">
   <div class="grid">
     <div class="grid__item medium-up--three-sixths medium-up--push-one-quarter">
       <div class="section-header text-center">
-        <h1>{{ page.title }}</h1>
+        {% render 'trade-logo' %}
       </div>
 
       {% if page.content.size > 0 %}
@@ -113,4 +114,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
