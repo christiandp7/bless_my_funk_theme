@@ -52,63 +52,82 @@
 
           {%- endcomment -%}
 
+          <div class="form-group">
+            <label for="{{ formId }}-name">{{ 'contact.form.name' | t }}</label>
+            <input type="text" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+          </div>
+          
+          <div class="form-group">
+            <label for="{{ formId }}-email">{{ 'contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+            <input
+            type="email"
+            id="{{ formId }}-email"
+            name="contact[email]"
+            autocorrect="off"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {%- if form.errors contains 'email' -%}
+            class="input--error"
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-email-error"
+            {%- endif -%}
+            >
+            {%- if form.errors contains 'email' -%}
+            <span id="{{ formId}}-email-error" class="input-error-message">
+              <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+              {% include 'icon-error' %}
+              <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+            </span>
+            {%- endif -%}
+          </div>
 
-          <label for="{{ formId }}-name">{{ 'contact.form.name' | t }}</label>
-          <input type="text" id="{{ formId }}-name" name="contact[{{ 'contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
-          
-          <label for="{{ formId }}-email">{{ 'contact.form.email' | t }} <span aria-hidden="true">*</span></label>
-          <input
-          type="email"
-          id="{{ formId }}-email"
-          name="contact[email]"
-          autocorrect="off"
-          autocapitalize="off"
-          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-          aria-required="true"
-          {%- if form.errors contains 'email' -%}
-          class="input--error"
-          aria-invalid="true"
-          aria-describedby="{{ formId }}-email-error"
-          {%- endif -%}
-          >
-          {%- if form.errors contains 'email' -%}
-          <span id="{{ formId}}-email-error" class="input-error-message">
-            <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-            {% include 'icon-error' %}
-            <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
-          </span>
-          {%- endif -%}
-          
-          <label for="{{ formId }}-company">Company/Firm Name</label>
-          <input type="text" id="{{ formId }}-company" name="contact[company]" value="{{ form[company] }}">
+          <div class="form-group">
+            <label for="{{ formId }}-company">Company/Firm Name</label>
+            <input type="text" id="{{ formId }}-company" name="contact[company]" value="{{ form[company] }}">
+          </div>
 
-          <label for="{{ formId }}-website">Company Website</label>
-          <input type="text" id="{{ formId }}-website" name="contact[website]" value="{{ form[website] }}">
+          <div class="form-group">
+            <label for="{{ formId }}-website">Company Website</label>
+            <input type="text" id="{{ formId }}-website" name="contact[website]" value="{{ form[website] }}">
+          </div>
           
-          <label for="{{ formId }}-address">Address</label>
-          <input type="text" id="{{ formId }}-address" name="contact[address]" value="{{ form[address] }}">
+          <div class="form-group">
+            <label for="{{ formId }}-address">Address</label>
+            <input type="text" id="{{ formId }}-address" name="contact[address]" value="{{ form[address] }}">
+          </div>
           
-          <label for="{{ formId }}-city">City</label>
-          <input type="text" id="{{ formId }}-city" name="contact[city]" value="{{ form[city] }}">
+          <div class="form-group">
+            <label for="{{ formId }}-city">City</label>
+            <input type="text" id="{{ formId }}-city" name="contact[city]" value="{{ form[city] }}">
+          </div>
           
-          <label for="{{ formId }}-state">state</label>
-          <input type="text" id="{{ formId }}-state" name="contact[state]" value="{{ form[state] }}">
+          <div class="form-group">
+            <label for="{{ formId }}-state">state</label>
+            <input type="text" id="{{ formId }}-state" name="contact[state]" value="{{ form[state] }}">
+          </div>
           
-          <label for="{{ formId }}-postalcode">ZIP/Postal Code</label>
-          <input type="text" id="{{ formId }}-postalcode" name="contact[postalcode]" value="{{ form[postalcode] }}">
+          <div class="form-group">
+            <label for="{{ formId }}-postalcode">ZIP/Postal Code</label>
+            <input type="text" id="{{ formId }}-postalcode" name="contact[postalcode]" value="{{ form[postalcode] }}">
+          </div>
           
-          <label for="{{ formId }}-country">Country</label>
-          <input type="text" id="{{ formId }}-country" name="contact[country]" value="{{ form[country] }}">
+          <div class="form-group">
+            <label for="{{ formId }}-country">Country</label>
+            <input type="text" id="{{ formId }}-country" name="contact[country]" value="{{ form[country] }}">
+          </div>
 
-          <label for="{{ formId }}-phone">{{ 'contact.form.phone' | t }}</label>
-          <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+          <div class="form-group">
+            <label for="{{ formId }}-phone">{{ 'contact.form.phone' | t }}</label>
+            <input type="tel" id="{{ formId }}-phone" name="contact[{{ 'contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+          </div>
 
           {%- comment -%}
           <label for="{{ formId }}-message">{{ 'contact.form.message' | t }}</label>
           <textarea rows="10" id="{{ formId }}-message" name="contact[{{ 'contact.form.message' | t }}]">{% if form.body %}{{ form.body }}{% endif %}</textarea>
           {%- endcomment -%}
 
-          <input type="submit" class="btn btn-wide" value="Submit Application">
+          <input type="submit" class="btn" value="Submit Application">
 
         {% endform %}
       </div>
