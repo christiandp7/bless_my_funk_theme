@@ -369,6 +369,34 @@ body a:focus, body a:not([disabled]):hover {
   height: 18px;
 }
 
+.trade-application-page {
+  background-color: #4A3B8E;
+  color: #E8A7C9;
+  padding-bottom: 50px;
+}
+.trade-application-page input {
+  background-color: #25234F;
+  border-color: #25234F;
+  color: #E8A7C9;
+}
+.trade-application-page input[type=submit] {
+  background-color: #E8A7C9;
+  color: #25234F;
+  border: solid 2px #25234F;
+  border-radius: 2px;
+  letter-spacing: normal;
+}
+.trade-application-page .form-group:nth-child(even) label {
+  text-align: right;
+}
+.trade-application-page input[type=submit] {
+  display: block;
+  color: #25234F;
+  font-family: "Montserrat";
+  text-transform: none;
+  margin: 40px auto;
+}
+
 .collection-item {
   margin-bottom: 30px;
 }
