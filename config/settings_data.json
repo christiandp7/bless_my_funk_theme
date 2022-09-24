@@ -703,10 +703,10 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/FONDO_4_fixed.jpg",
           "layout": "left",
-          "title": "REST. RESET &amp; <br>\nBOUNCE BACK",
+          "title": "REST, RESET &amp; <br>\nBOUNCE BACK",
           "text": "",
           "button_label": "Find out more",
-          "button_link": "https:\/\/www.blessmyfunkhome.com\/collections\/pillows-spa",
+          "button_link": "shopify:\/\/collections\/all",
           "content_bg": "shopify:\/\/shop_images\/FONDE_3__2000x_e87ca881-e65c-420c-8d78-73e14d6dac2a.jpg"
         }
       },
@@ -719,8 +719,8 @@
       "1660573690d9d21400": {
         "type": "banner-blur",
         "settings": {
-          "title": "TRADE & FRIENDS",
-          "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...<\/p><p><\/p><p>Quality products, dedicated services, and exclusive pricing through our Trade & Friends Program<\/p>"
+          "title": "Trade & Friends",
+          "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...<\/p><p>Quality products, dedicated services, and exclusive pricing through our Trade & Friends Program<\/p>"
         }
       },
       "1660737062158ee8fe": {
