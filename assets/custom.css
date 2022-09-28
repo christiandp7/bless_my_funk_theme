@@ -394,7 +394,7 @@ body a:focus, body a:not([disabled]):hover {
   display: block;
   color: #25234F;
   font-family: "Montserrat";
-  text-transform: none;
+  text-transform: uppercase;
   margin: 40px auto;
 }
 .trade-application-page .trade-form-vertical-text {
