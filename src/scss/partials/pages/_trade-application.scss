@@ -2,6 +2,7 @@
   background-color: #4A3B8E;
   color: #E8A7C9;
   padding-bottom: 50px;
+  position: relative;
   
   input {
     background-color: #25234F;
@@ -30,6 +31,22 @@
     font-family: "Montserrat";
     text-transform: none;
     margin: 40px auto;
+  }
+
+  .trade-form-vertical-text {
+    position: absolute;
+    bottom: -60px;
+    width: 150px;
+    right: 10vw;
+
+    @include media-max-width($large-down) {
+      bottom: -50px;
+      width: 130px;
+      right: 6vw;
+    }
+    @include media-max-width(749px) {
+      display: none;
+    }
   }
   
 }
