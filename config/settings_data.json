@@ -588,6 +588,16 @@
               "button_label": "PDF · Download",
               "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/OUTLET_SALE.pdf?v=1662763277"
             }
+          },
+          "98e6e350-d84a-4a13-81de-c6cc446c1592": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "title": "2022 CHRISTMAS PILLOWS",
+              "text": "",
+              "button_label": "PDF · DOWNLOAD",
+              "button_link": ""
+            }
           }
         },
         "block_order": [
@@ -596,7 +606,8 @@
           "136dcc86-0ba4-4dbb-967a-7642a2550b83",
           "7f888023-1fda-4c1b-beb3-fc7f4ff15743",
           "47af25ff-53f8-4cb1-9297-3b08418e4703",
-          "47dc0153-44db-412f-8202-2b94dc1f015a"
+          "47dc0153-44db-412f-8202-2b94dc1f015a",
+          "98e6e350-d84a-4a13-81de-c6cc446c1592"
         ],
         "settings": {
           "title": "",
