@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_text": "#000000",
@@ -21,11 +30,11 @@
     "type_base_font_custom": "\"Blair ITC Medium\"",
     "type_base_size": 16,
     "search_enabled": false,
-    "social_pinterest_link": "https:\/\/pinterest.com\/542c513407011ec056602d6279b72c",
-    "social_instagram_link": "https:\/\/instagram.com\/blessmyfunkhome?igshid=1q4z3uuynm30y",
-    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCtjSrPAHSnTuWBF9oVoHsfw",
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/BMFH_LOGO.png",
+    "social_pinterest_link": "https://pinterest.com/542c513407011ec056602d6279b72c",
+    "social_instagram_link": "https://instagram.com/blessmyfunkhome?igshid=1q4z3uuynm30y",
+    "social_youtube_link": "https://www.youtube.com/channel/UCtjSrPAHSnTuWBF9oVoHsfw",
+    "favicon": "shopify://shop_images/favicon.png",
+    "checkout_logo_image": "shopify://shop_images/BMFH_LOGO.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#5f95b9",
@@ -41,8 +50,8 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "shopify:\/\/shop_images\/BMFH_LOGO.png",
-          "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/Logo_Bless_Nuevo.svg?v=1625582434",
+          "logo": "shopify://shop_images/BMFH_LOGO.png",
+          "logo_svg": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/Logo_Bless_Nuevo.svg?v=1625582434",
           "logo_max_width": 185,
           "main_linklist": "main-menu",
           "contact_email": "info@blessmyfunk.com",
@@ -58,7 +67,7 @@
         "type": "hero",
         "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/FotoMujerDormida-09.jpg",
+          "image": "shopify://shop_images/FotoMujerDormida-09.jpg",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "adapt",
@@ -66,7 +75,7 @@
           "title": "",
           "text": "",
           "button_label": "find out more",
-          "button_link": "shopify:\/\/collections\/pillows",
+          "button_link": "shopify://collections/pillows",
           "button_animation_duration": 0.8
         }
       },
@@ -75,7 +84,7 @@
         "settings": {
           "layout": "left",
           "title": "Image with text",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "button_label": ""
         }
       },
@@ -87,7 +96,7 @@
             "settings": {
               "enable_image": true,
               "title": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
               "button_label": ""
             }
           },
@@ -96,7 +105,7 @@
             "settings": {
               "enable_image": true,
               "title": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
               "button_label": ""
             }
           },
@@ -105,7 +114,7 @@
             "settings": {
               "enable_image": true,
               "title": "Add a title or tagline",
-              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
               "button_label": ""
             }
           }
@@ -126,21 +135,21 @@
           "quotes-0": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
               "author": "Author's name"
             }
           },
           "quotes-1": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
               "author": "Author's name"
             }
           },
           "quotes-2": {
             "type": "quote",
             "settings": {
-              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
               "author": "Author's name"
             }
           }
@@ -222,7 +231,7 @@
         "type": "header-full-height",
         "settings": {
           "bg_color": "#1bd9a2",
-          "logo_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/Logo_Bless_Nuevo.svg?v=1625582434",
+          "logo_svg": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/Logo_Bless_Nuevo.svg?v=1625582434",
           "menu": "main-menu-home",
           "contact_email": "veronica@blessmyfunk.com"
         }
@@ -232,12 +241,12 @@
         "disabled": true,
         "settings": {
           "bg_color": "#000000",
-          "c-h-1_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/LetrasFranjaNegra-04.svg?v=1614950998",
-          "c-h-1_svg__mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/its-not-for-everyone-mobile.svg?v=1625574657",
+          "c-h-1_svg": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/LetrasFranjaNegra-04.svg?v=1614950998",
+          "c-h-1_svg__mobile": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/its-not-for-everyone-mobile.svg?v=1625574657",
           "c-h-1_color": "#ffffff",
           "c-h-1_width": 90,
           "c-h-1_width--mobile": 90,
-          "c-h-2_svg": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/LetrasFranjaNegra-03.svg?v=1614950998",
+          "c-h-2_svg": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/LetrasFranjaNegra-03.svg?v=1614950998",
           "c-h-2_svg__mobile": "",
           "c-h-2_color": "#a7abf2",
           "c-h-2_width": 30,
@@ -248,8 +257,8 @@
         "type": "hero-2",
         "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/Studio_Session-065_as_Smart_Object-1MB.jpg",
-          "image_mobile": "shopify:\/\/shop_images\/Studio_Session-094_as_Smart_Object-1_copy.tif_3b9bc2ea-429f-46ea-8d51-3d5d8137b25b.jpg",
+          "image": "shopify://shop_images/Studio_Session-065_as_Smart_Object-1MB.jpg",
+          "image_mobile": "shopify://shop_images/Studio_Session-094_as_Smart_Object-1_copy.tif_3b9bc2ea-429f-46ea-8d51-3d5d8137b25b.jpg",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "adapt",
@@ -257,17 +266,16 @@
           "title": "",
           "text": "",
           "button_label": "Let's party",
-          "button_link": "shopify:\/\/products\/coffee-table-book"
+          "button_link": "shopify://products/coffee-table-book"
         }
       },
       "1613136972888c9a57": {
         "type": "image-bar-svg",
-        "disabled": true,
         "blocks": {
           "1613136972888c9a57-1": {
             "type": "image",
             "settings": {
-              "svg_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/madrid-design-festival-02__logo.svg?v=1614950998",
+              "svg_url": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/madrid-design-festival-02__logo.svg?v=1614950998",
               "width": "25%",
               "alignment": "center",
               "link": ""
@@ -276,7 +284,7 @@
           "1613136972888c9a57-2": {
             "type": "image",
             "settings": {
-              "svg_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/architectural-digest.svg?v=1614950998",
+              "svg_url": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/architectural-digest.svg?v=1614950998",
               "width": "25%",
               "alignment": "center",
               "link": ""
@@ -285,7 +293,7 @@
           "1613136972888c9a57-0": {
             "type": "image",
             "settings": {
-              "svg_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/vogue-talents.svg?v=1614950998",
+              "svg_url": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/vogue-talents.svg?v=1614950998",
               "width": "50%",
               "alignment": "center",
               "link": ""
@@ -297,6 +305,7 @@
           "1613136972888c9a57-2",
           "1613136972888c9a57-0"
         ],
+        "disabled": true,
         "settings": {
           "section_height": "small"
         }
@@ -331,7 +340,7 @@
           "display_type": "all",
           "sort": "alphabetical_reversed",
           "grid": 3,
-          "bottom_banner": "shopify:\/\/shop_images\/FotoMujerDormida-09.jpg",
+          "bottom_banner": "shopify://shop_images/FotoMujerDormida-09.jpg",
           "fullwidth": true
         }
       },
@@ -376,7 +385,7 @@
           "layout": "grid",
           "grid": 3,
           "rows": 3,
-          "bottom_banner": "shopify:\/\/shop_images\/FotoMujerDormida-09.jpg",
+          "bottom_banner": "shopify://shop_images/FotoMujerDormida-09.jpg",
           "show_collection_image": true,
           "show_vendor": false,
           "sort_enable": false,
@@ -389,10 +398,10 @@
           "heading": "ABOUT <br>\nUS",
           "heading_font_size": 2.5,
           "heading_line_height": 1.5,
-          "image": "shopify:\/\/shop_images\/Recurso_1.png",
-          "text": "<p><\/p><p>Since our beginning we take pride on celebrating individuality, self-awareness and character. Focusing on providing our customer with the opportunity to have fun expressing themselves through our work.<\/p><p><\/p><p>We are a contemporary homeware brand and design studio based in the Caribbean, Dominican Republic. Bless My Funk Home’s signature approach to bold colors, crafting textiles, and pattern printing with humor and strong focus on uniqueness is inspired by the Retro-Future aesthetic, Surrealism, and Pop culture.<\/p><p><\/p><p>The brand has taken part in design events such as the Madrid Design Festival (2019) and Design Week RD (2019). Bless My Funk Home has also been featured in magazines like Vogue Talent, The Girl Mob, Santo Domingo Times, and Archivos de Arquitectura Antillana.<br\/><br\/>Verónica is an enthusiastic innovator and illustrator who graduated from Istituto Marangoni in Milan. Painting and drawing since she was a child helped her hone her art, fashion, and product design skills. As a designer, she wants to bring a new approach by merging fashion with the interior design industry.<\/p><p>The studio feels the need to reflect today’s society and consumer, aiming to create a fun and enjoyable environment<\/p>",
+          "image": "shopify://shop_images/Recurso_1.png",
+          "text": "<p></p><p>Since our beginning we take pride on celebrating individuality, self-awareness and character. Focusing on providing our customer with the opportunity to have fun expressing themselves through our work.</p><p></p><p>We are a contemporary homeware brand and design studio based in the Caribbean, Dominican Republic. Bless My Funk Home’s signature approach to bold colors, crafting textiles, and pattern printing with humor and strong focus on uniqueness is inspired by the Retro-Future aesthetic, Surrealism, and Pop culture.</p><p></p><p>The brand has taken part in design events such as the Madrid Design Festival (2019) and Design Week RD (2019). Bless My Funk Home has also been featured in magazines like Vogue Talent, The Girl Mob, Santo Domingo Times, and Archivos de Arquitectura Antillana.<br/><br/>Verónica is an enthusiastic innovator and illustrator who graduated from Istituto Marangoni in Milan. Painting and drawing since she was a child helped her hone her art, fashion, and product design skills. As a designer, she wants to bring a new approach by merging fashion with the interior design industry.</p><p>The studio feels the need to reflect today’s society and consumer, aiming to create a fun and enjoyable environment</p>",
           "text_font_size": 1.1,
-          "silhouette": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/abut-us__ovalo-1.svg?v=1624756476",
+          "silhouette": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/abut-us__ovalo-1.svg?v=1624756476",
           "silhouette_styles": "width: 50%;\ntop: -25px;\nleft: 16%;"
         }
       },
@@ -404,9 +413,9 @@
           "heading": "For those <br>\nwho dare <br>\nto play. <br>",
           "heading_font_size": 1.8,
           "heading_line_height": 2.6,
-          "image_1": "shopify:\/\/shop_images\/Studio_Session-013_as_Smart_Object-1_copy.jpg",
-          "image_2": "shopify:\/\/shop_images\/jjn.jpg",
-          "silhouette": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/abut-us__ovalo-2.svg?v=1624756476",
+          "image_1": "shopify://shop_images/Studio_Session-013_as_Smart_Object-1_copy.jpg",
+          "image_2": "shopify://shop_images/jjn.jpg",
+          "silhouette": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/abut-us__ovalo-2.svg?v=1624756476",
           "silhouette_styles": "top: -120px;\nwidth: 55%;"
         }
       },
@@ -415,16 +424,16 @@
         "settings": {
           "heading": "INSIDE THE CLOSET",
           "fullwidth": true,
-          "image_overlay": "shopify:\/\/shop_images\/DIFUSOR_1.jpg",
-          "image": "shopify:\/\/shop_images\/WhatsApp_Image_2021-10-22_at_5.09.08_PM.jpg",
+          "image_overlay": "shopify://shop_images/DIFUSOR_1.jpg",
+          "image": "shopify://shop_images/WhatsApp_Image_2021-10-22_at_5.09.08_PM.jpg",
           "image_position": "center center",
-          "video_link": "https:\/\/youtu.be\/yic4rDzYyBw",
+          "video_link": "https://youtu.be/yic4rDzYyBw",
           "show_overlay": true,
           "style": "image_with_play",
           "height": "medium",
           "video_title": "INSIDE THE CLOSET HOME FRAGRANCE",
           "cta_text": "Shop Now",
-          "cta_url": "shopify:\/\/products\/inside-the-closet",
+          "cta_url": "shopify://products/inside-the-closet",
           "text_size": "medium"
         }
       },
@@ -434,28 +443,28 @@
           "show_section": true,
           "heading": "PIANTINI GIRLS",
           "fullwidth": true,
-          "image_overlay": "shopify:\/\/shop_images\/DSC03367.jpg",
-          "image": "shopify:\/\/shop_images\/Sin_titulo-2.jpg",
+          "image_overlay": "shopify://shop_images/DSC03367.jpg",
+          "image": "shopify://shop_images/Sin_titulo-2.jpg",
           "image_position": "center center",
-          "video_link": "https:\/\/youtu.be\/DCLYmZAkHo8",
+          "video_link": "https://youtu.be/DCLYmZAkHo8",
           "show_overlay": true,
           "style": "image_with_play",
           "height": "large",
           "video_title": "PIANTINI GIRLS      HOME FRAGRANCE",
           "cta_text": "Shop Now",
-          "cta_url": "shopify:\/\/products\/piantini-girls",
+          "cta_url": "shopify://products/piantini-girls",
           "text_size": "medium"
         }
       },
       "img-with-text__trade-services": {
         "type": "img-with-text__trade-services",
         "settings": {
-          "image": "shopify:\/\/shop_images\/bmfhomepic1.png",
+          "image": "shopify://shop_images/bmfhomepic1.png",
           "layout": "left",
           "title": "TRADE SERVICES",
-          "text": "<p>Our trade program is designed to make your job easily, to have on hand anything you need for your projects and to have exclusive access for commissions (custom products) and early access to new products and promotions. Available for national and international designers.<\/p>",
+          "text": "<p>Our trade program is designed to make your job easily, to have on hand anything you need for your projects and to have exclusive access for commissions (custom products) and early access to new products and promotions. Available for national and international designers.</p>",
           "button_label": "Apply Now",
-          "button_link": "shopify:\/\/pages\/trade-services-application"
+          "button_link": "shopify://pages/trade-services-application"
         }
       },
       "text-cols-w-img__trade-services": {
@@ -466,7 +475,7 @@
             "settings": {
               "enable_image": false,
               "title": "",
-              "text": "<p>10% off trade pricing and cash back<\/p><p>Physical and digital catalogues<\/p>",
+              "text": "<p>10% off trade pricing and cash back</p><p>Physical and digital catalogues</p>",
               "button_label": "",
               "button_link": ""
             }
@@ -476,7 +485,7 @@
             "settings": {
               "enable_image": false,
               "title": "",
-              "text": "<p>Commission projects<\/p><p>Exclusive early access to promotions<\/p>",
+              "text": "<p>Commission projects</p><p>Exclusive early access to promotions</p>",
               "button_label": "",
               "button_link": ""
             }
@@ -486,7 +495,7 @@
             "settings": {
               "enable_image": false,
               "title": "",
-              "text": "<p>Exclusive early access to new products<\/p>",
+              "text": "<p>Exclusive early access to new products</p>",
               "button_label": "",
               "button_link": ""
             }
@@ -536,7 +545,7 @@
               "title": "2018-2019 Pillows Catalogue",
               "text": "",
               "button_label": "PDF · Download",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/BMFH_CATALOGUE_2019-20_PLLWS.pdf?v=1626194412"
+              "button_link": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/BMFH_CATALOGUE_2019-20_PLLWS.pdf?v=1626194412"
             }
           },
           "d9756313-087a-4743-8be7-9e69898fd50f": {
@@ -546,7 +555,7 @@
               "title": "2020-2021 Pillows Catalogue",
               "text": "",
               "button_label": "PDF · Download",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/BMFH_CATALOGUE_2021_PLLWS.pdf?v=1626194412"
+              "button_link": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/BMFH_CATALOGUE_2021_PLLWS.pdf?v=1626194412"
             }
           },
           "136dcc86-0ba4-4dbb-967a-7642a2550b83": {
@@ -556,7 +565,7 @@
               "title": "2021 Pillows Catalogue",
               "text": "",
               "button_label": "PDF · Download",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/catalogodigital2021_BMFH_2.pdf?v=1637241947"
+              "button_link": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/catalogodigital2021_BMFH_2.pdf?v=1637241947"
             }
           },
           "7f888023-1fda-4c1b-beb3-fc7f4ff15743": {
@@ -566,7 +575,7 @@
               "title": "Coffee Table Book Catalogue",
               "text": "",
               "button_label": "PDF · Download",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/CTB_CATALOGUE.pdf?v=1626194412"
+              "button_link": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/CTB_CATALOGUE.pdf?v=1626194412"
             }
           },
           "47af25ff-53f8-4cb1-9297-3b08418e4703": {
@@ -576,7 +585,7 @@
               "title": "2022 Shop & Relax catalogue",
               "text": "",
               "button_label": "PDF · Download",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/PILLOWS_SPA-SHOP_RELAX.pdf?v=1660076685"
+              "button_link": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/PILLOWS_SPA-SHOP_RELAX.pdf?v=1660076685"
             }
           },
           "47dc0153-44db-412f-8202-2b94dc1f015a": {
@@ -586,7 +595,7 @@
               "title": "2022 PILLOWS OUTLET SALE",
               "text": "",
               "button_label": "PDF · Download",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/OUTLET_SALE.pdf?v=1662763277"
+              "button_link": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/OUTLET_SALE.pdf?v=1662763277"
             }
           },
           "98e6e350-d84a-4a13-81de-c6cc446c1592": {
@@ -596,7 +605,7 @@
               "title": "2022 CHRISTMAS PILLOWS",
               "text": "",
               "button_label": "PDF · DOWNLOAD",
-              "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/Christmas_Catalogue_2022.pdf?v=1667339028"
+              "button_link": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/Christmas_Catalogue_2022.pdf?v=1667339028"
             }
           }
         },
@@ -616,8 +625,7 @@
       },
       "newsletter-popup": {
         "type": "newsletter-popup",
-        "settings": {
-        }
+        "settings": {}
       },
       "product-template-ctb": {
         "type": "product-template-ctb",
@@ -631,7 +639,7 @@
           "enable_image_zoom": false,
           "enable_video_looping": false,
           "fullwidth": true,
-          "download_btn_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/CTB_CATALOGUE.pdf?v=1626194412",
+          "download_btn_url": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/CTB_CATALOGUE.pdf?v=1626194412",
           "download_btn_text": "Download Catalogue"
         }
       },
@@ -649,15 +657,15 @@
       "premiere-template": {
         "type": "premiere-template",
         "settings": {
-          "banner": "shopify:\/\/shop_images\/PREMIERE_SHOW-01.jpg"
+          "banner": "shopify://shop_images/PREMIERE_SHOW-01.jpg"
         }
       },
       "premiere-video": {
         "type": "premiere-video",
         "settings": {
-          "image": "shopify:\/\/shop_images\/PREMIERE_SHOW-01_1.jpg",
+          "image": "shopify://shop_images/PREMIERE_SHOW-01_1.jpg",
           "image_position": "center center",
-          "video_link": "https:\/\/www.youtube.com\/watch?v=l6aviwi5iag",
+          "video_link": "https://www.youtube.com/watch?v=l6aviwi5iag",
           "show_overlay": false,
           "style": "image_with_play",
           "height": "medium",
@@ -669,9 +677,9 @@
         "type": "video",
         "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/PREMIERE_SHOW-01_1.jpg",
+          "image": "shopify://shop_images/PREMIERE_SHOW-01_1.jpg",
           "image_position": "center center",
-          "video_link": "https:\/\/www.youtube.com\/watch?v=l6aviwi5iag",
+          "video_link": "https://www.youtube.com/watch?v=l6aviwi5iag",
           "show_overlay": true,
           "style": "image_with_play",
           "height": "large",
@@ -683,9 +691,9 @@
         "type": "video-2",
         "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/PREMIERE_SHOW-01_1.jpg",
+          "image": "shopify://shop_images/PREMIERE_SHOW-01_1.jpg",
           "image_position": "center top",
-          "video_link": "https:\/\/www.youtube.com\/watch?v=l6aviwi5iag",
+          "video_link": "https://www.youtube.com/watch?v=l6aviwi5iag",
           "show_overlay": true,
           "style": "image_with_play",
           "height": "medium",
@@ -696,29 +704,29 @@
       "166056303963e65136": {
         "type": "hero-new",
         "settings": {
-          "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_1.png",
-          "hero_new_mobile": "shopify:\/\/shop_images\/render1.jpg",
-          "title": "Need a <br>\n<span>Little<\/span> <br>\nMe Time?"
+          "hero_new_desktop": "shopify://shop_images/FONDO_1.png",
+          "hero_new_mobile": "shopify://shop_images/render1.jpg",
+          "title": "Need a <br>\n<span>Little</span> <br>\nMe Time?"
         }
       },
       "1660563045905a93ed": {
         "type": "hero-new-2",
         "settings": {
-          "hero_new_desktop": "shopify:\/\/shop_images\/FONDO_2_2000.jpg",
-          "hero_new_mobile": "shopify:\/\/shop_images\/render_2.jpg",
-          "title": "Enjoy <br>\nA <span>peaceful<\/span> Stay <br>\nWhile Choosing <br>\nYour Favorite Pillows."
+          "hero_new_desktop": "shopify://shop_images/FONDO_2_2000.jpg",
+          "hero_new_mobile": "shopify://shop_images/render_2.jpg",
+          "title": "Enjoy <br>\nA <span>peaceful</span> Stay <br>\nWhile Choosing <br>\nYour Favorite Pillows."
         }
       },
       "1660563214f92a06e7": {
         "type": "img-w-text-full",
         "settings": {
-          "image": "shopify:\/\/shop_images\/FONDO_4_fixed.jpg",
+          "image": "shopify://shop_images/FONDO_4_fixed.jpg",
           "layout": "left",
           "title": "REST. RESET &amp; <br>\nBOUNCE BACK",
           "text": "",
           "button_label": "Find out more",
-          "button_link": "https:\/\/www.blessmyfunkhome.com\/collections\/pillows-spa",
-          "content_bg": "shopify:\/\/shop_images\/FONDE_3__2000x_e87ca881-e65c-420c-8d78-73e14d6dac2a.jpg"
+          "button_link": "https://www.blessmyfunkhome.com/collections/pillows-spa",
+          "content_bg": "shopify://shop_images/FONDE_3__2000x_e87ca881-e65c-420c-8d78-73e14d6dac2a.jpg"
         }
       },
       "16605732388e37e59c": {
@@ -731,22 +739,22 @@
         "type": "banner-blur",
         "settings": {
           "title": "TRADE & FRIENDS",
-          "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...<\/p><p><\/p><p>Quality products, dedicated services, and exclusive pricing through our Trade & Friends Program<\/p>"
+          "text": "<p>We invite all interior designers, architects, decorators and licensed general contractors to enjoy...</p><p></p><p>Quality products, dedicated services, and exclusive pricing through our Trade & Friends Program</p>"
         }
       },
       "1660737062158ee8fe": {
         "type": "pillows-spa",
         "settings": {
-          "bg_image": "shopify:\/\/shop_images\/FONDE_3__2000x_e87ca881-e65c-420c-8d78-73e14d6dac2a.jpg",
+          "bg_image": "shopify://shop_images/FONDE_3__2000x_e87ca881-e65c-420c-8d78-73e14d6dac2a.jpg",
           "pretitle": "We Present",
           "title": "Pillow's Spa",
           "subtitle": "Collection",
           "cta_text": "Shop & Relax",
-          "cta_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0542\/1445\/9587\/files\/PILLOWS_SPA-SHOP_RELAX.pdf?v=1660076685",
-          "pillow_1": "shopify:\/\/shop_images\/25.png",
-          "pillow_2": "shopify:\/\/shop_images\/28.png",
-          "pillow_3": "shopify:\/\/shop_images\/26.png",
-          "pillow_4": "shopify:\/\/shop_images\/10.png"
+          "cta_url": "https://cdn.shopify.com/s/files/1/0542/1445/9587/files/PILLOWS_SPA-SHOP_RELAX.pdf?v=1660076685",
+          "pillow_1": "shopify://shop_images/25.png",
+          "pillow_2": "shopify://shop_images/28.png",
+          "pillow_3": "shopify://shop_images/26.png",
+          "pillow_4": "shopify://shop_images/10.png"
         }
       },
       "1660742240f0a7760d": {
@@ -755,23 +763,41 @@
           "title": "A Little Sneak Peek?",
           "line_1": "Early Access",
           "line_2": "Custom Products",
-          "line_3": "BIM\/CAD Models",
+          "line_3": "BIM/CAD Models",
           "line_4": "Private Events",
           "line_5": "Dedicated Concierge",
           "cta_text": "I want to apply",
-          "cta_url": "https:\/\/www.blessmyfunkhome.com\/pages\/trade-services-application",
-          "img": "shopify:\/\/shop_images\/FONDO_5__1000x_633d68a6-32ff-4709-bbcc-be66b448aa8a.jpg"
+          "cta_url": "https://www.blessmyfunkhome.com/pages/trade-services-application",
+          "img": "shopify://shop_images/FONDO_5__1000x_633d68a6-32ff-4709-bbcc-be66b448aa8a.jpg"
         }
       },
       "166077378500f3bed9": {
         "type": "piantini-girls",
         "settings": {
           "title": "Piantini Girls",
-          "text": "<p>Piantini Girls is a powerful, bubbly and rosy scent; a craving for a properly chilled champagne<\/p><p>The Piantini Girls scent will transport you to an exclusive atmosphere. Let your nose guide you through a voyage of everlasting flower waves<\/p>",
+          "text": "<p>Piantini Girls is a powerful, bubbly and rosy scent; a craving for a properly chilled champagne</p><p>The Piantini Girls scent will transport you to an exclusive atmosphere. Let your nose guide you through a voyage of everlasting flower waves</p>",
           "cta_text": "Hook me up",
-          "cta_url": "https:\/\/www.blessmyfunkhome.com\/products\/piantini-girls",
-          "img": "shopify:\/\/shop_images\/BOTTLE_cropped.png",
-          "img_blur": "shopify:\/\/shop_images\/BOTELLA_BLUR_cropped.png"
+          "cta_url": "https://www.blessmyfunkhome.com/products/piantini-girls",
+          "img": "shopify://shop_images/BOTTLE_cropped.png",
+          "img_blur": "shopify://shop_images/BOTELLA_BLUR_cropped.png"
+        }
+      },
+      "video-w-img_3__difusers": {
+        "type": "video-w-img_3__difusers",
+        "settings": {
+          "heading": "DOMINICAN BEAT",
+          "fullwidth": true,
+          "image_overlay": "shopify://shop_images/ScreenShot2024-11-25at10.52.30AM.png",
+          "image": "shopify://shop_images/ScreenShot2024-11-25at10.53.10AM.png",
+          "image_position": "center center",
+          "video_link": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "show_overlay": true,
+          "style": "image_with_play",
+          "height": "medium",
+          "video_title": "the vibrant freshness of the ocean",
+          "cta_text": "SHOP NOW",
+          "cta_url": "shopify://products/dominican-beat",
+          "text_size": "medium"
         }
       }
     },
@@ -799,8 +825,7 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "hero-1": {
           "type": "hero",
@@ -811,26 +836,22 @@
         },
         "feature-row": {
           "type": "feature-row",
-          "settings": {
-          }
+          "settings": {}
         },
         "feature-columns": {
           "type": "feature-columns",
           "blocks": {
             "feature-columns-0": {
               "type": "text_block",
-              "settings": {
-              }
+              "settings": {}
             },
             "feature-columns-1": {
               "type": "text_block",
-              "settings": {
-              }
+              "settings": {}
             },
             "feature-columns-2": {
               "type": "text_block",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -853,18 +874,15 @@
           "blocks": {
             "quotes-0": {
               "type": "quote",
-              "settings": {
-              }
+              "settings": {}
             },
             "quotes-1": {
               "type": "quote",
-              "settings": {
-              }
+              "settings": {}
             },
             "quotes-2": {
               "type": "quote",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -881,18 +899,15 @@
           "blocks": {
             "image-bar-0": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image-bar-1": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             },
             "image-bar-2": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -900,21 +915,18 @@
             "image-bar-1",
             "image-bar-2"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
           "blocks": {
             "footer-0": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "footer-1": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1056,23 +1068,20 @@
         },
         "1492033809691": {
           "type": "map",
-          "settings": {
-          }
+          "settings": {}
         },
         "1492033877875": {
           "type": "quotes",
           "blocks": {
             "1492033877875-0": {
               "type": "quote",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
             "1492033877875-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "1492033924902": {
           "type": "custom-content",
@@ -1098,18 +1107,15 @@
           "blocks": {
             "1492096252560-0": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "1492096252560-1": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "1492096252560-2": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1148,18 +1154,15 @@
           "blocks": {
             "link_list": {
               "type": "link_list",
-              "settings": {
-              }
+              "settings": {}
             },
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
